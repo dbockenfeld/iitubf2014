@@ -1,0 +1,1071 @@
+2014/05/29 09:08:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "contact".' in /var/www/sites/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('contact')
+#1 /var/www/sites/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/sites/iitubf/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/contact
+---
+2014/05/29 09:23:19 [error] [php] Undefined variable: root (/var/www/sites/iitubf/protected/views/layouts/main.php:59)
+Stack trace:
+#0 /var/www/sites/iitubf/protected/lib/yii/framework/web/widgets/CContentDecorator.php(76): SiteController->renderFile()
+#1 /var/www/sites/iitubf/protected/lib/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate()
+#2 /var/www/sites/iitubf/protected/lib/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput()
+#3 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(206): CContentDecorator->run()
+#4 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(300): SiteController->endWidget()
+#5 /var/www/sites/iitubf/protected/views/layouts/column1.php(6): SiteController->endContent()
+#6 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(126): require()
+#7 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#8 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(784): SiteController->renderFile()
+#9 /var/www/sites/iitubf/protected/controllers/SiteController.php(32): SiteController->render()
+#10 /var/www/sites/iitubf/protected/lib/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#11 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#12 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(286): SiteController->runAction()
+#13 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#14 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#15 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#16 /var/www/sites/iitubf/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#17 /var/www/sites/iitubf/index.php(13): CWebApplication->run()
+REQUEST_URI=/site/index
+in /var/www/sites/iitubf/protected/views/layouts/main.php (59)
+in /var/www/sites/iitubf/protected/views/layouts/column1.php (6)
+in /var/www/sites/iitubf/protected/controllers/SiteController.php (32)
+2014/05/29 09:26:37 [error] [php] Undefined variable: root (/var/www/sites/iitubf/protected/views/site/index.php:2)
+Stack trace:
+#0 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(869): SiteController->renderFile()
+#1 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(782): SiteController->renderPartial()
+#2 /var/www/sites/iitubf/protected/controllers/SiteController.php(32): SiteController->render()
+#3 /var/www/sites/iitubf/protected/lib/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#4 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(286): SiteController->runAction()
+#6 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/sites/iitubf/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/sites/iitubf/index.php(13): CWebApplication->run()
+REQUEST_URI=/site/index
+in /var/www/sites/iitubf/protected/views/site/index.php (2)
+in /var/www/sites/iitubf/protected/controllers/SiteController.php (32)
+in /var/www/sites/iitubf/index.php (13)
+2014/05/29 09:27:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/features/Acts-Feature.jpg".' in /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('images/features...')
+#1 /var/www/sites/iitubf/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/sites/iitubf/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/features/Acts-Feature.jpg
+HTTP_REFERER=http://iitubf.local.com/site/index
+---
+2014/05/29 09:28:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/features/Acts-Feature.jpg".' in /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('images/features...')
+#1 /var/www/sites/iitubf/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/sites/iitubf/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/features/Acts-Feature.jpg
+HTTP_REFERER=http://iitubf.local.com/site/index
+---
+2014/05/29 10:20:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "index".' in /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('index')
+#1 /var/www/sites/iitubf/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/sites/iitubf/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index
+HTTP_REFERER=http://iitubf.local.com/site/index
+---
+2014/05/29 10:27:53 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /var/www/sites/iitubf/protected/lib/yii/framework/db/CDbConnection.php:381
+Stack trace:
+#0 /var/www/sites/iitubf/protected/lib/yii/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /var/www/sites/iitubf/protected/lib/yii/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /var/www/sites/iitubf/protected/lib/yii/framework/base/CModule.php(387): CDbConnection->init()
+#3 /var/www/sites/iitubf/protected/lib/yii/framework/base/CModule.php(103): CModule->getComponent('db')
+#4 /var/www/sites/iitubf/protected/lib/yii/framework/gii/generators/model/ModelCode.php(57): CModule->__get('db')
+#5 /var/www/sites/iitubf/protected/lib/yii/framework/web/CFormModel.php(39): ModelCode->init()
+#6 /var/www/sites/iitubf/protected/lib/yii/framework/gii/CCodeGenerator.php(153): CFormModel->__construct()
+#7 /var/www/sites/iitubf/protected/lib/yii/framework/gii/CCodeGenerator.php(63): CCodeGenerator->prepare()
+#8 /var/www/sites/iitubf/protected/lib/yii/framework/web/actions/CInlineAction.php(49): CCodeGenerator->actionIndex()
+#9 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(282): CController->run('')
+#13 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/model')
+#14 /var/www/sites/iitubf/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /var/www/sites/iitubf/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/gii/model
+HTTP_REFERER=http://iitubf.local.com/gii/default/index
+---
+2014/05/29 10:43:03 [error] [exception.CException] exception 'CException' with message 'Alias "smallSermonList.smallSermonList" is invalid. Make sure it points to an existing directory or file.' in /var/www/sites/iitubf/protected/lib/yii/framework/YiiBase.php:341
+Stack trace:
+#0 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWidgetFactory.php(146): YiiBase::import('smallSermonList...', true)
+#1 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'smallSermonList...', Array)
+#2 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(172): CBaseController->createWidget('smallSermonList...', Array)
+#3 /var/www/sites/iitubf/protected/views/site/index.php(9): CBaseController->widget('smallSermonList...')
+#4 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(126): require('/var/www/sites/...')
+#5 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/sites/...', NULL, true)
+#6 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/sites/...', NULL, true)
+#7 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#8 /var/www/sites/iitubf/protected/controllers/SiteController.php(32): CController->render('index')
+#9 /var/www/sites/iitubf/protected/lib/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#10 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(282): CController->run('')
+#14 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#15 /var/www/sites/iitubf/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /var/www/sites/iitubf/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/
+---
+2014/05/29 10:43:32 [error] [exception.CException] exception 'CException' with message 'Alias "smallSermonList.smallSermonList" is invalid. Make sure it points to an existing directory or file.' in /var/www/sites/iitubf/protected/lib/yii/framework/YiiBase.php:341
+Stack trace:
+#0 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWidgetFactory.php(146): YiiBase::import('smallSermonList...', true)
+#1 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'smallSermonList...', Array)
+#2 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(172): CBaseController->createWidget('smallSermonList...', Array)
+#3 /var/www/sites/iitubf/protected/views/site/index.php(9): CBaseController->widget('smallSermonList...')
+#4 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(126): require('/var/www/sites/...')
+#5 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/sites/...', NULL, true)
+#6 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/sites/...', NULL, true)
+#7 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#8 /var/www/sites/iitubf/protected/controllers/SiteController.php(32): CController->render('index')
+#9 /var/www/sites/iitubf/protected/lib/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#10 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(282): CController->run('')
+#14 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#15 /var/www/sites/iitubf/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /var/www/sites/iitubf/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/
+---
+2014/05/29 10:43:33 [error] [exception.CException] exception 'CException' with message 'Alias "smallSermonList.smallSermonList" is invalid. Make sure it points to an existing directory or file.' in /var/www/sites/iitubf/protected/lib/yii/framework/YiiBase.php:341
+Stack trace:
+#0 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWidgetFactory.php(146): YiiBase::import('smallSermonList...', true)
+#1 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'smallSermonList...', Array)
+#2 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(172): CBaseController->createWidget('smallSermonList...', Array)
+#3 /var/www/sites/iitubf/protected/views/site/index.php(9): CBaseController->widget('smallSermonList...')
+#4 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(126): require('/var/www/sites/...')
+#5 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/sites/...', NULL, true)
+#6 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/sites/...', NULL, true)
+#7 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#8 /var/www/sites/iitubf/protected/controllers/SiteController.php(32): CController->render('index')
+#9 /var/www/sites/iitubf/protected/lib/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#10 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(282): CController->run('')
+#14 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#15 /var/www/sites/iitubf/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /var/www/sites/iitubf/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/
+---
+2014/05/29 10:43:55 [error] [exception.CException] exception 'CException' with message 'Alias "extenstions.smallSermonList.smallSermonList" is invalid. Make sure it points to an existing directory or file.' in /var/www/sites/iitubf/protected/lib/yii/framework/YiiBase.php:341
+Stack trace:
+#0 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWidgetFactory.php(146): YiiBase::import('extenstions.sma...', true)
+#1 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'extenstions.sma...', Array)
+#2 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(172): CBaseController->createWidget('extenstions.sma...', Array)
+#3 /var/www/sites/iitubf/protected/views/site/index.php(9): CBaseController->widget('extenstions.sma...')
+#4 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(126): require('/var/www/sites/...')
+#5 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/sites/...', NULL, true)
+#6 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/sites/...', NULL, true)
+#7 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#8 /var/www/sites/iitubf/protected/controllers/SiteController.php(32): CController->render('index')
+#9 /var/www/sites/iitubf/protected/lib/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#10 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(282): CController->run('')
+#14 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#15 /var/www/sites/iitubf/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /var/www/sites/iitubf/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/
+---
+2014/05/29 10:44:07 [error] [exception.CException] exception 'CException' with message 'Alias "application.extenstions.smallSermonList.smallSermonList" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /var/www/sites/iitubf/protected/lib/yii/framework/YiiBase.php:316
+Stack trace:
+#0 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWidgetFactory.php(146): YiiBase::import('application.ext...', true)
+#1 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'application.ext...', Array)
+#2 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(172): CBaseController->createWidget('application.ext...', Array)
+#3 /var/www/sites/iitubf/protected/views/site/index.php(9): CBaseController->widget('application.ext...')
+#4 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(126): require('/var/www/sites/...')
+#5 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/sites/...', NULL, true)
+#6 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/sites/...', NULL, true)
+#7 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#8 /var/www/sites/iitubf/protected/controllers/SiteController.php(32): CController->render('index')
+#9 /var/www/sites/iitubf/protected/lib/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#10 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(282): CController->run('')
+#14 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#15 /var/www/sites/iitubf/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /var/www/sites/iitubf/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/
+---
+2014/05/29 10:44:43 [error] [exception.CException] exception 'CException' with message 'Alias "application.protected.extenstions.smallSermonList.smallSermonList" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /var/www/sites/iitubf/protected/lib/yii/framework/YiiBase.php:316
+Stack trace:
+#0 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWidgetFactory.php(146): YiiBase::import('application.pro...', true)
+#1 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'application.pro...', Array)
+#2 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(172): CBaseController->createWidget('application.pro...', Array)
+#3 /var/www/sites/iitubf/protected/views/site/index.php(9): CBaseController->widget('application.pro...')
+#4 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(126): require('/var/www/sites/...')
+#5 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/sites/...', NULL, true)
+#6 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/sites/...', NULL, true)
+#7 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#8 /var/www/sites/iitubf/protected/controllers/SiteController.php(32): CController->render('index')
+#9 /var/www/sites/iitubf/protected/lib/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#10 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(282): CController->run('')
+#14 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#15 /var/www/sites/iitubf/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /var/www/sites/iitubf/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/
+---
+2014/05/29 10:44:50 [error] [exception.CException] exception 'CException' with message 'Alias "protected.extenstions.smallSermonList.smallSermonList" is invalid. Make sure it points to an existing directory or file.' in /var/www/sites/iitubf/protected/lib/yii/framework/YiiBase.php:341
+Stack trace:
+#0 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWidgetFactory.php(146): YiiBase::import('protected.exten...', true)
+#1 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'protected.exten...', Array)
+#2 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(172): CBaseController->createWidget('protected.exten...', Array)
+#3 /var/www/sites/iitubf/protected/views/site/index.php(9): CBaseController->widget('protected.exten...')
+#4 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(126): require('/var/www/sites/...')
+#5 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/sites/...', NULL, true)
+#6 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/sites/...', NULL, true)
+#7 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#8 /var/www/sites/iitubf/protected/controllers/SiteController.php(32): CController->render('index')
+#9 /var/www/sites/iitubf/protected/lib/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#10 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(282): CController->run('')
+#14 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#15 /var/www/sites/iitubf/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /var/www/sites/iitubf/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/
+---
+2014/05/29 10:44:58 [error] [exception.CException] exception 'CException' with message 'Alias "application.protected.extenstions.smallSermonList.smallSermonList" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /var/www/sites/iitubf/protected/lib/yii/framework/YiiBase.php:316
+Stack trace:
+#0 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWidgetFactory.php(146): YiiBase::import('application.pro...', true)
+#1 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'application.pro...', Array)
+#2 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(172): CBaseController->createWidget('application.pro...', Array)
+#3 /var/www/sites/iitubf/protected/views/site/index.php(9): CBaseController->widget('application.pro...')
+#4 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(126): require('/var/www/sites/...')
+#5 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/sites/...', NULL, true)
+#6 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/sites/...', NULL, true)
+#7 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#8 /var/www/sites/iitubf/protected/controllers/SiteController.php(32): CController->render('index')
+#9 /var/www/sites/iitubf/protected/lib/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#10 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(282): CController->run('')
+#14 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#15 /var/www/sites/iitubf/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /var/www/sites/iitubf/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/
+---
+2014/05/29 10:46:39 [error] [php] include(smallSermonList.php): failed to open stream: No such file or directory (/var/www/sites/iitubf/protected/lib/yii/framework/YiiBase.php:421)
+Stack trace:
+#0 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWidgetFactory.php(146): import()
+#1 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(146): CWidgetFactory->createWidget()
+#2 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(172): SiteController->createWidget()
+#3 /var/www/sites/iitubf/protected/views/site/index.php(9): SiteController->widget()
+#4 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(126): require()
+#5 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#6 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(869): SiteController->renderFile()
+#7 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(782): SiteController->renderPartial()
+#8 /var/www/sites/iitubf/protected/controllers/SiteController.php(32): SiteController->render()
+#9 /var/www/sites/iitubf/protected/lib/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#10 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#11 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(286): SiteController->runAction()
+#12 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#13 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#14 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#15 /var/www/sites/iitubf/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /var/www/sites/iitubf/index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in /var/www/sites/iitubf/protected/views/site/index.php (9)
+in /var/www/sites/iitubf/protected/controllers/SiteController.php (32)
+in /var/www/sites/iitubf/index.php (13)
+2014/05/29 10:48:43 [error] [exception.CException] exception 'CException' with message 'Alias "extensions.smallSermonList.smallSermonList" is invalid. Make sure it points to an existing directory or file.' in /var/www/sites/iitubf/protected/lib/yii/framework/YiiBase.php:341
+Stack trace:
+#0 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWidgetFactory.php(146): YiiBase::import('extensions.smal...', true)
+#1 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'extensions.smal...', Array)
+#2 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(172): CBaseController->createWidget('extensions.smal...', Array)
+#3 /var/www/sites/iitubf/protected/views/site/index.php(9): CBaseController->widget('extensions.smal...')
+#4 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(126): require('/var/www/sites/...')
+#5 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/sites/...', NULL, true)
+#6 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/sites/...', NULL, true)
+#7 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#8 /var/www/sites/iitubf/protected/controllers/SiteController.php(32): CController->render('index')
+#9 /var/www/sites/iitubf/protected/lib/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#10 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(282): CController->run('')
+#14 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#15 /var/www/sites/iitubf/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /var/www/sites/iitubf/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/
+---
+2014/05/29 10:49:01 [error] [exception.CException] exception 'CException' with message 'Alias "site.protectedextensions.smallSermonList.smallSermonList" is invalid. Make sure it points to an existing directory or file.' in /var/www/sites/iitubf/protected/lib/yii/framework/YiiBase.php:341
+Stack trace:
+#0 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWidgetFactory.php(146): YiiBase::import('site.protectede...', true)
+#1 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'site.protectede...', Array)
+#2 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(172): CBaseController->createWidget('site.protectede...', Array)
+#3 /var/www/sites/iitubf/protected/views/site/index.php(9): CBaseController->widget('site.protectede...')
+#4 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(126): require('/var/www/sites/...')
+#5 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/sites/...', NULL, true)
+#6 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/sites/...', NULL, true)
+#7 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#8 /var/www/sites/iitubf/protected/controllers/SiteController.php(32): CController->render('index')
+#9 /var/www/sites/iitubf/protected/lib/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#10 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(282): CController->run('')
+#14 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#15 /var/www/sites/iitubf/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /var/www/sites/iitubf/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/
+---
+2014/05/29 10:49:08 [error] [exception.CException] exception 'CException' with message 'Alias "site.protected.extensions.smallSermonList.smallSermonList" is invalid. Make sure it points to an existing directory or file.' in /var/www/sites/iitubf/protected/lib/yii/framework/YiiBase.php:341
+Stack trace:
+#0 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWidgetFactory.php(146): YiiBase::import('site.protected....', true)
+#1 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'site.protected....', Array)
+#2 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(172): CBaseController->createWidget('site.protected....', Array)
+#3 /var/www/sites/iitubf/protected/views/site/index.php(9): CBaseController->widget('site.protected....')
+#4 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(126): require('/var/www/sites/...')
+#5 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/sites/...', NULL, true)
+#6 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/sites/...', NULL, true)
+#7 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#8 /var/www/sites/iitubf/protected/controllers/SiteController.php(32): CController->render('index')
+#9 /var/www/sites/iitubf/protected/lib/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#10 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(282): CController->run('')
+#14 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#15 /var/www/sites/iitubf/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /var/www/sites/iitubf/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/
+---
+2014/05/29 10:49:09 [error] [exception.CException] exception 'CException' with message 'Alias "site.protected.extensions.smallSermonList.smallSermonList" is invalid. Make sure it points to an existing directory or file.' in /var/www/sites/iitubf/protected/lib/yii/framework/YiiBase.php:341
+Stack trace:
+#0 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWidgetFactory.php(146): YiiBase::import('site.protected....', true)
+#1 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'site.protected....', Array)
+#2 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(172): CBaseController->createWidget('site.protected....', Array)
+#3 /var/www/sites/iitubf/protected/views/site/index.php(9): CBaseController->widget('site.protected....')
+#4 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(126): require('/var/www/sites/...')
+#5 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/sites/...', NULL, true)
+#6 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/sites/...', NULL, true)
+#7 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#8 /var/www/sites/iitubf/protected/controllers/SiteController.php(32): CController->render('index')
+#9 /var/www/sites/iitubf/protected/lib/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#10 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(282): CController->run('')
+#14 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#15 /var/www/sites/iitubf/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /var/www/sites/iitubf/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/
+---
+2014/05/29 10:49:09 [error] [exception.CException] exception 'CException' with message 'Alias "site.protected.extensions.smallSermonList.smallSermonList" is invalid. Make sure it points to an existing directory or file.' in /var/www/sites/iitubf/protected/lib/yii/framework/YiiBase.php:341
+Stack trace:
+#0 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWidgetFactory.php(146): YiiBase::import('site.protected....', true)
+#1 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'site.protected....', Array)
+#2 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(172): CBaseController->createWidget('site.protected....', Array)
+#3 /var/www/sites/iitubf/protected/views/site/index.php(9): CBaseController->widget('site.protected....')
+#4 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(126): require('/var/www/sites/...')
+#5 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/sites/...', NULL, true)
+#6 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/sites/...', NULL, true)
+#7 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#8 /var/www/sites/iitubf/protected/controllers/SiteController.php(32): CController->render('index')
+#9 /var/www/sites/iitubf/protected/lib/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#10 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(282): CController->run('')
+#14 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#15 /var/www/sites/iitubf/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /var/www/sites/iitubf/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/
+---
+2014/05/29 10:49:10 [error] [exception.CException] exception 'CException' with message 'Alias "site.protected.extensions.smallSermonList.smallSermonList" is invalid. Make sure it points to an existing directory or file.' in /var/www/sites/iitubf/protected/lib/yii/framework/YiiBase.php:341
+Stack trace:
+#0 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWidgetFactory.php(146): YiiBase::import('site.protected....', true)
+#1 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'site.protected....', Array)
+#2 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(172): CBaseController->createWidget('site.protected....', Array)
+#3 /var/www/sites/iitubf/protected/views/site/index.php(9): CBaseController->widget('site.protected....')
+#4 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(126): require('/var/www/sites/...')
+#5 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/sites/...', NULL, true)
+#6 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/sites/...', NULL, true)
+#7 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#8 /var/www/sites/iitubf/protected/controllers/SiteController.php(32): CController->render('index')
+#9 /var/www/sites/iitubf/protected/lib/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#10 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(282): CController->run('')
+#14 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#15 /var/www/sites/iitubf/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /var/www/sites/iitubf/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/
+---
+2014/05/29 10:49:10 [error] [exception.CException] exception 'CException' with message 'Alias "site.protected.extensions.smallSermonList.smallSermonList" is invalid. Make sure it points to an existing directory or file.' in /var/www/sites/iitubf/protected/lib/yii/framework/YiiBase.php:341
+Stack trace:
+#0 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWidgetFactory.php(146): YiiBase::import('site.protected....', true)
+#1 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'site.protected....', Array)
+#2 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(172): CBaseController->createWidget('site.protected....', Array)
+#3 /var/www/sites/iitubf/protected/views/site/index.php(9): CBaseController->widget('site.protected....')
+#4 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(126): require('/var/www/sites/...')
+#5 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/sites/...', NULL, true)
+#6 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/sites/...', NULL, true)
+#7 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#8 /var/www/sites/iitubf/protected/controllers/SiteController.php(32): CController->render('index')
+#9 /var/www/sites/iitubf/protected/lib/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#10 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(282): CController->run('')
+#14 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#15 /var/www/sites/iitubf/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /var/www/sites/iitubf/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/
+---
+2014/05/29 10:49:10 [error] [exception.CException] exception 'CException' with message 'Alias "site.protected.extensions.smallSermonList.smallSermonList" is invalid. Make sure it points to an existing directory or file.' in /var/www/sites/iitubf/protected/lib/yii/framework/YiiBase.php:341
+Stack trace:
+#0 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWidgetFactory.php(146): YiiBase::import('site.protected....', true)
+#1 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'site.protected....', Array)
+#2 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(172): CBaseController->createWidget('site.protected....', Array)
+#3 /var/www/sites/iitubf/protected/views/site/index.php(9): CBaseController->widget('site.protected....')
+#4 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(126): require('/var/www/sites/...')
+#5 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/sites/...', NULL, true)
+#6 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/sites/...', NULL, true)
+#7 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#8 /var/www/sites/iitubf/protected/controllers/SiteController.php(32): CController->render('index')
+#9 /var/www/sites/iitubf/protected/lib/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#10 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(282): CController->run('')
+#14 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#15 /var/www/sites/iitubf/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /var/www/sites/iitubf/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/
+---
+2014/05/29 10:49:16 [error] [exception.CException] exception 'CException' with message 'Alias "site.extensions.smallSermonList.smallSermonList" is invalid. Make sure it points to an existing directory or file.' in /var/www/sites/iitubf/protected/lib/yii/framework/YiiBase.php:341
+Stack trace:
+#0 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWidgetFactory.php(146): YiiBase::import('site.extensions...', true)
+#1 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'site.extensions...', Array)
+#2 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(172): CBaseController->createWidget('site.extensions...', Array)
+#3 /var/www/sites/iitubf/protected/views/site/index.php(9): CBaseController->widget('site.extensions...')
+#4 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(126): require('/var/www/sites/...')
+#5 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/sites/...', NULL, true)
+#6 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/sites/...', NULL, true)
+#7 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#8 /var/www/sites/iitubf/protected/controllers/SiteController.php(32): CController->render('index')
+#9 /var/www/sites/iitubf/protected/lib/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#10 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(282): CController->run('')
+#14 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#15 /var/www/sites/iitubf/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /var/www/sites/iitubf/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/
+---
+2014/05/29 10:51:01 [error] [exception.CException] exception 'CException' with message 'Alias "extensions.smallSermonList.smallSermonList" is invalid. Make sure it points to an existing directory or file.' in /var/www/sites/iitubf/protected/lib/yii/framework/YiiBase.php:341
+Stack trace:
+#0 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWidgetFactory.php(146): YiiBase::import('extensions.smal...', true)
+#1 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'extensions.smal...', Array)
+#2 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(172): CBaseController->createWidget('extensions.smal...', Array)
+#3 /var/www/sites/iitubf/protected/views/site/index.php(9): CBaseController->widget('extensions.smal...')
+#4 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(126): require('/var/www/sites/...')
+#5 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/sites/...', NULL, true)
+#6 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/sites/...', NULL, true)
+#7 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#8 /var/www/sites/iitubf/protected/controllers/SiteController.php(32): CController->render('index')
+#9 /var/www/sites/iitubf/protected/lib/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#10 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(282): CController->run('')
+#14 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#15 /var/www/sites/iitubf/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /var/www/sites/iitubf/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/
+---
+2014/05/29 11:21:10 [error] [exception.CException] exception 'CException' with message 'smallSermonList and its behaviors do not have a method or closure named "renderPartial".' in /var/www/sites/iitubf/protected/lib/yii/framework/base/CComponent.php:265
+Stack trace:
+#0 /var/www/sites/iitubf/protected/extensions/smallSermonList/views/smallSermonList.php(4): CComponent->__call('renderPartial', Array)
+#1 /var/www/sites/iitubf/protected/extensions/smallSermonList/views/smallSermonList.php(4): smallSermonList->renderPartial('_sermon_item', Array)
+#2 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(130): require('/var/www/sites/...')
+#3 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/sites/...', Array, false)
+#4 /var/www/sites/iitubf/protected/lib/yii/framework/web/widgets/CWidget.php(243): CBaseController->renderFile('/var/www/sites/...', Array, false)
+#5 /var/www/sites/iitubf/protected/extensions/smallSermonList/smallSermonList.php(31): CWidget->render('smallSermonList', Array)
+#6 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(173): smallSermonList->run()
+#7 /var/www/sites/iitubf/protected/views/site/index.php(9): CBaseController->widget('ext.smallSermon...')
+#8 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(126): require('/var/www/sites/...')
+#9 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/sites/...', NULL, true)
+#10 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/sites/...', NULL, true)
+#11 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#12 /var/www/sites/iitubf/protected/controllers/SiteController.php(32): CController->render('index')
+#13 /var/www/sites/iitubf/protected/lib/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#14 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#15 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#16 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(282): CController->run('')
+#18 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#19 /var/www/sites/iitubf/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#20 /var/www/sites/iitubf/index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/
+---
+2014/05/29 11:25:04 [error] [php] A non well formed numeric value encountered (/var/www/sites/iitubf/protected/extensions/smallSermonList/views/_sermon_item.php:5)
+Stack trace:
+#0 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(95): smallSermonList->renderInternal()
+#1 /var/www/sites/iitubf/protected/lib/yii/framework/web/widgets/CWidget.php(243): smallSermonList->renderFile()
+#2 /var/www/sites/iitubf/protected/extensions/smallSermonList/views/smallSermonList.php(4): smallSermonList->render()
+#3 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(130): require()
+#4 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(95): smallSermonList->renderInternal()
+#5 /var/www/sites/iitubf/protected/lib/yii/framework/web/widgets/CWidget.php(243): smallSermonList->renderFile()
+#6 /var/www/sites/iitubf/protected/extensions/smallSermonList/smallSermonList.php(31): smallSermonList->render()
+#7 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(173): smallSermonList->run()
+#8 /var/www/sites/iitubf/protected/views/site/index.php(9): SiteController->widget()
+#9 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(126): require()
+#10 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#11 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(869): SiteController->renderFile()
+#12 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(782): SiteController->renderPartial()
+#13 /var/www/sites/iitubf/protected/controllers/SiteController.php(32): SiteController->render()
+#14 /var/www/sites/iitubf/protected/lib/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#15 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#16 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(286): SiteController->runAction()
+#17 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#18 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#19 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#20 /var/www/sites/iitubf/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#21 /var/www/sites/iitubf/index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in /var/www/sites/iitubf/protected/extensions/smallSermonList/views/_sermon_item.php (5)
+in /var/www/sites/iitubf/protected/extensions/smallSermonList/views/smallSermonList.php (4)
+in /var/www/sites/iitubf/protected/extensions/smallSermonList/smallSermonList.php (31)
+2014/05/29 13:32:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/sermon/nehemiah.jpg".' in /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('images/sermon/n...')
+#1 /var/www/sites/iitubf/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/sites/iitubf/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/sermon/nehemiah.jpg
+HTTP_REFERER=http://iitubf.local.com/
+---
+2014/05/29 13:34:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/sermon/james.jpg".' in /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('images/sermon/j...')
+#1 /var/www/sites/iitubf/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/sites/iitubf/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/sermon/james.jpg
+HTTP_REFERER=http://iitubf.local.com/
+---
+2014/05/29 13:36:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/sermon/james.jpg".' in /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('images/sermon/j...')
+#1 /var/www/sites/iitubf/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/sites/iitubf/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/sermon/james.jpg
+HTTP_REFERER=http://iitubf.local.com/
+---
+2014/05/29 13:38:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/sermon/james.jpg".' in /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('images/sermon/j...')
+#1 /var/www/sites/iitubf/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/sites/iitubf/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/sermon/james.jpg
+HTTP_REFERER=http://iitubf.local.com/
+---
+2014/05/29 14:13:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "worship-in-the-godbox.jpg".' in /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('worship-in-the-...')
+#1 /var/www/sites/iitubf/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/sites/iitubf/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/worship-in-the-godbox.jpg
+HTTP_REFERER=http://iitubf.local.com/
+---
+2014/05/29 14:14:23 [error] [php] Undefined variable: image_file (/var/www/sites/iitubf/protected/extensions/displayHeroImage/views/displayHeroImage.php:3)
+Stack trace:
+#0 /var/www/sites/iitubf/protected/lib/yii/framework/web/widgets/CWidget.php(243): displayHeroImage->renderFile()
+#1 /var/www/sites/iitubf/protected/extensions/displayHeroImage/displayHeroImage.php(40): displayHeroImage->render()
+#2 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(173): displayHeroImage->run()
+#3 /var/www/sites/iitubf/protected/views/site/index.php(5): SiteController->widget()
+#4 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(126): require()
+#5 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#6 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(869): SiteController->renderFile()
+#7 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(782): SiteController->renderPartial()
+#8 /var/www/sites/iitubf/protected/controllers/SiteController.php(32): SiteController->render()
+#9 /var/www/sites/iitubf/protected/lib/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#10 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#11 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(286): SiteController->runAction()
+#12 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#13 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#14 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#15 /var/www/sites/iitubf/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /var/www/sites/iitubf/index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in /var/www/sites/iitubf/protected/extensions/displayHeroImage/views/displayHeroImage.php (3)
+in /var/www/sites/iitubf/protected/extensions/displayHeroImage/displayHeroImage.php (40)
+in /var/www/sites/iitubf/protected/views/site/index.php (5)
+2014/06/03 08:38:31 [error] [php] SimpleXMLElement::__construct(): Entity: line 3: parser error : Start tag expected, '<' not found (/var/www/sites/iitubf/protected/controllers/SiteController.php:40)
+Stack trace:
+#0 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(286): SiteController->runAction()
+#2 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#3 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#4 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/sites/iitubf/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#6 /var/www/sites/iitubf/index.php(13): CWebApplication->run()
+REQUEST_URI=/site/dailybread
+in /var/www/sites/iitubf/protected/controllers/SiteController.php (40)
+in /var/www/sites/iitubf/index.php (13)
+2014/06/03 08:39:31 [error] [php] SimpleXMLElement::__construct(): Entity: line 3: parser error : Start tag expected, '<' not found (/var/www/sites/iitubf/protected/controllers/SiteController.php:40)
+Stack trace:
+#0 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(286): SiteController->runAction()
+#2 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#3 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#4 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/sites/iitubf/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#6 /var/www/sites/iitubf/index.php(13): CWebApplication->run()
+REQUEST_URI=/site/dailybread
+in /var/www/sites/iitubf/protected/controllers/SiteController.php (40)
+in /var/www/sites/iitubf/index.php (13)
+2014/06/03 08:43:44 [error] [php] Undefined variable: page (/var/www/sites/iitubf/protected/views/site/page.php:4)
+Stack trace:
+#0 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(869): SiteController->renderFile()
+#1 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(782): SiteController->renderPartial()
+#2 /var/www/sites/iitubf/protected/controllers/SiteController.php(46): SiteController->render()
+#3 /var/www/sites/iitubf/protected/lib/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionDailyBread()
+#4 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(286): SiteController->runAction()
+#6 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/sites/iitubf/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/sites/iitubf/index.php(13): CWebApplication->run()
+REQUEST_URI=/site/dailybread
+in /var/www/sites/iitubf/protected/views/site/page.php (4)
+in /var/www/sites/iitubf/protected/controllers/SiteController.php (46)
+in /var/www/sites/iitubf/index.php (13)
+2014/06/03 08:47:55 [error] [php] array_pop() expects parameter 1 to be array, object given (/var/www/sites/iitubf/protected/controllers/SiteController.php:42)
+Stack trace:
+#0 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(286): SiteController->runAction()
+#2 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#3 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#4 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/sites/iitubf/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#6 /var/www/sites/iitubf/index.php(13): CWebApplication->run()
+REQUEST_URI=/site/dailybread
+in /var/www/sites/iitubf/protected/controllers/SiteController.php (42)
+in /var/www/sites/iitubf/index.php (13)
+2014/06/03 08:56:58 [error] [php] Undefined variable: page (/var/www/sites/iitubf/protected/views/site/page.php:5)
+Stack trace:
+#0 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(869): SiteController->renderFile()
+#1 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(782): SiteController->renderPartial()
+#2 /var/www/sites/iitubf/protected/controllers/SiteController.php(45): SiteController->render()
+#3 /var/www/sites/iitubf/protected/lib/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionDailyBread()
+#4 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(286): SiteController->runAction()
+#6 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/sites/iitubf/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/sites/iitubf/index.php(13): CWebApplication->run()
+REQUEST_URI=/site/dailybread
+in /var/www/sites/iitubf/protected/views/site/page.php (5)
+in /var/www/sites/iitubf/protected/controllers/SiteController.php (45)
+in /var/www/sites/iitubf/index.php (13)
+2014/06/03 08:57:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(270): CController->missingAction('images')
+#1 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(282): CController->run('images')
+#2 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/images/dai...')
+#3 /var/www/sites/iitubf/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/sites/iitubf/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/daily-bread.jpg
+HTTP_REFERER=http://iitubf.local.com/site/dailybread
+---
+2014/06/03 09:01:48 [error] [php] htmlspecialchars() expects parameter 1 to be string, array given (/var/www/sites/iitubf/protected/lib/yii/framework/web/helpers/CHtml.php:98)
+Stack trace:
+#0 /var/www/sites/iitubf/protected/lib/yii/framework/web/helpers/CHtml.php(153): renderAttributes()
+#1 /var/www/sites/iitubf/protected/lib/yii/framework/web/helpers/CHtml.php(426): tag()
+#2 /var/www/sites/iitubf/protected/views/site/page.php(6): image()
+#3 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(126): require()
+#4 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#5 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(869): SiteController->renderFile()
+#6 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(782): SiteController->renderPartial()
+#7 /var/www/sites/iitubf/protected/controllers/SiteController.php(45): SiteController->render()
+#8 /var/www/sites/iitubf/protected/lib/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionDailyBread()
+#9 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#10 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(286): SiteController->runAction()
+#11 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#12 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#13 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#14 /var/www/sites/iitubf/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /var/www/sites/iitubf/index.php(13): CWebApplication->run()
+REQUEST_URI=/site/dailybread
+in /var/www/sites/iitubf/protected/views/site/page.php (6)
+in /var/www/sites/iitubf/protected/controllers/SiteController.php (45)
+in /var/www/sites/iitubf/index.php (13)
+2014/06/03 13:11:23 [error] [php] Trying to get property of non-object (/var/www/sites/iitubf/protected/extensions/displayHeroImage/views/displayHeroImage.php:2)
+Stack trace:
+#0 /var/www/sites/iitubf/protected/lib/yii/framework/web/widgets/CWidget.php(243): displayHeroImage->renderFile()
+#1 /var/www/sites/iitubf/protected/extensions/displayHeroImage/displayHeroImage.php(42): displayHeroImage->render()
+#2 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(173): displayHeroImage->run()
+#3 /var/www/sites/iitubf/protected/views/site/page.php(26): SiteController->widget()
+#4 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(126): require()
+#5 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#6 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(869): SiteController->renderFile()
+#7 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(782): SiteController->renderPartial()
+#8 /var/www/sites/iitubf/protected/controllers/SiteController.php(45): SiteController->render()
+#9 /var/www/sites/iitubf/protected/lib/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionDailyBread()
+#10 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#11 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(286): SiteController->runAction()
+#12 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#13 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#14 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#15 /var/www/sites/iitubf/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /var/www/sites/iitubf/index.php(13): CWebApplication->run()
+REQUEST_URI=/site/dailybread
+in /var/www/sites/iitubf/protected/extensions/displayHeroImage/views/displayHeroImage.php (2)
+in /var/www/sites/iitubf/protected/extensions/displayHeroImage/displayHeroImage.php (42)
+in /var/www/sites/iitubf/protected/views/site/page.php (26)
+2014/06/03 13:12:14 [error] [php] Trying to get property of non-object (/var/www/sites/iitubf/protected/extensions/displayHeroImage/views/displayHeroImage.php:2)
+Stack trace:
+#0 /var/www/sites/iitubf/protected/lib/yii/framework/web/widgets/CWidget.php(243): displayHeroImage->renderFile()
+#1 /var/www/sites/iitubf/protected/extensions/displayHeroImage/displayHeroImage.php(42): displayHeroImage->render()
+#2 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(173): displayHeroImage->run()
+#3 /var/www/sites/iitubf/protected/views/site/page.php(26): SiteController->widget()
+#4 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(126): require()
+#5 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#6 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(869): SiteController->renderFile()
+#7 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(782): SiteController->renderPartial()
+#8 /var/www/sites/iitubf/protected/controllers/SiteController.php(45): SiteController->render()
+#9 /var/www/sites/iitubf/protected/lib/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionDailyBread()
+#10 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#11 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(286): SiteController->runAction()
+#12 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#13 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#14 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#15 /var/www/sites/iitubf/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /var/www/sites/iitubf/index.php(13): CWebApplication->run()
+REQUEST_URI=/site/dailybread
+in /var/www/sites/iitubf/protected/extensions/displayHeroImage/views/displayHeroImage.php (2)
+in /var/www/sites/iitubf/protected/extensions/displayHeroImage/displayHeroImage.php (42)
+in /var/www/sites/iitubf/protected/views/site/page.php (26)
+2014/06/03 13:25:16 [error] [php] Trying to get property of non-object (/var/www/sites/iitubf/protected/extensions/displayHeroImage/views/displayHeroImage.php:2)
+Stack trace:
+#0 /var/www/sites/iitubf/protected/lib/yii/framework/web/widgets/CWidget.php(243): displayHeroImage->renderFile()
+#1 /var/www/sites/iitubf/protected/extensions/displayHeroImage/displayHeroImage.php(42): displayHeroImage->render()
+#2 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(173): displayHeroImage->run()
+#3 /var/www/sites/iitubf/protected/views/site/page.php(26): SiteController->widget()
+#4 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(126): require()
+#5 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#6 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(869): SiteController->renderFile()
+#7 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(782): SiteController->renderPartial()
+#8 /var/www/sites/iitubf/protected/controllers/SiteController.php(45): SiteController->render()
+#9 /var/www/sites/iitubf/protected/lib/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionDailyBread()
+#10 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#11 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(286): SiteController->runAction()
+#12 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#13 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#14 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#15 /var/www/sites/iitubf/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /var/www/sites/iitubf/index.php(13): CWebApplication->run()
+REQUEST_URI=/site/dailybread
+in /var/www/sites/iitubf/protected/extensions/displayHeroImage/views/displayHeroImage.php (2)
+in /var/www/sites/iitubf/protected/extensions/displayHeroImage/displayHeroImage.php (42)
+in /var/www/sites/iitubf/protected/views/site/page.php (26)
+2014/06/03 13:25:17 [error] [php] Trying to get property of non-object (/var/www/sites/iitubf/protected/extensions/displayHeroImage/views/displayHeroImage.php:2)
+Stack trace:
+#0 /var/www/sites/iitubf/protected/lib/yii/framework/web/widgets/CWidget.php(243): displayHeroImage->renderFile()
+#1 /var/www/sites/iitubf/protected/extensions/displayHeroImage/displayHeroImage.php(42): displayHeroImage->render()
+#2 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(173): displayHeroImage->run()
+#3 /var/www/sites/iitubf/protected/views/site/page.php(26): SiteController->widget()
+#4 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(126): require()
+#5 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#6 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(869): SiteController->renderFile()
+#7 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(782): SiteController->renderPartial()
+#8 /var/www/sites/iitubf/protected/controllers/SiteController.php(45): SiteController->render()
+#9 /var/www/sites/iitubf/protected/lib/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionDailyBread()
+#10 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#11 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(286): SiteController->runAction()
+#12 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#13 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#14 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#15 /var/www/sites/iitubf/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /var/www/sites/iitubf/index.php(13): CWebApplication->run()
+REQUEST_URI=/site/dailybread
+in /var/www/sites/iitubf/protected/extensions/displayHeroImage/views/displayHeroImage.php (2)
+in /var/www/sites/iitubf/protected/extensions/displayHeroImage/displayHeroImage.php (42)
+in /var/www/sites/iitubf/protected/views/site/page.php (26)
+2014/06/03 13:25:18 [error] [php] Trying to get property of non-object (/var/www/sites/iitubf/protected/extensions/displayHeroImage/views/displayHeroImage.php:2)
+Stack trace:
+#0 /var/www/sites/iitubf/protected/lib/yii/framework/web/widgets/CWidget.php(243): displayHeroImage->renderFile()
+#1 /var/www/sites/iitubf/protected/extensions/displayHeroImage/displayHeroImage.php(42): displayHeroImage->render()
+#2 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(173): displayHeroImage->run()
+#3 /var/www/sites/iitubf/protected/views/site/page.php(26): SiteController->widget()
+#4 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(126): require()
+#5 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#6 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(869): SiteController->renderFile()
+#7 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(782): SiteController->renderPartial()
+#8 /var/www/sites/iitubf/protected/controllers/SiteController.php(45): SiteController->render()
+#9 /var/www/sites/iitubf/protected/lib/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionDailyBread()
+#10 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#11 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(286): SiteController->runAction()
+#12 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#13 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#14 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#15 /var/www/sites/iitubf/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /var/www/sites/iitubf/index.php(13): CWebApplication->run()
+REQUEST_URI=/site/dailybread
+in /var/www/sites/iitubf/protected/extensions/displayHeroImage/views/displayHeroImage.php (2)
+in /var/www/sites/iitubf/protected/extensions/displayHeroImage/displayHeroImage.php (42)
+in /var/www/sites/iitubf/protected/views/site/page.php (26)
+2014/06/03 13:25:19 [error] [php] Trying to get property of non-object (/var/www/sites/iitubf/protected/extensions/displayHeroImage/views/displayHeroImage.php:2)
+Stack trace:
+#0 /var/www/sites/iitubf/protected/lib/yii/framework/web/widgets/CWidget.php(243): displayHeroImage->renderFile()
+#1 /var/www/sites/iitubf/protected/extensions/displayHeroImage/displayHeroImage.php(42): displayHeroImage->render()
+#2 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(173): displayHeroImage->run()
+#3 /var/www/sites/iitubf/protected/views/site/page.php(26): SiteController->widget()
+#4 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(126): require()
+#5 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#6 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(869): SiteController->renderFile()
+#7 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(782): SiteController->renderPartial()
+#8 /var/www/sites/iitubf/protected/controllers/SiteController.php(45): SiteController->render()
+#9 /var/www/sites/iitubf/protected/lib/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionDailyBread()
+#10 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#11 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(286): SiteController->runAction()
+#12 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#13 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#14 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#15 /var/www/sites/iitubf/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /var/www/sites/iitubf/index.php(13): CWebApplication->run()
+REQUEST_URI=/site/dailybread
+in /var/www/sites/iitubf/protected/extensions/displayHeroImage/views/displayHeroImage.php (2)
+in /var/www/sites/iitubf/protected/extensions/displayHeroImage/displayHeroImage.php (42)
+in /var/www/sites/iitubf/protected/views/site/page.php (26)
+2014/06/03 13:38:21 [error] [php] Trying to get property of non-object (/var/www/sites/iitubf/protected/extensions/displayHeroImage/views/displayHeroImage.php:2)
+Stack trace:
+#0 /var/www/sites/iitubf/protected/lib/yii/framework/web/widgets/CWidget.php(243): displayHeroImage->renderFile()
+#1 /var/www/sites/iitubf/protected/extensions/displayHeroImage/displayHeroImage.php(48): displayHeroImage->render()
+#2 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(173): displayHeroImage->run()
+#3 /var/www/sites/iitubf/protected/views/site/page.php(26): SiteController->widget()
+#4 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(126): require()
+#5 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#6 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(869): SiteController->renderFile()
+#7 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(782): SiteController->renderPartial()
+#8 /var/www/sites/iitubf/protected/controllers/SiteController.php(45): SiteController->render()
+#9 /var/www/sites/iitubf/protected/lib/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionDailyBread()
+#10 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#11 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(286): SiteController->runAction()
+#12 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#13 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#14 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#15 /var/www/sites/iitubf/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /var/www/sites/iitubf/index.php(13): CWebApplication->run()
+REQUEST_URI=/site/dailybread
+in /var/www/sites/iitubf/protected/extensions/displayHeroImage/views/displayHeroImage.php (2)
+in /var/www/sites/iitubf/protected/extensions/displayHeroImage/displayHeroImage.php (48)
+in /var/www/sites/iitubf/protected/views/site/page.php (26)
+2014/06/03 13:43:42 [error] [php] Object of class SiteController could not be converted to string (/var/www/sites/iitubf/protected/views/site/page.php:25)
+Stack trace:
+#0 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(869): SiteController->renderFile()
+#1 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(782): SiteController->renderPartial()
+#2 /var/www/sites/iitubf/protected/controllers/SiteController.php(45): SiteController->render()
+#3 /var/www/sites/iitubf/protected/lib/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionDailyBread()
+#4 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(286): SiteController->runAction()
+#6 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/sites/iitubf/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/sites/iitubf/index.php(13): CWebApplication->run()
+REQUEST_URI=/site/dailybread
+in /var/www/sites/iitubf/protected/views/site/page.php (25)
+in /var/www/sites/iitubf/protected/controllers/SiteController.php (45)
+in /var/www/sites/iitubf/index.php (13)
+2014/06/04 13:17:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "daily-bread".' in /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(270): CController->missingAction('daily-bread')
+#1 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(282): CController->run('daily-bread')
+#2 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/daily-brea...')
+#3 /var/www/sites/iitubf/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/sites/iitubf/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/daily-bread
+HTTP_REFERER=http://iitubf.local.com/site/index
+---
+2014/06/09 09:21:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /var/www/sites/iitubf/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/sites/iitubf/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/06/09 09:21:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /var/www/sites/iitubf/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/sites/iitubf/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/06/09 09:43:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "sermons".' in /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(270): CController->missingAction('sermons')
+#1 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(282): CController->run('sermons')
+#2 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/sermons')
+#3 /var/www/sites/iitubf/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/sites/iitubf/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/sermons
+HTTP_REFERER=http://iitubf.local.com/
+---
+2014/06/09 10:19:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "about".' in /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(270): CController->missingAction('about')
+#1 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(282): CController->run('about')
+#2 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/about')
+#3 /var/www/sites/iitubf/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/sites/iitubf/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/about
+HTTP_REFERER=http://iitubf.local.com/site/contact
+---
+2014/06/09 10:29:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "about".' in /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(270): CController->missingAction('about')
+#1 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(282): CController->run('about')
+#2 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/about')
+#3 /var/www/sites/iitubf/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/sites/iitubf/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/about
+HTTP_REFERER=http://iitubf.local.com/site/resources
+---
+2014/06/09 10:31:58 [error] [exception.CException] exception 'CException' with message 'Property "Pages.short" is not defined.' in /var/www/sites/iitubf/protected/lib/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/sites/iitubf/protected/lib/yii/framework/db/ar/CActiveRecord.php(143): CComponent->__get('short')
+#1 /var/www/sites/iitubf/protected/views/site/page.php(11): CActiveRecord->__get('short')
+#2 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(126): require('/var/www/sites/...')
+#3 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/sites/...', Array, true)
+#4 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/sites/...', Array, true)
+#5 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(782): CController->renderPartial('page', Array, true)
+#6 /var/www/sites/iitubf/protected/controllers/SiteController.php(57): CController->render('page', Array)
+#7 /var/www/sites/iitubf/protected/lib/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionAbout()
+#8 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(282): CController->run('about')
+#12 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/about')
+#13 /var/www/sites/iitubf/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /var/www/sites/iitubf/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/site/about
+HTTP_REFERER=http://iitubf.local.com/site/contact
+---
+2014/06/09 11:51:02 [error] [php] Trying to get property of non-object (/var/www/sites/iitubf/protected/views/site/page.php:3)
+Stack trace:
+#0 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(869): SiteController->renderFile()
+#1 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(782): SiteController->renderPartial()
+#2 /var/www/sites/iitubf/protected/controllers/SiteController.php(56): SiteController->render()
+#3 /var/www/sites/iitubf/protected/lib/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionSermons()
+#4 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(286): SiteController->runAction()
+#6 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/sites/iitubf/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/sites/iitubf/index.php(13): CWebApplication->run()
+REQUEST_URI=/site/sermons
+in /var/www/sites/iitubf/protected/views/site/page.php (3)
+in /var/www/sites/iitubf/protected/controllers/SiteController.php (56)
+in /var/www/sites/iitubf/index.php (13)
+2014/06/09 11:56:09 [error] [php] Trying to get property of non-object (/var/www/sites/iitubf/protected/controllers/SiteController.php:56)
+Stack trace:
+#0 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(286): SiteController->runAction()
+#1 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#2 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#3 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/sites/iitubf/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#5 /var/www/sites/iitubf/index.php(13): CWebApplication->run()
+REQUEST_URI=/site/sermons/name/hope-rises
+in /var/www/sites/iitubf/protected/controllers/SiteController.php (56)
+in /var/www/sites/iitubf/index.php (13)
+2014/06/09 12:03:52 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'hope' in 'where clause'. The SQL statement executed was: SELECT * FROM `messages` `t` WHERE title SOUNDS LIKE hope-rises LIMIT 1.
+in /var/www/sites/iitubf/protected/controllers/SiteController.php (72)
+in /var/www/sites/iitubf/protected/controllers/SiteController.php (55)
+in /var/www/sites/iitubf/index.php (13)
+2014/06/09 12:03:52 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'hope' in 'where clause'. The SQL statement executed was: SELECT * FROM `messages` `t` WHERE title SOUNDS LIKE hope-rises LIMIT 1' in /var/www/sites/iitubf/protected/lib/yii/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /var/www/sites/iitubf/protected/lib/yii/framework/db/CDbCommand.php(414): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /var/www/sites/iitubf/protected/lib/yii/framework/db/ar/CActiveRecord.php(1297): CDbCommand->queryRow()
+#2 /var/www/sites/iitubf/protected/lib/yii/framework/db/ar/CActiveRecord.php(1402): CActiveRecord->query(Object(CDbCriteria))
+#3 /var/www/sites/iitubf/protected/controllers/SiteController.php(72): CActiveRecord->find(Object(CDbCriteria))
+#4 /var/www/sites/iitubf/protected/controllers/SiteController.php(55): SiteController->getSermon('hope-rises')
+#5 /var/www/sites/iitubf/protected/lib/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionSermons()
+#6 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#8 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(282): CController->run('sermons')
+#10 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/sermons/na...')
+#11 /var/www/sites/iitubf/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#12 /var/www/sites/iitubf/index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/site/sermons/name/hope-rises
+---
+2014/06/09 13:51:41 [error] [exception.CException] exception 'CException' with message 'Property "Sermons.author" is not defined.' in /var/www/sites/iitubf/protected/lib/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/sites/iitubf/protected/lib/yii/framework/db/ar/CActiveRecord.php(143): CComponent->__get('author')
+#1 /var/www/sites/iitubf/protected/views/site/_sermon_text.php(7): CActiveRecord->__get('author')
+#2 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(126): require('/var/www/sites/...')
+#3 /var/www/sites/iitubf/protected/lib/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/sites/...', Array, true)
+#4 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/sites/...', Array, true)
+#5 /var/www/sites/iitubf/protected/controllers/SiteController.php(85): CController->renderPartial('_sermon_text', Array, true)
+#6 /var/www/sites/iitubf/protected/controllers/SiteController.php(56): SiteController->formatSermon(Object(Sermons))
+#7 /var/www/sites/iitubf/protected/lib/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionSermons()
+#8 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/sites/iitubf/protected/lib/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(282): CController->run('sermons')
+#12 /var/www/sites/iitubf/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/sermons/na...')
+#13 /var/www/sites/iitubf/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /var/www/sites/iitubf/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/site/sermons/name/idolatry-ignorance-and-repentance
+---

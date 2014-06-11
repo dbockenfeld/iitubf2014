@@ -1,0 +1,352 @@
+html {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+html body {
+    /* 	background-color: #3e3e3e; */
+    background-color: #ffffff;
+    padding-top: 60px;
+    height: 100%;
+}
+
+body > header {
+    background: url(../images/common/header-background.jpg) center no-repeat #500000;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    box-shadow: 0 0 10px rgba(0,0,0,1);
+    border-top: 10px solid #3e3e3e;
+    z-index: 20;
+}
+
+body > header > nav,
+.content > .content-body,
+body > footer > section {
+    width: 1020px;
+    margin: 0 auto;
+}
+
+a {
+    color: #CC0000;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.zero-font {
+    font-size: 0;
+}
+
+.zero-font .item {
+    font-size: 16px;
+}
+
+section.featured {
+    max-width: 2500px;
+    min-width: 1020px;
+    background-color: #000000;
+    max-height: 427px;
+    position: relative;
+    height: 427px;
+}
+
+.featured > .hero-image {
+    /* 	width: 2500px; */
+    max-width: none;
+    /* 	height: 427px; */
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    /* 	text-align: center; */
+}
+
+.featured > .hero-image > img {
+    height: 100%;
+    position: absolute;
+    /* 	right: 0; */
+    top: 50%;
+    left: 50%;
+    max-width: none;
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    -moz-transform: translateY(-50%) translateX(-50%);
+    transform: translateY(-50%) translateX(-50%);
+}
+
+section.content {
+    width: 100%;
+    background-color: #FFFFFF;
+    min-height: 300px;
+}
+
+.content > .content-body {
+    padding: 20px 0;
+}
+
+.content-body h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #3e3e3e;
+}
+
+.left50, .right50 {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+}
+
+.left70 {
+    display: inline-block;
+    width: 70%;
+    vertical-align: top;
+}
+
+.right30 {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+}
+
+.left50 .item,
+.left70 .item {
+    margin-right: 5px;
+}
+
+.right50 .item,
+.right30 .item {
+    margin-left: 5px;
+}
+
+section.item {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    box-shadow: 0 0 20px #000000;
+}
+
+section.item h3 {
+    display: table-cell;
+    background-color: #CC0000;
+    color: #FFFFFF;
+    text-align: center;
+    vertical-align: top;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: normal;
+    width: 70px;
+    padding: 10px;
+}
+
+section.item .item-right {
+    display: table-cell;
+    padding: 10px
+}
+
+.item-right article {
+    padding: 0 10px;
+    /* 	border-bottom: 3px solid #3e3e3e; */
+    margin-bottom: 10px;
+}
+
+.sermon .image {
+    margin: 0;
+    line-height: 0;
+}
+
+.sermon img {
+    width: 100%;
+    margin: 0;
+}
+
+.sermon .caption {
+    background-color: #3e3e3e;
+    color: #ffffff;
+    margin: 0;
+    padding: 10px;
+}
+
+.small-sermon .caption {
+    background: transparent;
+    color: #3e3e3e;
+}
+
+.page-content .date {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #3e3e3e;
+    vertical-align: top;
+    text-align: center;
+    position: relative;
+    float: right;
+}
+
+.page-content .date .month {
+    background-color: #CC0000;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-size: 0.7em;
+    line-height: 1.5em;
+}
+
+.page-content .date .day {
+    font-size: 1.8em;
+    line-height: 1.2em;
+    font-weight: bold;
+}
+
+.page-content .date .year {
+    font-size: 0.7em;
+    line-height: normal;        
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+
+}
+
+.caption .words {
+    /*    display: table-cell;
+        max-width: 280px;
+        text-align: right;
+        vertical-align: middle;
+        float: right;*/
+}
+
+.sidebar .caption .words {
+    /*max-width: 150px;*/
+}
+
+.clear {
+    clear: both;
+}
+
+.caption .title {
+    font-size: 1.2em;
+}
+
+.sidebar .caption .title {
+    /*font-size: 1.0em;*/
+}
+
+.caption .passage {
+    font-style: italic;
+    font-size: .9em;
+}
+
+p.home-blog-title {
+    color: #CC0000;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+p.home-blog-date {
+    font-size: 0.9em;
+}
+
+p.home-blog-author {
+    font-size: 0.9em;
+    font-style: italic;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #3e3e3e;
+}
+
+p.home-blog-summary {
+    font-size: 1.2em;
+}
+
+.item-right article.blog {
+    padding-bottom: 30px;
+    border-bottom: 3px solid #3e3e3e;
+    margin-bottom: 30px;
+}
+
+.item-right article.blog:last-child {
+    margin-bottom: 0;
+    border-bottom: 0px;
+}
+
+.page-content {
+    line-height: 24px;
+    padding: 20px !important;
+}
+
+.page-content p {
+    margin-bottom: 30px;
+}
+
+section.page-content h3 {
+    display: block;
+    background-color: transparent;
+    color: #3e3e3e;
+    width: auto;
+    text-align: left;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 0;
+    text-transform: none;
+}
+
+section.sermons h4 {
+    color: #3e3e3e;
+    padding-left: 10px;
+}
+
+p.sermon-passage {
+    margin: 0 0 15px;;
+}
+
+p.sermon-author {
+    clear: both;
+    margin: 0 70px 10px;
+    /*margin-bottom: 10px;*/
+    font-style: italic;
+    border-top: 1px dotted #3e3e3e;
+    border-bottom: 1px dotted #3e3e3e;
+    text-align: center;
+}
+
+p.key-verse {
+    margin-bottom: 0;
+}
+
+section.key-verse-text {
+    padding: 20px;
+    margin: 0 20px 20px;
+    background-color: #EEEEEE;
+    border-top: 1px dotted #3e3e3e;
+    border-bottom: 1px dotted #3e3e3e;
+}
+
+section.key-verse-text p {
+    margin-bottom: 0
+}
+
+.sidebar img.hero {
+    width: 100%;
+}
+
+h4.extra-top-space {
+    margin-top: 40px;
+}
+
+.page-header {
+    height: 213px; 
+    overflow: hidden; 
+    position: relative;
+}
+
+.page-header img {
+    position: absolute; 
+    bottom: 0;
+}
+
+.sermon-header {
+    
+}

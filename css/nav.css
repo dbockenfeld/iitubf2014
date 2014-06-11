@@ -1,0 +1,56 @@
+nav {
+	position: relative;
+	color: #FFFFFF;
+	font-size: 0.9em
+}
+
+nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: all ease-in-out .5s
+}
+
+nav a:hover {
+    text-shadow: 0 0 20px #000000;
+/*    transform: scale(2, 2);
+    -webkit-transform: scale(2, 2);
+    -moz-transform: scale(2,2);*/
+}
+
+nav > section {
+	display: inline-block;
+	vertical-align: top;
+	border-right: 1px solid #500000;
+	height: 50px;
+}
+
+nav > section.logo {
+	padding-right: 50px;
+}
+
+nav > section.logo > a > img {
+	width: 120px;
+	margin-top: -4px;
+	z-index: 20;
+}
+
+
+nav > section.main {
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+nav > section.about {
+	position: absolute;
+	right: 0;
+	border-left: 1px solid #500000;
+}
+
+nav > section > ul {
+	list-style: none;
+}
+
+nav > section > ul > li {
+	display: inline-block;
+	padding: 16px 20px;
+}
