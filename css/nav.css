@@ -12,9 +12,10 @@ nav a {
 
 nav a:hover {
     text-shadow: 0 0 20px #000000;
-/*    transform: scale(2, 2);
-    -webkit-transform: scale(2, 2);
-    -moz-transform: scale(2,2);*/
+    text-decoration: none;
+    transform: scale(2, 2);
+    -webkit-transform: scale(1.1, 1.1);
+    -moz-transform: scale(2,2);
 }
 
 nav > section {
@@ -34,6 +35,13 @@ nav > section.logo > a > img {
 	z-index: 20;
 }
 
+nav a:hover.logo-image {
+    text-shadow: 0 0 20px #000000;
+    text-decoration: none;
+    transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+}
 
 nav > section.main {
 	font-weight: bold;
@@ -51,6 +59,11 @@ nav > section > ul {
 }
 
 nav > section > ul > li {
+	display: inline-block;
+	/*padding: 16px 20px;*/
+}
+
+nav > section > ul > li > a {
 	display: inline-block;
 	padding: 16px 20px;
 }

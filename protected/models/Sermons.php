@@ -141,4 +141,84 @@ class Sermons extends CActiveRecord {
         ));
     }
 
+    public function makeSermonUrl() {
+        $name = str_replace(' ', '-', preg_replace("/[^A-Za-z0-9 ]/", '', strtolower($this->title)));
+        return '/site/sermons/name/' . $name;
+    }
+
+    public function getSermonPassage() {
+        if (isset($this->book)) {
+            $passage = $this->book->name . ' ' . $this->verses;
+        } else {
+            $passage = $this->passage;
+        }
+        return $passage;
+    }
+
+    public function getSermonDate() {
+        if ($this->sermon_date != '')
+            $date = $this->sermon_date;
+        else {
+            $date = $this->posted_date;
+        }
+        return $date;
+    }
+
+    public function getSermonMonth() {
+        return date('M', strtotime($this->getSermonDate()));
+    }
+
+    public function getSermonDay() {
+        return date('j', strtotime($this->getSermonDate()));
+    }
+
+    public function getSermonYear() {
+        return date('Y', strtotime($this->getSermonDate()));
+    }
+
+    public function hasQuestions() {
+        if ($this->question_file || $this->questions) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public function getQuestions() {
+        if ($this->questions) {
+            return Yii::app()->createUrl('site/generateSermonQuestions/id/' . $this->message_id);
+        }
+        if ($this->question_file) {
+            return '/docs/questions/' . $this->question_file;
+        }
+    }
+
+    public function getTranscript() {
+        if ($this->text) {
+            return Yii::app()->createUrl('site/generateSermonTranscript/id/' . $this->message_id);
+        }
+        if ($this->message_file) {
+            return '/docs/sermons/' . $this->message_file;
+        }
+    }
+
+    public function hasSermonFiles() {
+        if ($this->sermonFiles) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public function getSermonFiles() {
+        $list = array();
+        foreach ($this->sermonFiles as $item) {
+            $list[] = array(
+                'type' => $item->type,
+                'url' => Yii::app()->createUrl('site/downloadSermonFile/id/' . $item->id),
+            );
+        }
+        return $list;
+    }
+
 }

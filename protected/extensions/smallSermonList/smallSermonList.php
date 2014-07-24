@@ -35,6 +35,7 @@ class smallSermonList extends CWidget {
 
         $criteria = new CDbCriteria();
         $criteria->order = 'sermon_date DESC';
+        $criteria->compare('active', 1);
         $this->recent_sermon = Sermons::model()->find($criteria);
 
         $connection = Yii::app()->db;

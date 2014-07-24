@@ -2,7 +2,7 @@
     <section class="content-body zero-font">
         <h2><?php echo $data->title; ?></h2>
         <?php if ($data->image != '') : ?>
-            <div class="<?php echo isset($image_class) ? $image_class : 'page-header';?>">
+            <div class="<?php echo isset($image_class) ? $image_class : 'page-header'; ?>">
                 <?php echo CHtml::image(Yii::app()->baseUrl . '/images/' . $data->image, $data->title); ?>
             </div>
         <?php endif; ?>
@@ -15,17 +15,24 @@
             </section>
         </section>
         <section class="right30">
-            <?php $this->widget('ext.smallSermonList.smallSermonList', array(
+            <?php if(isset($sidebar_top)) {
+                echo $sidebar_top;
+            }?>
+            <?php
+            $this->widget('ext.smallSermonList.smallSermonList', array(
                 'options' => array(
                     'location' => 'sidebar',
-                    ),
-            )); ?>
+                ),
+            ));
+            ?>
             <section class="item sidebar">
                 <section class="item-right">
-            <?php $this->widget('ext.displayHeroImage.displayHeroImage', array (
-                'location' => 'sidebar',
-                'current_page' => $this->getId().'/'.$this->getAction()->getId(),
-            )); ?>
+                    <?php
+                    $this->widget('ext.displayHeroImage.displayHeroImage', array(
+                        'location' => 'sidebar',
+                        'current_page' => $this->getId() . '/' . $this->getAction()->getId(),
+                    ));
+                    ?>
                 </section>
             </section>
 

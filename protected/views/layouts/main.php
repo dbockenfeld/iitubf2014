@@ -17,7 +17,7 @@
         <header>
             <nav>
                 <section class="logo">
-                    <a href="<?php echo Yii::app()->createUrl('/site/index'); ?>">
+                    <a class="logo-image" href="<?php echo Yii::app()->createUrl('/site/index'); ?>">
                     <img src="<?php echo Yii::app()->request->baseUrl; ?>/images/common/iitubf_logo.svg"/>
                     </a>
                 </section>

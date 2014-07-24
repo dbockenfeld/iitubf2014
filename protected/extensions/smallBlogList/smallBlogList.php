@@ -12,13 +12,23 @@
  * @author parallels
  */
 class smallBlogList extends CWidget {
+    
+    private $posts = array();
 
     public function init() {
         parent::init();
     }
 
     public function run() {
-        $this->render('smallBlogList');
+        $criteria = new CDbCriteria();
+        $criteria->order = 'date DESC';
+        $criteria->compare('active', 1);
+        $criteria->limit = 3;
+        $this->posts = BlogPosts::model()->findAll($criteria);
+
+        $this->render('smallBlogList', array(
+            'posts' => $this->posts,
+        ));
     }
 
 }

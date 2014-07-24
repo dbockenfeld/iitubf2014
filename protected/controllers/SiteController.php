@@ -35,10 +35,12 @@ class SiteController extends Controller {
             'page' => 'daily-bread',
         ));
 
+//        $this->widget('ext.uploadDBtoDB.uploadDBtoDB');
+
         $xmlstr = simplexml_load_file('http://ubf.org/dbrss.php');
 
 
-        $page_data->text = str_replace('</h3></p></b>','</h3>',str_replace('<b><p align="center"><h3>', '<h3>', $xmlstr->channel->item->description));
+        $page_data->text = str_replace('</h3></p></b>', '</h3>', str_replace('<b><p align="center"><h3>', '<h3>', $xmlstr->channel->item->description));
 
         $this->render('page', array(
             'data' => $page_data,
@@ -47,16 +49,154 @@ class SiteController extends Controller {
 
     public function actionSermons() {
         $sermon_name = Yii::app()->request->getParam('name');
-        $page_data = new Pages();
-        
-        $page_data->title = $page_data->short_title = 'Sermons';
-        
         if ($sermon_name) {
+            $page_data = new Pages();
             $sermon = $this->getSermon($sermon_name);
             $page_data->text = $this->formatSermon($sermon);
-            $page_data->image = $sermon->series->large_feature;
+            $page_data->image = $sermon->series ? $sermon->series->large_feature : '';
+            $download_options = $this->getDownloads($sermon);
         } else {
+            $page_data = Pages::model()->findByAttributes(array(
+                'page' => 'sermon-listing',
+            ));
             $page_data->text = $this->getSermonList();
+            $download_options = '';
+        }
+
+        $page_data->title = $page_data->short_title = 'Sermons';
+
+        $this->render('page', array(
+            'data' => $page_data,
+            'image_class' => 'sermon-header',
+            'sidebar_top' => $download_options,
+        ));
+    }
+
+    protected function getSermon($name) {
+        $criteria = new CDbCriteria();
+        $criteria->addCondition('title SOUNDS LIKE "' . $name . '"');
+
+        $sermon = Sermons::model()->find($criteria);
+//        $sermon->text = $name;
+        return $sermon;
+    }
+
+    protected function getSermonList() {
+        $criteria = new CDbCriteria();
+        $criteria->compare('active', 1);
+        $criteria->order = 'message_id DESC';
+
+        $sermons = Sermons::model()->findAll($criteria);
+        return $this->renderPartial('_sermon_list', array(
+                    'sermons' => $sermons,
+                        ), true);
+    }
+
+    protected function formatSermon($sermon) {
+        return $this->renderPartial('_sermon_text', array(
+                    'sermon' => $sermon,
+                        ), true);
+    }
+
+    protected function getDownloads($sermon) {
+        $criteria = new CDbCriteria();
+        $download_urls = array();
+        $download_urls[] = array(
+            'type' => 'transcript',
+            'url' => $sermon->getTranscript()
+        );
+        if ($sermon->hasQuestions()) {
+            $question_url = $sermon->getQuestions();
+            $download_urls[] = array(
+                'type' => 'questions',
+                'url' => $question_url
+            );
+        }
+        if ($sermon->hasSermonFiles()) {
+            $file_info = $sermon->getSermonFiles();
+            foreach ($file_info as $item) {
+                $download_urls[] = $item;
+            }
+        }
+        return $this->formatDownloads($download_urls);
+    }
+
+    protected function formatDownloads($downloads) {
+        return $this->renderPartial('_sermon_downloads', array(
+                    'downloads' => $downloads,
+                        ), true);
+    }
+
+    public function actionGenerateSermonTranscript($id) {
+        $sermon = Sermons::model()->findByPk($id);
+        if (!preg_match('/bot|Disqus|spider|crawler|curl|Ezooms|^$/i', $_SERVER['HTTP_USER_AGENT'])) {
+            $log = new DownloadLog();
+            $log->sermon_id = $id;
+            $log->type = 'text';
+            $log->ip = $_SERVER['REMOTE_ADDR'];
+            $log->system = $_SERVER['HTTP_USER_AGENT'];
+            $log->save(false);
+        }
+        $this->render('download_transcript', array(
+            'sermon' => $sermon,
+        ));
+    }
+
+    public function actionGenerateSermonQuestions($id) {
+        $sermon = Sermons::model()->findByPk($id);
+        if (!preg_match('/bot|Disqus|spider|crawler|curl|Ezooms|^$/i', $_SERVER['HTTP_USER_AGENT'])) {
+            $log = new DownloadLog();
+            $log->sermon_id = $id;
+            $log->type = 'questions';
+            $log->ip = $_SERVER['REMOTE_ADDR'];
+            $log->system = $_SERVER['HTTP_USER_AGENT'];
+            $log->save(false);
+        }
+        $this->render('download_questions', array(
+            'sermon' => $sermon,
+        ));
+    }
+
+    public function actionAjaxAddViewLog() {
+        if (Yii::app()->request->isAjaxRequest) {
+            if (!preg_match('/bot|Disqus|spider|crawler|curl|Ezooms|^$/i', $_SERVER['HTTP_USER_AGENT'])) {
+                $log = new SermonViewLog();
+                $log->sermon_id = $_POST['id'];
+                $log->ip = $_SERVER['REMOTE_ADDR'];
+                $log->system = $_SERVER['HTTP_USER_AGENT'];
+                $log->save(false);
+            }
+        }
+    }
+
+    public function actionDownloadSermonFile($id) {
+        $file = SermonFiles::model()->findByPk($id);
+        if (!preg_match('/bot|Disqus|spider|crawler|curl|Ezooms|^$/i', $_SERVER['HTTP_USER_AGENT'])) {
+            $log = new DownloadLog();
+            $log->sermon_id = $file->sermon_id;
+            $log->type = 'file';
+            $log->ip = $_SERVER['REMOTE_ADDR'];
+            $log->system = $_SERVER['HTTP_USER_AGENT'];
+            $log->save(false);
+        }
+        $this->render('download_file', array(
+            'file' => $file,
+        ));
+    }
+
+    public function actionBlog() {
+        $post_name = Yii::app()->request->getParam('name');
+        if ($post_name) {
+            $page_data = new Pages();
+            $post = $this->getPost($post_name);
+            $page_data->text = $this->formatPost($post);
+            $page_data->image = $post->header_image;
+            $page_data->title = $page_data->short_title = 'Blog';
+        } else {
+            $page_data = Pages::model()->findByAttributes(array(
+                'page' => 'blog',
+            ));
+            $page_data->text = $this->getPostList();
         }
 
 
@@ -64,26 +204,32 @@ class SiteController extends Controller {
             'data' => $page_data,
             'image_class' => 'sermon-header',
         ));
-        
     }
-    
-    protected function getSermon($name) {
+
+    protected function getPost($name) {
         $criteria = new CDbCriteria();
-        $criteria->addCondition('title SOUNDS LIKE "'.$name.'"');
-        
-        $sermon = Sermons::model()->find($criteria);
+        $criteria->addCondition('title SOUNDS LIKE "' . $name . '"');
+
+        $post = BlogPosts::model()->find($criteria);
 //        $sermon->text = $name;
-        return $sermon;
+        return $post;
     }
-    
-    protected function getSermonList() {
-        return 'Sermon List';
+
+    protected function formatPost($post) {
+        return $this->renderPartial('_post_text', array(
+                    'post' => $post,
+                        ), true);
     }
-    
-    protected function formatSermon($sermon) {
-        return $this->renderPartial('_sermon_text', array(
-            'sermon' => $sermon,
-        ), true);
+
+    protected function getPostList() {
+        $criteria = new CDbCriteria();
+        $criteria->compare('active', 1);
+        $criteria->order = 'date DESC';
+
+        $posts = BlogPosts::model()->findAll($criteria);
+        return $this->renderPartial('_post_list', array(
+                    'posts' => $posts,
+                        ), true);
     }
 
     public function actionAbout() {
