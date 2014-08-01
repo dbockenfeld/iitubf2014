@@ -4,13 +4,21 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="language" content="en" />
-        <title>University Bible Fellowship at IIT</title>
+        <title><?php echo $this->pageTitle; ?></title>
+        <?php Yii::app()->clientScript->registerCoreScript('jquery'); ?>
+        <?php Yii::app()->clientScript->registerScriptFile('/js/jquery.defuscate.js'); ?>
+        <script>
+            $(document).ready(function() {
+                $('.obfuscated').defuscate();
+            });
+        </script>
+
         <link type="text/css" rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/reset_uni.css"/>
+        <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/font-awesome/css/font-awesome.min.css"/>
         <link type="text/css" rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/universal.css"/>
         <link type="text/css" rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/nav.css"/>
         <link type="text/css" rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/footer.css"/>
-
-        <!--<title><?php echo CHtml::encode($this->pageTitle); ?></title>-->
+        <link rel="shortcut icon" href="<?php echo Yii::app()->request->baseUrl; ?>/favicon.ico" type="image/x-icon" />
     </head>
 
     <body>
@@ -18,7 +26,7 @@
             <nav>
                 <section class="logo">
                     <a class="logo-image" href="<?php echo Yii::app()->createUrl('/site/index'); ?>">
-                    <img src="<?php echo Yii::app()->request->baseUrl; ?>/images/common/iitubf_logo.svg"/>
+                        <img src="<?php echo Yii::app()->request->baseUrl; ?>/images/common/iitubf_logo.svg"/>
                     </a>
                 </section>
                 <section class="main">
@@ -57,15 +65,15 @@
                         <p>University Bible Fellowship at IIT</p>
                         <p>3148 S Indiana Avenue<br/>
                             Chicago, IL 60616<br/>
-                            iitubf@gmail.com</p>
+                            <span class="obfuscated">iitubf( at )gmail.com</span></p>
                         <img src="<?php echo Yii::app()->request->baseUrl; ?>/images/common/worship_in_the_godbox_logo.svg"/>
                         <p>&copy;<?php echo date('Y'); ?> IIT UBF</p>
                     </section>
                 </section>
                 <section class="middle-footer">
                     <section>
-                        <p><a href="http://www.facebook.com/iitubf">IIT UBF</a></p>
-                        <p><a href="http://www.twitter.com/iitubf">@iitubf</a></p>
+                        <p><i class="fa fa-facebook"></i><a href="http://www.facebook.com/iitubf">IIT UBF</a></p>
+                        <p><i class="fa fa-twitter"></i><a href="http://www.twitter.com/iitubf">@iitubf</a></p>
                     </section>
                 </section>
                 <section class="right-footer">

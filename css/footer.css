@@ -36,6 +36,12 @@ footer p {
 	margin-bottom: 13px;
 }
 
+i.fa {
+    display: inline-block;
+    width: 20px;
+    text-align: center;
+}
+
 .left-footer {
 	width: 300px;
 }

@@ -36,6 +36,10 @@ a.no-color {
     color: #3e3e3e;
 }
 
+ol, ul {
+    margin: 0 0 30px 25px;
+}
+
 .page-content a:hover {
     text-decoration: underline;
 }
@@ -74,7 +78,8 @@ section.featured {
     /* 	text-align: center; */
 }
 
-.featured > .hero-image > img {
+.featured > .hero-image > img,
+.featured > .hero-image > a > img {
     height: 100%;
     position: absolute;
     /* 	right: 0; */
@@ -373,6 +378,7 @@ section.page-content h3 {
     font-size: 24px;
     font-weight: bold;
     padding: 0;
+    margin-bottom: 10px;
     text-transform: none;
 }
 
@@ -523,4 +529,8 @@ p.series {
 .questions:hover {
     /*width: 125px;*/
     background-image: url('../images/downloads/questions-highlighted.svg');
+}
+
+article.top-padding {
+    padding-top: 10px;
 }

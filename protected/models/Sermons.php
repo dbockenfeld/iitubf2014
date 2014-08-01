@@ -142,8 +142,9 @@ class Sermons extends CActiveRecord {
     }
 
     public function makeSermonUrl() {
-        $name = str_replace(' ', '-', preg_replace("/[^A-Za-z0-9 ]/", '', strtolower($this->title)));
-        return '/site/sermons/name/' . $name;
+        $name = str_replace(' ', '_', preg_replace("/[^A-Za-z0-9 ]/", '', strtolower($this->title)));
+        return Yii::app()->createUrl('site/sermons/name/' . $name);
+//        return '/sermons/' . $name;
     }
 
     public function getSermonPassage() {

@@ -2,6 +2,8 @@
 
 class SiteController extends Controller {
 
+    public $pageTitle = 'University Bible Fellowship at IIT';
+
     /**
      * Declares class-based actions.
      */
@@ -35,6 +37,8 @@ class SiteController extends Controller {
             'page' => 'daily-bread',
         ));
 
+        $this->pageTitle = $page_data->title . ' | ' . $this->pageTitle;
+
 //        $this->widget('ext.uploadDBtoDB.uploadDBtoDB');
 
         $xmlstr = simplexml_load_file('http://ubf.org/dbrss.php');
@@ -55,12 +59,14 @@ class SiteController extends Controller {
             $page_data->text = $this->formatSermon($sermon);
             $page_data->image = $sermon->series ? $sermon->series->large_feature : '';
             $download_options = $this->getDownloads($sermon);
+            $this->pageTitle = $sermon->title . ' | Sermons | ' . $this->pageTitle;
         } else {
             $page_data = Pages::model()->findByAttributes(array(
                 'page' => 'sermon-listing',
             ));
             $page_data->text = $this->getSermonList();
             $download_options = '';
+            $this->pageTitle = $page_data->title . ' | ' . $this->pageTitle;
         }
 
         $page_data->title = $page_data->short_title = 'Sermons';
@@ -192,10 +198,12 @@ class SiteController extends Controller {
             $page_data->text = $this->formatPost($post);
             $page_data->image = $post->header_image;
             $page_data->title = $page_data->short_title = 'Blog';
+            $this->pageTitle = $post->title .' | '.$page_data->title . ' | ' . $this->pageTitle;
         } else {
             $page_data = Pages::model()->findByAttributes(array(
                 'page' => 'blog',
             ));
+            $this->pageTitle = $page_data->title . ' | ' . $this->pageTitle;
             $page_data->text = $this->getPostList();
         }
 
@@ -237,6 +245,7 @@ class SiteController extends Controller {
             'page' => 'about',
         ));
 
+        $this->pageTitle = $page_data->title . ' | ' . $this->pageTitle;
 
         $this->render('page', array(
             'data' => $page_data,
@@ -248,6 +257,7 @@ class SiteController extends Controller {
             'page' => 'contact',
         ));
 
+        $this->pageTitle = $page_data->title . ' | ' . $this->pageTitle;
 
         $this->render('page', array(
             'data' => $page_data,
@@ -259,6 +269,7 @@ class SiteController extends Controller {
             'page' => 'resources',
         ));
 
+        $this->pageTitle = $page_data->title . ' | ' . $this->pageTitle;
 
         $this->render('page', array(
             'data' => $page_data,

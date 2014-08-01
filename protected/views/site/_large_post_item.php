@@ -1,5 +1,5 @@
 <a href="<?php echo $post->makePostUrl(); ?>">
-    <article class="post-item transition hover-shadow">
+    <article class="post-item transition hover-shadow<?php echo !isset($post->header_image) ? ' top-padding': ''?>">
         <?php if (isset($post->header_image)) : ?>
             <img src="<?php echo Yii::app()->request->baseUrl; ?>/images/<?php echo $post->header_image; ?>" />
         <?php endif; ?>
