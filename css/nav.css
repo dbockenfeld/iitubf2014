@@ -13,9 +13,9 @@ nav a {
 nav a:hover {
     text-shadow: 0 0 20px #000000;
     text-decoration: none;
-    transform: scale(2, 2);
+    transform: scale(1.1, 1.1);
     -webkit-transform: scale(1.1, 1.1);
-    -moz-transform: scale(2,2);
+    -moz-transform: scale(1.1,1.1);
 }
 
 nav > section {
