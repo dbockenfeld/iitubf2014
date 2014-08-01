@@ -4,6 +4,12 @@
 // Yii::setPathOfAlias('local','path/to/local-folder');
 // This is the main Web application configuration. Any writable
 // CWebApplication properties can be configured here.
+//$root = dirname(__FILE__) . '/..';
+$params = array_merge(
+        require('params.php'), 
+        require('params-local.php')
+);
+
 return array(
     'basePath' => dirname(__FILE__) . DIRECTORY_SEPARATOR . '..',
     'name' => 'University Bible Fellowship at IIT',
@@ -48,10 +54,10 @@ return array(
 //        ),
         // uncomment the following to use a MySQL database
         'db' => array(
-            'connectionString' => 'mysql:host=localhost;dbname=iitubfdb',
+            'connectionString' => $params['db.connectionString'],
             'emulatePrepare' => true,
-            'username' => 'iitubf',
-            'password' => '',
+            'username' => $params['db.username'],
+            'password' => $params['db.password'],
             'charset' => 'utf8',
         ),
         'errorHandler' => array(
