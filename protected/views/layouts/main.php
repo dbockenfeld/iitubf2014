@@ -6,7 +6,7 @@
         <meta name="language" content="en" />
         <title><?php echo $this->pageTitle; ?></title>
         <?php Yii::app()->clientScript->registerCoreScript('jquery'); ?>
-        <?php Yii::app()->clientScript->registerScriptFile('/js/jquery.defuscate.js'); ?>
+        <?php Yii::app()->clientScript->registerScriptFile(Yii::app()->request->baseUrl.'/js/jquery.defuscate.js'); ?>
         <script>
             $(document).ready(function() {
                 $('.obfuscated').defuscate();
