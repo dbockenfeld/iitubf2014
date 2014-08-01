@@ -57,7 +57,7 @@ class SiteController extends Controller {
             $page_data = new Pages();
             $sermon = $this->getSermon($sermon_name);
             $page_data->text = $this->formatSermon($sermon);
-            $page_data->image = $sermon->series ? $sermon->series->large_feature : '';
+            $page_data->image = $sermon->series ? str_replace('features', 'sermon', $sermon->series->large_feature) : '';
             $download_options = $this->getDownloads($sermon);
             $this->pageTitle = $sermon->title . ' | Sermons | ' . $this->pageTitle;
         } else {

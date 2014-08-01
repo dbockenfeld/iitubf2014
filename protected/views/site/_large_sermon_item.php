@@ -13,7 +13,7 @@
         </section>
         <section class="sermon-image">
             <?php if (isset($sermon->series)) : ?>
-                <img src="<?php echo Yii::app()->request->baseUrl; ?>/images/<?php echo $sermon->series->large_feature; ?>" />
+                <img src="<?php echo Yii::app()->request->baseUrl; ?>/images/<?php echo str_replace('features', 'sermon', $sermon->series->large_feature); ?>" />
                 <p class="series"><?php echo $sermon->series->title; ?></p>
             <?php endif; ?>
         </section>
