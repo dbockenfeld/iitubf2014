@@ -534,3 +534,17 @@ p.series {
 article.top-padding {
     padding-top: 10px;
 }
+
+.left-float {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    width: 200px;
+}
+
+.right-float {
+    float: right;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    width: 200px;
+}
