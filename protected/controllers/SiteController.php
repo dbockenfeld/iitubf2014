@@ -163,6 +163,18 @@ class SiteController extends Controller {
         ));
     }
 
+    public function actionAjaxAddBlogViewLog() {
+        if (Yii::app()->request->isAjaxRequest) {
+            if (!preg_match('/bot|Disqus|spider|crawler|curl|Ezooms|^$/i', $_SERVER['HTTP_USER_AGENT'])) {
+                $log = new BlogViewLog();
+                $log->post_id = $_POST['id'];
+                $log->ip = $_SERVER['REMOTE_ADDR'];
+                $log->system = $_SERVER['HTTP_USER_AGENT'];
+                $log->save(false);
+            }
+        }
+    }
+
     public function actionAjaxAddViewLog() {
         if (Yii::app()->request->isAjaxRequest) {
             if (!preg_match('/bot|Disqus|spider|crawler|curl|Ezooms|^$/i', $_SERVER['HTTP_USER_AGENT'])) {

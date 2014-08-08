@@ -23,5 +23,18 @@
 <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
+<script type="text/javascript">
+    $(document).ready(function() {
+        $.ajax({
+            type: 'post',
+            data: {
+                id: <?php echo $post->id; ?>
+            },
+            cache: false,
+            url: '<?php echo $this->createUrl('site/ajaxAddBlogViewLog'); ?>',
+            datatype: 'html',
+        });
+    });
+</script>
 <!-- Go to www.addthis.com/dashboard to customize your tools -->
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51c1ea691c714e26"></script>
