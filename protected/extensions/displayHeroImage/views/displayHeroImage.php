@@ -1,6 +1,6 @@
 <?php
 $image_file = $location == 'sidebar' ? $image->sidebar_image : $image->image;
-$image_folder = $location == 'sidebar' ? '' : 'hero/';
+$image_folder = $location == 'sidebar' ? 'hero/sidebar/' : 'hero/';
 ?>
 
 <?php if ($image->link) : ?>
