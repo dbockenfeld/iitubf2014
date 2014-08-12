@@ -45,7 +45,7 @@ return array(
 //                '<controller:\w+>/<action:\w+>' => '<controller>/<action>',
                 '' => 'site/index',
                 '<action:\w+>' => 'site/<action>',
-                '<action:\w+>/<name:\w+>.html' => 'site/<action>/name/<name>',
+                '<action:\w+>/<year:\d+>/<month:\d+>/<day:\d+>/<name:\w+>.html' => 'site/<action>/year/<year>/month/<month>/day/<day>/name/<name>',
             ),
             'showScriptName' => false,
         ),

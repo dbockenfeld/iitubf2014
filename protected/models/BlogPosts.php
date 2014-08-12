@@ -112,7 +112,10 @@ class BlogPosts extends CActiveRecord {
 
     public function makePostUrl() {
         $name = str_replace(' ', '_', preg_replace("/[^A-Za-z0-9 ]/", '', strtolower($this->title)));
-        return Yii::app()->createUrl('site/blog/name/' . $name);
+        $year = date("Y", strtotime($this->date));
+        $month = date("m", strtotime($this->date));
+        $day = date("d", strtotime($this->date));
+        return Yii::app()->createUrl('site/blog/year/'.$year.'/month/' . $month.'/day/' . $day.'/name/' . $name);
     }
 
     public function getPostMonth() {

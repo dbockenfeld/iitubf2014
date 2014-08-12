@@ -53,9 +53,10 @@ class SiteController extends Controller {
 
     public function actionSermons() {
         $sermon_name = Yii::app()->request->getParam('name');
+        $sermon_date = Yii::app()->request->getParam('year').'-'.Yii::app()->request->getParam('month').'-'.Yii::app()->request->getParam('day');
         if ($sermon_name) {
             $page_data = new Pages();
-            $sermon = $this->getSermon($sermon_name);
+            $sermon = $this->getSermon($sermon_name, $sermon_date);
             $page_data->text = $this->formatSermon($sermon);
             $page_data->image = $sermon->series ? str_replace('features', 'sermon', $sermon->series->large_feature) : '';
             $download_options = $this->getDownloads($sermon);
@@ -78,9 +79,10 @@ class SiteController extends Controller {
         ));
     }
 
-    protected function getSermon($name) {
+    protected function getSermon($name, $date) {
         $criteria = new CDbCriteria();
         $criteria->addCondition('title SOUNDS LIKE "' . $name . '"');
+        $criteria->compare('sermon_date', $date);
 
         $sermon = Sermons::model()->find($criteria);
 //        $sermon->text = $name;
@@ -204,9 +206,10 @@ class SiteController extends Controller {
 
     public function actionBlog() {
         $post_name = Yii::app()->request->getParam('name');
+        $post_date = Yii::app()->request->getParam('year').'-'.Yii::app()->request->getParam('month').'-'.Yii::app()->request->getParam('day');
         if ($post_name) {
             $page_data = new Pages();
-            $post = $this->getPost($post_name);
+            $post = $this->getPost($post_name, $post_date);
             $page_data->text = $this->formatPost($post);
             $page_data->image = $post->header_image;
             $page_data->title = $page_data->short_title = 'Blog';
@@ -226,9 +229,10 @@ class SiteController extends Controller {
         ));
     }
 
-    protected function getPost($name) {
+    protected function getPost($name, $date) {
         $criteria = new CDbCriteria();
         $criteria->addCondition('title SOUNDS LIKE "' . $name . '"');
+        $criteria->compare('date', $date);
 
         $post = BlogPosts::model()->find($criteria);
 //        $sermon->text = $name;
