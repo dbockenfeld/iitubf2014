@@ -1,12 +1,5 @@
 # Redirects from old site
 
-RewriteRule ^/?daily-bread/ /dailybread [R=302,L]
-Redirect 302 /daily-bread /dailybread
-RewriteRule ^/?about/ /about [R=302,L]
-RewriteRule ^/?contact/ /contact [R=302,L]
-RewriteRule ^/?resources/ /resources [R=302,L]
-Redirect 302 /bible-study /sermons
-
 Redirect 302 /bible-study/sermon.php?title=Jesus-Calls-the-Twelve-Apostles&date=2007-05-19 /sermons/2007/05/19/jesus_calls_the_twelve_apostles.html
 Redirect 302 /bible-study/sermon.php?title=Just-Believe&date=2007-06-17 /sermons/2007/06/17/just_believe.html
 Redirect 302 /bible-study/sermon.php?title=Jesus-Blesses-a-Humble-Woman&date=2007-07-29 /sermons/2007/07/29/jesus_blesses_a_humble_woman.html
@@ -301,6 +294,13 @@ Redirect 302 /bible-study/sermon.php?title=Bound-for-Christ&date=2014-07-20 /ser
 Redirect 302 /bible-study/sermon.php?title=Identity&date=2014-07-27 /sermons/2014/07/27/identity.html
 Redirect 302 /bible-study/sermon.php?title=Conscience-Hope-and-Courage&date=2014-08-03 /sermons/2014/08/03/conscience_hope_and_courage.html
 Redirect 302 /bible-study/sermon.php?title=The-Providence-and-Protection-of-God&date=2014-08-10 /sermons/2014/08/10/the_providence_and_protection_of_god.html
+
+RewriteRule ^/?daily-bread/ /dailybread [R=302,L]
+Redirect 302 /daily-bread /dailybread
+RewriteRule ^/?about/ /about [R=302,L]
+RewriteRule ^/?contact/ /contact [R=302,L]
+RewriteRule ^/?resources/ /resources [R=302,L]
+Redirect 302 /bible-study /sermons
 
 # FollowSymLinks must be enabled for this to work.
 <IfModule mod_rewrite.c>
