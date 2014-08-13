@@ -3,6 +3,7 @@
 class SiteController extends Controller {
 
     public $pageTitle = 'University Bible Fellowship at IIT';
+    public $siteDescription;
 
     /**
      * Declares class-based actions.
@@ -27,8 +28,12 @@ class SiteController extends Controller {
      * when an action is not explicitly requested by users.
      */
     public function actionIndex() {
-        // renders the view file 'protected/views/site/index.php'
-        // using the default layout 'protected/views/layouts/main.php'
+        $page_data = Pages::model()->findByAttributes(array(
+            'page' => 'index',
+        ));
+        
+        $this->siteDescription = $page_data->text;
+
         $this->render('index');
     }
 
@@ -53,7 +58,7 @@ class SiteController extends Controller {
 
     public function actionSermons() {
         $sermon_name = Yii::app()->request->getParam('name');
-        $sermon_date = Yii::app()->request->getParam('year').'-'.Yii::app()->request->getParam('month').'-'.Yii::app()->request->getParam('day');
+        $sermon_date = Yii::app()->request->getParam('year') . '-' . Yii::app()->request->getParam('month') . '-' . Yii::app()->request->getParam('day');
         if ($sermon_name) {
             $page_data = new Pages();
             $sermon = $this->getSermon($sermon_name, $sermon_date);
@@ -206,14 +211,14 @@ class SiteController extends Controller {
 
     public function actionBlog() {
         $post_name = Yii::app()->request->getParam('name');
-        $post_date = Yii::app()->request->getParam('year').'-'.Yii::app()->request->getParam('month').'-'.Yii::app()->request->getParam('day');
+        $post_date = Yii::app()->request->getParam('year') . '-' . Yii::app()->request->getParam('month') . '-' . Yii::app()->request->getParam('day');
         if ($post_name) {
             $page_data = new Pages();
             $post = $this->getPost($post_name, $post_date);
             $page_data->text = $this->formatPost($post);
             $page_data->image = $post->header_image;
             $page_data->title = $page_data->short_title = 'Blog';
-            $this->pageTitle = $post->title .' | '.$page_data->title . ' | ' . $this->pageTitle;
+            $this->pageTitle = $post->title . ' | ' . $page_data->title . ' | ' . $this->pageTitle;
         } else {
             $page_data = Pages::model()->findByAttributes(array(
                 'page' => 'blog',
