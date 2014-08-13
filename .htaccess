@@ -1,3 +1,12 @@
+# Redirects from old site
+
+RewriteRule ^/?daily-bread/ /dailybread [R=302,L]
+Redirect 302 /daily-bread /dailybread
+RewriteRule ^/?about/ /about [R=302,L]
+RewriteRule ^/?contact/ /contact [R=302,L]
+RewriteRule ^/?resources/ /resources [R=302,L]
+Redirect 302 /bible-study /sermons
+
 # FollowSymLinks must be enabled for this to work.
 <IfModule mod_rewrite.c>
   Options +FollowSymlinks

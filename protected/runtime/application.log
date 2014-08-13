@@ -1069,3 +1069,1860 @@ Stack trace:
 #15 {main}
 REQUEST_URI=/site/sermons/name/idolatry-ignorance-and-repentance
 ---
+2014/08/12 18:30:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "bible-study/sermon.php".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('bible-study/ser...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bible-study/sermon.php?id=133
+---
+2014/08/12 18:36:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "dailybread/index.php".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('dailybread/inde...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dailybread/index.php
+---
+2014/08/12 18:38:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "daily-bread/index.php".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('daily-bread/ind...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/daily-bread/index.php
+---
+2014/08/12 18:38:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "daily-bread/index.php".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('daily-bread/ind...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/daily-bread/index.php
+---
+2014/08/12 18:40:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "daily-bread/index.php".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('daily-bread/ind...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/daily-bread/index.php
+---
+2014/08/12 18:42:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "daily-bread/index.php".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('daily-bread/ind...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/daily-bread/index.php
+---
+2014/08/12 18:44:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "daily-bread".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('daily-bread')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/daily-bread
+---
+2014/08/12 18:44:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "daily-bread".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('daily-bread')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/daily-bread
+---
+2014/08/12 18:45:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "robots.txt".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('robots.txt')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/robots.txt
+---
+2014/08/12 18:45:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "bible-study/download-sermon.php".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('bible-study/dow...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bible-study/download-sermon.php?id=304
+---
+2014/08/12 18:45:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "bible-study/sermon.php".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('bible-study/ser...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bible-study/sermon.php?title=Metamorphosis&date=2014-01-12
+HTTP_REFERER=http://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=7&ved=0CEAQFjAG&url=http%3A%2F%2Fiitubf.org%2Fbible-study%2Fsermon.php%3Ftitle%3DMetamorphosis%26date%3D2014-01-12&ei=2MDqU6XpILjMsQTNtYLgBw&usg=AFQjCNHe_YrH6id7hedxdqd3DRGDQfMLiA
+---
+2014/08/12 18:46:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "bible-study/sermon.php".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('bible-study/ser...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bible-study/sermon.php?title=Metamorphosis&date=2014-01-12
+HTTP_REFERER=http://r.search.yahoo.com/_ylt=A0LEVj4ixepTJjYAhZIPxQt.;_ylu=X3oDMTByMG04Z2o2BHNlYwNzcgRwb3MDMQRjb2xvA2JmMQR2dGlkAw--/RV=2/RE=1407923619/RO=10/RU=http%3a%2f%2fiitubf.org%2fbible-study%2fsermon.php%3ftitle%3dMetamorphosis%26date%3d2014-01-12/RK=0/RS=3tLTAkmLkvCrpNZOtk2xC5wbVHo-
+---
+2014/08/12 18:46:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "bible-study/sermon.php".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('bible-study/ser...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bible-study/sermon.php?title=Metamorphosis&date=2014-01-12
+HTTP_REFERER=http://r.search.yahoo.com/_ylt=A0LEVj4ixepTJjYAhZIPxQt.;_ylu=X3oDMTByMG04Z2o2BHNlYwNzcgRwb3MDMQRjb2xvA2JmMQR2dGlkAw--/RV=2/RE=1407923619/RO=10/RU=http%3a%2f%2fiitubf.org%2fbible-study%2fsermon.php%3ftitle%3dMetamorphosis%26date%3d2014-01-12/RK=0/RS=3tLTAkmLkvCrpNZOtk2xC5wbVHo-
+---
+2014/08/12 18:46:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "bible-study/sermon.php".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('bible-study/ser...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bible-study/sermon.php?title=Metamorphosis&date=2014-01-12
+HTTP_REFERER=http://r.search.yahoo.com/_ylt=A0LEVj4ixepTJjYAhZIPxQt.;_ylu=X3oDMTByMG04Z2o2BHNlYwNzcgRwb3MDMQRjb2xvA2JmMQR2dGlkAw--/RV=2/RE=1407923619/RO=10/RU=http%3a%2f%2fiitubf.org%2fbible-study%2fsermon.php%3ftitle%3dMetamorphosis%26date%3d2014-01-12/RK=0/RS=3tLTAkmLkvCrpNZOtk2xC5wbVHo-
+---
+2014/08/12 18:46:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "bible-study/sermon.php".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('bible-study/ser...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bible-study/sermon.php?title=Metamorphosis&date=2014-01-12
+HTTP_REFERER=http://r.search.yahoo.com/_ylt=A0LEVj4ixepTJjYAhZIPxQt.;_ylu=X3oDMTByMG04Z2o2BHNlYwNzcgRwb3MDMQRjb2xvA2JmMQR2dGlkAw--/RV=2/RE=1407923619/RO=10/RU=http%3a%2f%2fiitubf.org%2fbible-study%2fsermon.php%3ftitle%3dMetamorphosis%26date%3d2014-01-12/RK=0/RS=3tLTAkmLkvCrpNZOtk2xC5wbVHo-
+---
+2014/08/12 18:52:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "blog/2011/01/2011-key-verses-for-the-iit-ministry".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('blog/2011/01/20...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/2011/01/2011-key-verses-for-the-iit-ministry/
+---
+2014/08/12 18:53:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "biblestudy/messages/Thanksgiving.msg_final.doc".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('biblestudy/mess...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/biblestudy/messages/Thanksgiving.msg_final.doc
+---
+2014/08/12 18:58:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/features/nehemiah.jpg".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('images/features...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/features/nehemiah.jpg
+---
+2014/08/12 18:58:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "sermons/sermon.php".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('sermons/sermon....')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sermons/sermon.php?title=Metamorphosis&date=2014-01-12
+HTTP_REFERER=http://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=6&ved=0CEYQFjAF&url=http%3A%2F%2Fiitubf.org%2Fbible-study%2Fsermon.php%3Ftitle%3DMetamorphosis%26date%3D2014-01-12&ei=98fqU_6GC4KMyATdrYDQBg&usg=AFQjCNHe_YrH6id7hedxdqd3DRGDQfMLiA&sig2=bvdGtChOPHhIWerp_8NBXw&bvm=bv.72938740,d.aWw
+---
+2014/08/12 18:58:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "sermons/sermon.php".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('sermons/sermon....')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sermons/sermon.php?title=Heartbreak&date=2013-06-23
+HTTP_REFERER=http://www.google.co.nz/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&docid=tGKBuIi7tEAIIM&tbnid=5Yqiw99trG81SM:&ved=0CAUQjRw&url=http%3A%2F%2Fiitubf.org%2Fbible-study%2Fsermon.php%3Ftitle%3DHeartbreak%26date%3D2013-06-23&ei=DsjqU9W7J8Th8AXYz4KICQ&bvm=bv.72938740,d.dGc&psig=AFQjCNE9C9aCS3BKLg0iZCTzVBh6sbpJAg&ust=1407981306215615
+---
+2014/08/12 19:00:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "sermons/sermon.php".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('sermons/sermon....')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sermons/sermon.php?id=10
+---
+2014/08/12 19:07:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "blog/the_new_iitubforg.html".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('blog/the_new_ii...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/the_new_iitubforg.html
+HTTP_REFERER=http://iitubf.org/
+---
+2014/08/12 19:13:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "apple-touch-icon-120x120-precomposed.png".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('apple-touch-ico...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/apple-touch-icon-120x120-precomposed.png
+---
+2014/08/12 19:13:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "apple-touch-icon-120x120.png".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('apple-touch-ico...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/apple-touch-icon-120x120.png
+---
+2014/08/12 19:13:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "apple-touch-icon-precomposed.png".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('apple-touch-ico...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/apple-touch-icon-precomposed.png
+---
+2014/08/12 19:13:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "apple-touch-icon.png".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('apple-touch-ico...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/apple-touch-icon.png
+---
+2014/08/12 19:15:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "sermons/sermon.php".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('sermons/sermon....')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sermons/sermon.php?title=Heartbreak&date=2013-06-23
+---
+2014/08/12 19:15:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "sermons/sermon.php".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('sermons/sermon....')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sermons/sermon.php?title=Metamorphosis&date=2014-01-12
+HTTP_REFERER=http://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=9&ved=0CGMQFjAI&url=http%3A%2F%2Fiitubf.org%2Fbible-study%2Fsermon.php%3Ftitle%3DMetamorphosis%26date%3D2014-01-12&ei=fMvqU7CsBdOAygTlsoLgAg&usg=AFQjCNHe_YrH6id7hedxdqd3DRGDQfMLiA&sig2=JSm7h8yLlLnLNmgGMds9pQ
+---
+2014/08/12 19:20:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "blog/page/5".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('blog/page/5')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/page/5/
+---
+2014/08/12 19:23:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "biblestudy/messages/Sharing_Jesus2_Acts.1.1-11.msg_final.pdf".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('biblestudy/mess...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/biblestudy/messages/Sharing_Jesus2_Acts.1.1-11.msg_final.pdf
+---
+2014/08/12 19:28:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "sermons/sermon.php".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('sermons/sermon....')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sermons/sermon.php?title=Endure-Like-Jesus&date=2010-08-22
+---
+2014/08/12 19:30:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "sermons/sermon.php".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('sermons/sermon....')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sermons/sermon.php?title=The-Work-of-the-Holy-Spirit&date=2012-04-21
+---
+2014/08/12 19:43:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "robots.txt".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('robots.txt')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/robots.txt
+---
+2014/08/12 19:44:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "sermons/download-questions.php".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('sermons/downloa...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sermons/download-questions.php?id=258
+---
+2014/08/12 19:45:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "sermons/sermon.php".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('sermons/sermon....')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sermons/sermon.php?title=How-Can-We-Face-an-Uncertain-Future&date=2009-07-23
+---
+2014/08/12 19:49:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "biblestudy/messages/12_20-50.msg_final.pdf".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('biblestudy/mess...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/biblestudy/messages/12_20-50.msg_final.pdf
+---
+2014/08/12 19:56:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "blog/wp-content/uploads/2010/11/IDOP2010.jpg".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('blog/wp-content...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/wp-content/uploads/2010/11/IDOP2010.jpg
+HTTP_REFERER=https://www.google.com/
+---
+2014/08/12 19:57:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/events/idop2010.jpg".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('images/events/i...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/events/idop2010.jpg
+HTTP_REFERER=https://www.google.com/
+---
+2014/08/12 19:57:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "blog/wp-content/uploads/2010/11/IDOP2010.jpg".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('blog/wp-content...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/wp-content/uploads/2010/11/IDOP2010.jpg
+HTTP_REFERER=https://www.google.com/
+---
+2014/08/12 19:57:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "robots.txt".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('robots.txt')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/robots.txt
+---
+2014/08/12 19:58:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "biblestudy/messages/12_35-48_msg_final.doc".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('biblestudy/mess...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/biblestudy/messages/12_35-48_msg_final.doc
+---
+2014/08/12 20:16:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "blog/2010/07/our-prayer-for-botswana".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('blog/2010/07/ou...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/2010/07/our-prayer-for-botswana/
+---
+2014/08/12 20:24:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "blog/wp-content/uploads/2010/11/IDOP2010.jpg".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('blog/wp-content...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/wp-content/uploads/2010/11/IDOP2010.jpg
+HTTP_REFERER=https://www.google.com.mx/
+---
+2014/08/12 20:32:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "sermons/sermon.php".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('sermons/sermon....')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sermons/sermon.php?title=Remember-the-Lord&date=2013-07-07
+---
+2014/08/12 20:35:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "biblestudy/messages/Romans.2.1-16.msg-final.pdf".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('biblestudy/mess...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/biblestudy/messages/Romans.2.1-16.msg-final.pdf
+---
+2014/08/12 20:47:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "wp-login.php".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('wp-login.php')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/wp-login.php
+---
+2014/08/12 20:50:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "events".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CController.php:483
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CController.php(270): CController->missingAction('events')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(282): CController->run('events')
+#2 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/events')
+#3 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/events/?page=3&q=
+---
+2014/08/12 20:51:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "robots.txt".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('robots.txt')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/robots.txt
+---
+2014/08/12 20:53:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "blog/2010/07/our-prayer-for-botswana".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('blog/2010/07/ou...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/2010/07/our-prayer-for-botswana/
+---
+2014/08/12 20:59:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "sermons/sermon.php".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('sermons/sermon....')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sermons/sermon.php?title=The-Call-of-Samuel&date=2010-09-26
+---
+2014/08/12 21:05:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "robots.txt".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('robots.txt')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/robots.txt
+---
+2014/08/12 21:05:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "biblestudy/messages".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('biblestudy/mess...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/biblestudy/messages/?C=N;O=D
+---
+2014/08/12 21:07:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "blog/2012/11/the-well-2012".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('blog/2012/11/th...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/2012/11/the-well-2012/
+---
+2014/08/12 21:12:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "robots.txt".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('robots.txt')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/robots.txt
+---
+2014/08/12 21:15:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "blog/2013/05/so-loved-registration-information".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('blog/2013/05/so...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/2013/05/so-loved-registration-information/
+---
+2014/08/12 21:16:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "robots.txt".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('robots.txt')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/robots.txt
+---
+2014/08/12 21:16:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "blog/category/general/page/2".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('blog/category/g...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/category/general/page/2/
+---
+2014/08/12 22:07:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "biblestudy/messages/Romans.7.14-25.msg_final.pdf".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('biblestudy/mess...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/biblestudy/messages/Romans.7.14-25.msg_final.pdf
+---
+2014/08/12 22:16:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "s7.addthis.com/js/300/addthis_widget.js".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('s7.addthis.com/...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/s7.addthis.com/js/300/addthis_widget.js
+---
+2014/08/12 22:16:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "s7.addthis.com/js/300/addthis_widget.js".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('s7.addthis.com/...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/s7.addthis.com/js/300/addthis_widget.js
+---
+2014/08/12 22:32:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "sermons/sermon.php".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('sermons/sermon....')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sermons/sermon.php?title=The-Power-of-Jesus-Name&date=2013-10-13
+---
+2014/08/12 22:36:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "blog/2008/10/mike-passes-his-german-exam".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('blog/2008/10/mi...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/2008/10/mike-passes-his-german-exam/
+---
+2014/08/12 22:44:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "blog/wp-content/uploads/2010/07/africaBotswMap.jpg".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('blog/wp-content...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/wp-content/uploads/2010/07/africaBotswMap.jpg
+HTTP_REFERER=https://www.google.com/
+---
+2014/08/12 22:46:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "blog/page/8".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('blog/page/8')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/page/8/
+---
+2014/08/12 22:51:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "robots.txt".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('robots.txt')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/robots.txt
+---
+2014/08/12 22:51:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "blog/2011/03/redeemed".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('blog/2011/03/re...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/2011/03/redeemed/
+---
+2014/08/12 23:00:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "blog/wp-content/uploads/2010/11/IDOP2010.jpg".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('blog/wp-content...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/wp-content/uploads/2010/11/IDOP2010.jpg
+HTTP_REFERER=http://www.google.com/blank.html
+---
+2014/08/12 23:14:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "blog/wp-content/uploads/2009/09/peter.jpg".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('blog/wp-content...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/wp-content/uploads/2009/09/peter.jpg
+---
+2014/08/12 23:25:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "biblestudy/messages/4_1_32.msg_final.doc".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('biblestudy/mess...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/biblestudy/messages/4_1_32.msg_final.doc
+HTTP_REFERER=http://www.google.com/url?sa=t&rct=j&q=be%20worthy%20of%20his%20calling&source=web&cd=8&ved=0CE8QFjAH&url=http%3A%2F%2Fiitubf.org%2Fbiblestudy%2Fmessages%2F4_1_32.msg_final.doc&ei=LAXrU8r9PNXs8AWw-YLgAg&usg=AFQjCNHuW0SvB3RmNdaurKohE-hTVMojvg
+---
+2014/08/12 23:33:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "blog/wp-content/uploads/2010/07/elephants.jpg".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('blog/wp-content...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/wp-content/uploads/2010/07/elephants.jpg
+---
+2014/08/12 23:37:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "biblestudy/messages/11_29-54.msg_final.doc".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('biblestudy/mess...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/biblestudy/messages/11_29-54.msg_final.doc
+---
+2014/08/12 23:45:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "biblestudy/messages/ON_THE_ROAD_TO_EMMAUS.doc".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('biblestudy/mess...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/biblestudy/messages/ON_THE_ROAD_TO_EMMAUS.doc
+---
+2014/08/12 23:51:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "events/calendar/index.php".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('events/calendar...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/events/calendar/index.php?month=3&year=7622
+---
+2014/08/12 23:55:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fckeditor/_whatsnew.html".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('fckeditor/_what...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/fckeditor/_whatsnew.html
+---
+2014/08/13 00:08:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "biblestudy/messages/7_31_37.msg_final.doc".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('biblestudy/mess...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/biblestudy/messages/7_31_37.msg_final.doc
+---
+2014/08/13 00:10:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "biblestudy/messages/Hope_Genesis_15.msg_final.doc".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('biblestudy/mess...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/biblestudy/messages/Hope_Genesis_15.msg_final.doc
+---
+2014/08/13 00:19:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "sermons/sermon.php".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('sermons/sermon....')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sermons/sermon.php?title=Legacy&date=2011-05-17
+---
+2014/08/13 00:21:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "biblestudy/messages/7_24_30.msg_final.doc".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('biblestudy/mess...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/biblestudy/messages/7_24_30.msg_final.doc
+---
+2014/08/13 00:26:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "robots.txt".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('robots.txt')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/robots.txt
+---
+2014/08/13 00:26:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "biblestudy/messages/Sharing_Jesus5_Phillipians_2.1-11.msg_final.pdf".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('biblestudy/mess...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/biblestudy/messages/Sharing_Jesus5_Phillipians_2.1-11.msg_final.pdf
+---
+2014/08/13 00:29:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "biblestudy/questions/Sharing_Jesus5_Phillipians_2.1-11.que.pdf".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('biblestudy/ques...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/biblestudy/questions/Sharing_Jesus5_Phillipians_2.1-11.que.pdf
+---
+2014/08/13 00:33:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "robots.txt".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('robots.txt')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/robots.txt
+---
+2014/08/13 00:33:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "sermons/sermon.php".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('sermons/sermon....')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sermons/sermon.php?title=Metamorphosis&date=2014-01-12
+---
+2014/08/13 00:41:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "blog/2012/01/for-the-glory-of-god".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('blog/2012/01/fo...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/2012/01/for-the-glory-of-god/
+---
+2014/08/13 01:00:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "blog/2013/04/james-act-by-faith".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('blog/2013/04/ja...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/2013/04/james-act-by-faith/
+---
+2014/08/13 01:04:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "biblestudy/questions/Romans.7.14-25.que.pdf".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('biblestudy/ques...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/biblestudy/questions/Romans.7.14-25.que.pdf
+---
+2014/08/13 01:04:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "blog/wp-login.php".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('blog/wp-login.p...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/wp-login.php
+HTTP_REFERER=http://iitubf.org/blog/wp-login.php
+---
+2014/08/13 01:04:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "blog/wp-login.php".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('blog/wp-login.p...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/wp-login.php
+HTTP_REFERER=http://iitubf.org/blog/wp-login.php
+---
+2014/08/13 01:04:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "blog/wp-login.php".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('blog/wp-login.p...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/wp-login.php
+HTTP_REFERER=http://iitubf.org/blog/wp-login.php
+---
+2014/08/13 01:04:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "blog/wp-login.php".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('blog/wp-login.p...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/wp-login.php
+HTTP_REFERER=http://iitubf.org/blog/wp-login.php
+---
+2014/08/13 01:05:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "blog/wp-login.php".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('blog/wp-login.p...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/wp-login.php
+HTTP_REFERER=http://iitubf.org/blog/wp-login.php
+---
+2014/08/13 01:05:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "blog/wp-login.php".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('blog/wp-login.p...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/wp-login.php
+HTTP_REFERER=http://iitubf.org/blog/wp-login.php
+---
+2014/08/13 01:05:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "blog/wp-login.php".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('blog/wp-login.p...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/wp-login.php
+HTTP_REFERER=http://iitubf.org/blog/wp-login.php
+---
+2014/08/13 01:05:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "blog/wp-login.php".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('blog/wp-login.p...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/wp-login.php
+HTTP_REFERER=http://iitubf.org/blog/wp-login.php
+---
+2014/08/13 01:05:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "blog/wp-login.php".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('blog/wp-login.p...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/wp-login.php
+HTTP_REFERER=http://iitubf.org/blog/wp-login.php
+---
+2014/08/13 01:08:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "blog/category/uncategorized/page/4".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('blog/category/u...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/category/uncategorized/page/4/
+---
+2014/08/13 01:08:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "blog/wp-login.php".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('blog/wp-login.p...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/wp-login.php
+HTTP_REFERER=http://iitubf.org/blog/wp-login.php
+---
+2014/08/13 01:08:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "blog/wp-login.php".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('blog/wp-login.p...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/wp-login.php
+HTTP_REFERER=http://iitubf.org/blog/wp-login.php
+---
+2014/08/13 01:08:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "blog/wp-login.php".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('blog/wp-login.p...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/wp-login.php
+HTTP_REFERER=http://iitubf.org/blog/wp-login.php
+---
+2014/08/13 01:10:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "sermons/sermon.php".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('sermons/sermon....')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sermons/sermon.php?title=One-Body-Many-Parts&date=2013-01-06
+---
+2014/08/13 01:12:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "blog/wp-login.php".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('blog/wp-login.p...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/wp-login.php
+HTTP_REFERER=http://iitubf.org/blog/wp-login.php
+---
+2014/08/13 01:12:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "blog/wp-login.php".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('blog/wp-login.p...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/wp-login.php
+HTTP_REFERER=http://iitubf.org/blog/wp-login.php
+---
+2014/08/13 01:12:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "blog/wp-login.php".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('blog/wp-login.p...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/wp-login.php
+HTTP_REFERER=http://iitubf.org/blog/wp-login.php
+---
+2014/08/13 01:12:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "blog/wp-content/uploads/2010/11/IDOP2010.jpg".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('blog/wp-content...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/wp-content/uploads/2010/11/IDOP2010.jpg
+HTTP_REFERER=https://www.google.co.za/
+---
+2014/08/13 01:19:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "sermons/sermon.php".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('sermons/sermon....')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sermons/sermon.php?id=245
+---
+2014/08/13 01:34:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "sermons/download-questions.php".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('sermons/downloa...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sermons/download-questions.php?id=239
+---
+2014/08/13 01:34:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "blog/2012/11/advent".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('blog/2012/11/ad...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/2012/11/advent/
+---
+2014/08/13 01:42:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "blog/2010/11/idop-2010-slideshow-and-notes".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('blog/2010/11/id...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/2010/11/idop-2010-slideshow-and-notes/
+---
+2014/08/13 01:42:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "biblestudy/messages/2_41-52.msg_final.doc".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('biblestudy/mess...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/biblestudy/messages/2_41-52.msg_final.doc
+---
+2014/08/13 01:48:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "robots.txt".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('robots.txt')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/robots.txt
+---
+2014/08/13 01:49:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "sermons/download-sermon.php".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('sermons/downloa...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sermons/download-sermon.php?id=286
+---
+2014/08/13 01:57:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "biblestudy/messages/John.21.1-25.msg-final.pdf".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('biblestudy/mess...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/biblestudy/messages/John.21.1-25.msg-final.pdf
+HTTP_REFERER=http://iitubf.org/biblestudy/messages/John.21.1-25.msg-final.pdf
+---
+2014/08/13 02:04:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "biblestudy/messages/4_31-44.msg_final.pdf".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('biblestudy/mess...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/biblestudy/messages/4_31-44.msg_final.pdf
+---
+2014/08/13 02:29:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "blog/2009/09/jesus-called-an-ordinary-man-peter".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('blog/2009/09/je...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/2009/09/jesus-called-an-ordinary-man-peter/
+---
+2014/08/13 02:38:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "sermons/download-sermon.php".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('sermons/downloa...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sermons/download-sermon.php?id=281
+---
+2014/08/13 02:39:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "biblestudy/messages/2.Samuel 6.1-23.msg_final.pdf".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('biblestudy/mess...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/biblestudy/messages/2.Samuel%206.1-23.msg_final.pdf
+---
+2014/08/13 02:46:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "./biblestudy/messages/12_35-48_msg_final.doc".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('./biblestudy/me...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/./biblestudy/messages/12_35-48_msg_final.doc
+---
+2014/08/13 02:48:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "styles/home.css".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('styles/home.css')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/styles/home.css
+---
+2014/08/13 02:50:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "biblestudy/messages/Sharing_Jesus1_1John_4.7-21.msg_final.pdf".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('biblestudy/mess...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/biblestudy/messages/Sharing_Jesus1_1John_4.7-21.msg_final.pdf
+---
+2014/08/13 02:51:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "sermons/sermon.php".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('sermons/sermon....')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sermons/sermon.php?title=Laying-the-Cornerstone&date=2013-07-14
+---
+2014/08/13 02:53:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "biblestudy/messages/2.Samuel 2-5.msg_final.pdf".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('biblestudy/mess...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/biblestudy/messages/2.Samuel%202-5.msg_final.pdf
+---
+2014/08/13 02:58:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "docs/sermons/2.Samuel.13-15.12.msg_final.pdf".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('docs/sermons/2....')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/docs/sermons/2.Samuel.13-15.12.msg_final.pdf
+---
+2014/08/13 02:59:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "docs/sermons/4_7-21.msg_final.doc".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('docs/sermons/4_...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/docs/sermons/4_7-21.msg_final.doc
+---
+2014/08/13 02:59:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "docs/sermons/4_1-42.msg_final.pdf".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('docs/sermons/4_...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/docs/sermons/4_1-42.msg_final.pdf
+---
+2014/08/13 02:59:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "docs/sermons/7_1-52.msg_final.pdf".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('docs/sermons/7_...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/docs/sermons/7_1-52.msg_final.pdf
+---
+2014/08/13 02:59:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "docs/sermons/9_1-41.msg_final.pdf".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('docs/sermons/9_...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/docs/sermons/9_1-41.msg_final.pdf
+---
+2014/08/13 02:59:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "docs/sermons/5_1-11.msg_final.doc".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('docs/sermons/5_...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/docs/sermons/5_1-11.msg_final.doc
+---
+2014/08/13 03:00:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "docs/sermons/4_31-44.msg_final.pdf".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('docs/sermons/4_...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/docs/sermons/4_31-44.msg_final.pdf
+---
+2014/08/13 03:00:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "docs/sermons/5_17-26.msg_final.doc".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('docs/sermons/5_...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/docs/sermons/5_17-26.msg_final.doc
+---
+2014/08/13 03:00:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "docs/sermons/12_1-19.msg_final.pdf".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('docs/sermons/12...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/docs/sermons/12_1-19.msg_final.pdf
+---
+2014/08/13 03:00:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "docs/sermons/5_21_43.msg_final.doc".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('docs/sermons/5_...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/docs/sermons/5_21_43.msg_final.doc
+---
+2014/08/13 03:00:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "docs/sermons/11_1-57.msg_final.pdf".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('docs/sermons/11...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/docs/sermons/11_1-57.msg_final.pdf
+---
+2014/08/13 03:00:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "docs/sermons/15_1-17.msg_final.pdf".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('docs/sermons/15...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/docs/sermons/15_1-17.msg_final.pdf
+---
+2014/08/13 03:00:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "docs/sermons/9_18-36.msg_final.doc".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('docs/sermons/9_...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/docs/sermons/9_18-36.msg_final.doc
+---
+2014/08/13 03:00:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "docs/sermons/6_21-71.msg_final.pdf".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('docs/sermons/6_...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/docs/sermons/6_21-71.msg_final.pdf
+---
+2014/08/13 03:00:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "docs/sermons/1_19-51.msg_final.pdf".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('docs/sermons/1_...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/docs/sermons/1_19-51.msg_final.pdf
+---
+2014/08/13 03:00:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "docs/sermons/8_40-56.msg_final.doc".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('docs/sermons/8_...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/docs/sermons/8_40-56.msg_final.doc
+---
+2014/08/13 03:00:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "docs/sermons/21_1-38.msg_final.doc".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('docs/sermons/21...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/docs/sermons/21_1-38.msg_final.doc
+---
+2014/08/13 03:00:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "docs/sermons/8_31-59.msg_final.pdf".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('docs/sermons/8_...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/docs/sermons/8_31-59.msg_final.pdf
+---
+2014/08/13 03:00:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "docs/sermons/6_27-36.msg_final.doc".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('docs/sermons/6_...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/docs/sermons/6_27-36.msg_final.doc
+---
+2014/08/13 03:00:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "docs/sermons/5.1-7.1.msg_final.doc".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('docs/sermons/5....')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/docs/sermons/5.1-7.1.msg_final.doc
+---
+2014/08/13 03:00:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "docs/sermons/16_19-31.msg_final.doc".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('docs/sermons/16...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/docs/sermons/16_19-31.msg_final.doc
+---
+2014/08/13 03:00:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "docs/sermons/10_22-42.msg_final.pdf".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('docs/sermons/10...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/docs/sermons/10_22-42.msg_final.pdf
+---
+2014/08/13 03:00:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "docs/sermons/13_18-38.msg_final.pdf".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('docs/sermons/13...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/docs/sermons/13_18-38.msg_final.pdf
+---
+2014/08/13 03:00:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "docs/sermons/13_22-35.msg_final.doc".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('docs/sermons/13...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/docs/sermons/13_22-35.msg_final.doc
+---
+2014/08/13 03:01:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "docs/sermons/19 1-10.msg_final.doc".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('docs/sermons/19...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/docs/sermons/19%201-10.msg_final.doc
+---
+2014/08/13 03:01:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "docs/sermons/Rom6_1-23.msg_final.doc".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('docs/sermons/Ro...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/docs/sermons/Rom6_1-23.msg_final.doc
+---
+2014/08/13 03:01:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "docs/sermons/11.1-12.25.msg_final.doc".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('docs/sermons/11...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/docs/sermons/11.1-12.25.msg_final.doc
+---
+2014/08/13 03:01:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "docs/sermons/15_18-16_4.msg_final.pdf".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('docs/sermons/15...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/docs/sermons/15_18-16_4.msg_final.pdf
+---
+2014/08/13 03:01:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "docs/questions/James.4.13-5.12.que.pdf".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('docs/questions/...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/docs/questions/James.4.13-5.12.que.pdf
+---
+2014/08/13 03:01:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "docs/sermons/ON_THE_ROAD_TO_EMMAUS.doc".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('docs/sermons/ON...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/docs/sermons/ON_THE_ROAD_TO_EMMAUS.doc
+---
+2014/08/13 03:01:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "docs/sermons/KV-Psalm_66.msg_final.pdf".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('docs/sermons/KV...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/docs/sermons/KV-Psalm_66.msg_final.pdf
+---
+2014/08/13 03:01:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "docs/sermons/John.17.1-26.msg_final.pdf".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('docs/sermons/Jo...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/docs/sermons/John.17.1-26.msg_final.pdf
+---
+2014/08/13 03:01:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "docs/sermons/John.20.1-31.msg-final.pdf".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('docs/sermons/Jo...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/docs/sermons/John.20.1-31.msg-final.pdf
+---
+2014/08/13 03:01:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "docs/sermons/John.1.35-51.msg_final.pdf".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('docs/sermons/Jo...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/docs/sermons/John.1.35-51.msg_final.pdf
+---
+2014/08/13 03:01:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "docs/sermons/John.21.1-25.msg-final.pdf".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('docs/sermons/Jo...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/docs/sermons/John.21.1-25.msg-final.pdf
+---
+2014/08/13 03:01:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "docs/sermons/Romans.4.1-25.msg_final.pdf".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('docs/sermons/Ro...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/docs/sermons/Romans.4.1-25.msg_final.pdf
+---
+2014/08/13 03:01:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "docs/sermons/John.16.16-33.msg_final.pdf".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('docs/sermons/Jo...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/docs/sermons/John.16.16-33.msg_final.pdf
+---
+2014/08/13 03:01:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "docs/sermons/2.Samuel.18-19.msg_final.pdf".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('docs/sermons/2....')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/docs/sermons/2.Samuel.18-19.msg_final.pdf
+---
+2014/08/13 03:02:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "docs/sermons/Romans.1.18-32.msg_final.pdf".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('docs/sermons/Ro...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/docs/sermons/Romans.1.18-32.msg_final.pdf
+---
+2014/08/13 03:02:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "docs/sermons/Romans.7.14-25.msg_final.pdf".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('docs/sermons/Ro...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/docs/sermons/Romans.7.14-25.msg_final.pdf
+---
+2014/08/13 03:02:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "docs/sermons/1Peter1_13-2_3.msg_final.doc".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('docs/sermons/1P...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/docs/sermons/1Peter1_13-2_3.msg_final.doc
+---
+2014/08/13 03:02:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "docs/sermons/Romans.16.1-27.msg_final.pdf".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('docs/sermons/Ro...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/docs/sermons/Romans.16.1-27.msg_final.pdf
+---
+2014/08/13 03:02:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "docs/sermons/2.Samuel 2-5.msg_final.pdf".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('docs/sermons/2....')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/docs/sermons/2.Samuel%202-5.msg_final.pdf
+---
+2014/08/13 03:02:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "docs/sermons/West-Loop_Christmas_Message.doc".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('docs/sermons/We...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/docs/sermons/West-Loop_Christmas_Message.doc
+---
+2014/08/13 03:02:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "docs/sermons/Galatians.05.1-26.msg_final.pdf".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('docs/sermons/Ga...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/docs/sermons/Galatians.05.1-26.msg_final.pdf
+---
+2014/08/13 03:02:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "docs/sermons/Galatians.02.1-21.msg_final.pdf".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('docs/sermons/Ga...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/docs/sermons/Galatians.02.1-21.msg_final.pdf
+---
+2014/08/13 03:02:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "docs/sermons/Galatians.01.11-24.msg_final.pdf".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('docs/sermons/Ga...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/docs/sermons/Galatians.01.11-24.msg_final.pdf
+---
+2014/08/13 03:02:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "docs/sermons/Revelation.21.1-22.5.msg_final.pdf".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('docs/sermons/Re...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/docs/sermons/Revelation.21.1-22.5.msg_final.pdf
+---
+2014/08/13 03:02:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "docs/sermons/Galatians.03.26-04.7.msg_final.pdf".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('docs/sermons/Ga...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/docs/sermons/Galatians.03.26-04.7.msg_final.pdf
+---
+2014/08/13 03:05:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "docs/sermons/9_1-17.msg_final.doc".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('docs/sermons/9_...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/docs/sermons/9_1-17.msg_final.doc
+---
+2014/08/13 03:05:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "docs/questions/John.19.17-42.que.pdf".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('docs/questions/...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/docs/questions/John.19.17-42.que.pdf
+---
+2014/08/13 03:05:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "docs/sermons/29.1-30.31.msg_final.pdf".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('docs/sermons/29...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/docs/sermons/29.1-30.31.msg_final.pdf
+---
+2014/08/13 03:05:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "docs/sermons/John.19.17-42.msg-final.pdf".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('docs/sermons/Jo...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/docs/sermons/John.19.17-42.msg-final.pdf
+---
+2014/08/13 03:05:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "docs/sermons/Easter-2013-Matthew-28-msg-final.pdf".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('docs/sermons/Ea...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/docs/sermons/Easter-2013-Matthew-28-msg-final.pdf
+---
+2014/08/13 03:17:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "sermons/sermon.php".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('sermons/sermon....')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sermons/sermon.php?title=Metamorphosis&date=2014-01-12
+HTTP_REFERER=https://www.google.com.ph/
+---
+2014/08/13 03:28:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "events/index.html".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('events/index.ht...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/events/index.html?event_id=10
+---
+2014/08/13 03:32:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "robots.txt".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('robots.txt')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/robots.txt
+---
+2014/08/13 03:32:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "blog/category/advent".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('blog/category/a...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/category/advent/
+---
+2014/08/13 03:38:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "blog/2011/03".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('blog/2011/03')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/2011/03/
+---
+2014/08/13 03:57:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "biblestudy/messages/1.kings.1-2.msg_final.pdf".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('biblestudy/mess...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/biblestudy/messages/1.kings.1-2.msg_final.pdf
+HTTP_REFERER=http://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=4&ved=0CDwQFjAD&url=http%3A%2F%2Fiitubf.org%2Fbiblestudy%2Fmessages%2F1.kings.1-2.msg_final.pdf&ei=XUbrU8bGIarIiwLa1ICIAQ&usg=AFQjCNGzv8T0OMigsm1EjqJE9wK4KwKASw&sig2=DZLp-JWLV3JunExoohHU9A&bvm=bv.72938740,d.cGE
+---
+2014/08/13 03:59:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "biblestudy/messages/13_1-17.msg_final.pdf".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('biblestudy/mess...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/biblestudy/messages/13_1-17.msg_final.pdf
+---
+2014/08/13 04:00:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "sermons/sermon.php".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('sermons/sermon....')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sermons/sermon.php?title=The-Power-of-Jesus-Name&date=2013-10-13
+HTTP_REFERER=http://www.google.com/url?url=http://iitubf.org/bible-study/sermon.php%3Ftitle%3DThe-Power-of-Jesus-Name%26date%3D2013-10-13&rct=j&frm=1&q=&esrc=s&sa=U&ei=C0frU6DBNofL8AGW0YGABQ&ved=0CC4QFjAE&usg=AFQjCNEdQYpLTIIcZTeK1rCyh-PUx4tGYA
+---
+2014/08/13 04:03:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "sermons/sermon.php".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('sermons/sermon....')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sermons/sermon.php?title=The-Power-of-Jesus-Name&date=2013-10-13
+HTTP_REFERER=http://www.google.com/url?url=http://iitubf.org/bible-study/sermon.php%3Ftitle%3DThe-Power-of-Jesus-Name%26date%3D2013-10-13&rct=j&frm=1&q=&esrc=s&sa=U&ei=C0frU6DBNofL8AGW0YGABQ&ved=0CC4QFjAE&usg=AFQjCNEdQYpLTIIcZTeK1rCyh-PUx4tGYA
+---
+2014/08/13 04:12:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "biblestudy/messages/4_1-13.msg_final.doc".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('biblestudy/mess...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/biblestudy/messages/4_1-13.msg_final.doc
+---
+2014/08/13 04:14:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "sermons/sermon.php".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('sermons/sermon....')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sermons/sermon.php?title=Dont-Play-Favorites&date=2013-05-05
+---
+2014/08/13 04:29:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "blog/2011/11/god-is-powerful-and-patient".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('blog/2011/11/go...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/2011/11/god-is-powerful-and-patient/
+---
+2014/08/13 04:40:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "biblestudy/questions/1Peter3_1-22.que.doc".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('biblestudy/ques...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/biblestudy/questions/1Peter3_1-22.que.doc
+---
+2014/08/13 04:50:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "blog/wp-login.php".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('blog/wp-login.p...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/wp-login.php
+HTTP_REFERER=http://iitubf.org/blog/wp-login.php
+---
+2014/08/13 04:50:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "blog/wp-login.php".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('blog/wp-login.p...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/wp-login.php
+HTTP_REFERER=http://iitubf.org/blog/wp-login.php
+---
+2014/08/13 04:50:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "blog/wp-login.php".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('blog/wp-login.p...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/wp-login.php
+HTTP_REFERER=http://iitubf.org/blog/wp-login.php
+---
+2014/08/13 04:51:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "blog/wp-login.php".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('blog/wp-login.p...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/wp-login.php
+HTTP_REFERER=http://iitubf.org/blog/wp-login.php
+---
+2014/08/13 04:51:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "blog/wp-login.php".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('blog/wp-login.p...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/wp-login.php
+HTTP_REFERER=http://iitubf.org/blog/wp-login.php
+---
+2014/08/13 04:51:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "blog/wp-login.php".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('blog/wp-login.p...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/wp-login.php
+HTTP_REFERER=http://iitubf.org/blog/wp-login.php
+---
+2014/08/13 04:51:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "blog/wp-login.php".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('blog/wp-login.p...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/wp-login.php
+HTTP_REFERER=http://iitubf.org/blog/wp-login.php
+---
+2014/08/13 04:51:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "blog/wp-login.php".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('blog/wp-login.p...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/wp-login.php
+HTTP_REFERER=http://iitubf.org/blog/wp-login.php
+---
+2014/08/13 04:57:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "biblestudy/messages/Romans.5.1-11.msg_final.pdf".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('biblestudy/mess...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/biblestudy/messages/Romans.5.1-11.msg_final.pdf
+---
+2014/08/13 04:57:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "blog/wp-login.php".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('blog/wp-login.p...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/wp-login.php
+HTTP_REFERER=http://iitubf.org/blog/wp-login.php
+---
+2014/08/13 04:57:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "blog/wp-login.php".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('blog/wp-login.p...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/wp-login.php
+HTTP_REFERER=http://iitubf.org/blog/wp-login.php
+---
+2014/08/13 04:57:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "blog/wp-login.php".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('blog/wp-login.p...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/wp-login.php
+HTTP_REFERER=http://iitubf.org/blog/wp-login.php
+---
+2014/08/13 05:00:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "blog/wp-login.php".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('blog/wp-login.p...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/wp-login.php
+HTTP_REFERER=http://iitubf.org/blog/wp-login.php
+---
+2014/08/13 05:00:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "blog/wp-login.php".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('blog/wp-login.p...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/wp-login.php
+HTTP_REFERER=http://iitubf.org/blog/wp-login.php
+---
+2014/08/13 05:00:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "blog/wp-login.php".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('blog/wp-login.p...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/wp-login.php
+HTTP_REFERER=http://iitubf.org/blog/wp-login.php
+---
+2014/08/13 05:13:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "blog/wp-content/uploads/2010/11/IDOP2010.jpg".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('blog/wp-content...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/wp-content/uploads/2010/11/IDOP2010.jpg
+HTTP_REFERER=https://www.google.nl/
+---
+2014/08/13 05:15:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "blog/page/10".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('blog/page/10')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/page/10/
+---
+2014/08/13 05:25:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "sermons/sermon.php".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('sermons/sermon....')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sermons/sermon.php?title=Loving-Leadership&date=2013-09-01
+---
+2014/08/13 05:26:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "blog/2009/09/jesus-called-an-ordinary-man-peter".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('blog/2009/09/je...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/2009/09/jesus-called-an-ordinary-man-peter/
+---
+2014/08/13 05:28:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "biblestudy/messages/1.1-2.11.msg_final.doc".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('biblestudy/mess...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/biblestudy/messages/1.1-2.11.msg_final.doc
+---
+2014/08/13 05:38:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "sermons/sermon.php".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('sermons/sermon....')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sermons/sermon.php?title=Metamorphosis&date=2014-01-12
+HTTP_REFERER=https://www.google.com/
+---
+2014/08/13 05:40:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "robots.txt".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('robots.txt')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/robots.txt
+---
+2014/08/13 05:42:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "sermons/sermon.php".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('sermons/sermon....')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sermons/sermon.php?title=Metamorphosis&date=2014-01-12
+HTTP_REFERER=http://www.google.com/
+---
+2014/08/13 05:44:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "biblestudy/messages/7_36-50.msg_final.doc".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('biblestudy/mess...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/biblestudy/messages/7_36-50.msg_final.doc
+---
+2014/08/13 05:44:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "biblestudy/questions/13.1-15.35.que.doc".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('biblestudy/ques...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/biblestudy/questions/13.1-15.35.que.doc
+---
+2014/08/13 05:45:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "robots.txt".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('robots.txt')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/robots.txt
+---
+2014/08/13 05:45:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "blog/wp-content/uploads/2010/11/IDOP2010.jpg".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('blog/wp-content...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/wp-content/uploads/2010/11/IDOP2010.jpg
+---
+2014/08/13 05:48:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "biblestudy/questions/26.1-27.12.que.pdf".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('biblestudy/ques...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/biblestudy/questions/26.1-27.12.que.pdf
+---
+2014/08/13 05:55:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "biblestudy/messages/2.Samuel 7.1-29.msg_final.pdf".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('biblestudy/mess...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/biblestudy/messages/2.Samuel%207.1-29.msg_final.pdf
+---
+2014/08/13 05:56:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "blog/2010/07/our-prayer-for-botswana".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('blog/2010/07/ou...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/2010/07/our-prayer-for-botswana/
+HTTP_REFERER=http://www.google.fr/url?url=http://iitubf.org/blog/2010/07/our-prayer-for-botswana/&rct=j&frm=1&q=&esrc=s&sa=U&ei=QGLrU8neNaqV7AbJzoGYCg&ved=0CCIQ9QEwBg&usg=AFQjCNGOswhN1FoGXFQiH23EV1WmSknNFw
+---
+2014/08/13 06:17:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "apple-touch-icon-120x120-precomposed.png".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('apple-touch-ico...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/apple-touch-icon-120x120-precomposed.png
+---
+2014/08/13 06:17:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "apple-touch-icon-120x120.png".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('apple-touch-ico...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/apple-touch-icon-120x120.png
+---
+2014/08/13 06:17:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "apple-touch-icon-precomposed.png".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('apple-touch-ico...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/apple-touch-icon-precomposed.png
+---
+2014/08/13 06:17:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "apple-touch-icon.png".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('apple-touch-ico...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/apple-touch-icon.png
+---
+2014/08/13 06:28:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "biblestudy/questions/John.20.1-31.que.pdf".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('biblestudy/ques...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/biblestudy/questions/John.20.1-31.que.pdf
+---
+2014/08/13 06:34:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "apple-touch-icon-precomposed.png".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('apple-touch-ico...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/apple-touch-icon-precomposed.png
+---
+2014/08/13 06:34:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "apple-touch-icon.png".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('apple-touch-ico...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/apple-touch-icon.png
+---

@@ -12,16 +12,9 @@
             <section class="item homepage">
                 <h3>Twitter</h3>
                 <section class="item-right">
-                    <a class="twitter-timeline" data-dnt=true href="https://twitter.com/iitubf" data-widget-id="248774763600805888">Tweets by @iitubf</a>
-                    <script>!function(d, s, id) {
-                        var js, fjs = d.getElementsByTagName(s)[0];
-                        if (!d.getElementById(id)) {
-                            js = d.createElement(s);
-                            js.id = id;
-                            js.src = "//platform.twitter.com/widgets.js";
-                            fjs.parentNode.insertBefore(js, fjs);
-                        }
-                    }(document, "script", "twitter-wjs");</script>
+<a class="twitter-timeline" href="https://twitter.com/iitubf" data-widget-id="499377545481973760" width="395" height="297">Tweets by @iitubf</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
                 </section>
             </section>
         </section>
@@ -30,8 +23,16 @@
             <section class="item homepage">
                 <h3>Facebook</h3>
                 <section class="item-right">
-                    <iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fiitubf&amp;width=352&amp;colorscheme=light&amp;show_faces=true&amp;stream=true&amp;header=false&amp;height=555" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:360px; height:555px;" allowTransparency="true"></iframe>
-                </section>
+                    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div class="fb-like-box" data-href="https://www.facebook.com/iitubf" data-width="395" data-height="579" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="true" data-show-border="false"></div>
+</section>
             </section>
         </section>
     </section>
