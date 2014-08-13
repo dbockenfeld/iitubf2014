@@ -1,2 +1,5 @@
+.gitignore
+/assets
+
 /protected/runtime
 /protected/config/*-local.php
