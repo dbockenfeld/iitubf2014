@@ -338,6 +338,7 @@ p.home-blog-title {
     color: #CC0000;
     font-size: 24px;
     font-weight: bold;
+    margin-bottom: 5px;
 }
 
 p.home-blog-date {
@@ -354,6 +355,7 @@ p.home-blog-author {
 
 p.home-blog-summary {
     font-size: 1.2em;
+    line-height: 1.2em;
 }
 
 .item-right article.blog {
