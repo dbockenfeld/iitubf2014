@@ -2926,3 +2926,11 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/apple-touch-icon.png
 ---
+2014/08/13 06:37:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "blog/2009/09/jesus-called-an-ordinary-man-peter".' in /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/iitubf/iitubf.org/protected/lib/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('blog/2009/09/je...')
+#1 /home/iitubf/iitubf.org/protected/lib/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/iitubf/iitubf.org/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/2009/09/jesus-called-an-ordinary-man-peter/
+---
