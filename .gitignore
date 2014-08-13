@@ -1,5 +1,5 @@
 .gitignore
-/assets
+assets/
 
-/protected/runtime
-/protected/config/*-local.php
+protected/runtime
+protected/config/*-local.php
