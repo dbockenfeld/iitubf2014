@@ -44,8 +44,8 @@ class SiteController extends Controller {
 
         $this->pageTitle = $page_data->title . ' | ' . $this->pageTitle;
 
-        $this->widget('ext.uploadDBtoDB.uploadDBtoDB');
-
+        uploadDBtoDB::archive();
+        
         $xmlstr = simplexml_load_file('http://ubf.org/dbrss.php');
 
 

@@ -11,40 +11,34 @@
  *
  * @author parallels
  */
-class uploadDBtoDB extends CWidget {
-    
-    private function strtotitle($title)
+class uploadDBtoDB {
+
+    public function strtotitle($title) {
 // Converts $title to Title Case, and returns the result.
-{
 // Our array of 'small words' which shouldn't be capitalised if
 // they aren't the first word. Add your own words to taste.
-$smallwordsarray = array(
-'of','a','the','and','an','or','nor','but','is','if','then','else','when',
-'at','from','by','on','off','for','in','out','over','to','into','with'
-);
+        $smallwordsarray = array(
+            'of', 'a', 'the', 'and', 'an', 'or', 'nor', 'but', 'is', 'if', 'then', 'else', 'when',
+            'at', 'from', 'by', 'on', 'off', 'for', 'in', 'out', 'over', 'to', 'into', 'with'
+        );
 
 // Split the string into separate words
-$words = explode(' ', $title);
+        $words = explode(' ', $title);
 
-foreach ($words as $key => $word)
-{
+        foreach ($words as $key => $word) {
 // If this word is the first, or it's not one of our small words, capitalise it
 // with ucwords().
-if ($key == 0 or !in_array($word, $smallwordsarray))
-$words[$key] = ucwords($word);
-}
+            if ($key == 0 or ! in_array($word, $smallwordsarray))
+                $words[$key] = ucwords($word);
+        }
 
 // Join the words back into a string
-$newtitle = implode(' ', $words);
+        $newtitle = implode(' ', $words);
 
-return $newtitle;
-}
-
-    public function init() {
-        parent::init();
+        return $newtitle;
     }
 
-    public function run() {
+    public function archive() {
         $today = date('Y-m-d');
 
         $db_today = DailyBreadArchive::model()->findByAttributes(array('date' => $today));
@@ -57,7 +51,7 @@ return $newtitle;
             $regex_title = "#<h3>(.*?)</h3>#";
             $search = preg_match($regex_title, $text, $matches);
 
-            $title = $this->strtotitle(strtolower(strip_tags($matches[0])));
+            $title = uploadDBtoDB::strtotitle(strtolower(strip_tags($matches[0])));
 
             $regex_passage = "#<a (.*?)</a>#";
             $search = preg_match($regex_passage, $text, $matches);
@@ -89,7 +83,7 @@ return $newtitle;
             $namespaces = $xmlstr->channel->getNameSpaces(true);
             //Now we don't have the URL hard-coded
             $dc = $xmlstr->channel->children($namespaces['dc']);
-//        echo $dc->date;
+//            echo $dc->date;
 
             $model = new DailyBreadArchive();
 
