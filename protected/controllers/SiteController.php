@@ -44,7 +44,7 @@ class SiteController extends Controller {
 
         $this->pageTitle = $page_data->title . ' | ' . $this->pageTitle;
 
-//        $this->widget('ext.uploadDBtoDB.uploadDBtoDB');
+        $this->widget('ext.uploadDBtoDB.uploadDBtoDB');
 
         $xmlstr = simplexml_load_file('http://ubf.org/dbrss.php');
 
@@ -82,6 +82,11 @@ class SiteController extends Controller {
             'image_class' => 'sermon-header',
             'sidebar_top' => $download_options,
         ));
+    }
+    
+    public function actionSermonRedirect() {
+        $sermons = Sermons::model()->findAll();
+        $this->render('generator', array('sermons'=>$sermons));
     }
 
     protected function getSermon($name, $date) {
