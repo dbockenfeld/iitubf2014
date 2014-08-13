@@ -5,8 +5,11 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="language" content="en" />
         <title><?php echo $this->pageTitle; ?></title>
+        <?php if ($this->siteDescription) : ?>
+        <meta name="description" content="<?php echo $this->siteDescription; ?>">
+        <?php endif; ?>
         <?php Yii::app()->clientScript->registerCoreScript('jquery'); ?>
-        <?php Yii::app()->clientScript->registerScriptFile(Yii::app()->request->baseUrl.'/js/jquery.defuscate.js'); ?>
+        <?php Yii::app()->clientScript->registerScriptFile(Yii::app()->request->baseUrl . '/js/jquery.defuscate.js'); ?>
         <script>
             $(document).ready(function() {
                 $('.obfuscated').defuscate();
