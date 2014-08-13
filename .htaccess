@@ -267,7 +267,7 @@
 #Redirect 302 /bible-study/sermon.php?title=The-Gospel-Breaks-Out&date=2014-01-26 /sermons/2014/01/26/the_gospel_breaks_out.html
 #Redirect 302 /bible-study/sermon.php?title=Is-Your-Heart-Right-Before-God&date=2014-02-02 /sermons/2014/02/02/is_your_heart_right_before_god.html
 RewriteCond %{QUERY_STRING} ^title=Hope-Rises&date=2014-02-09$
-RewriteRule ^nl/bible-study/sermon\.php$ /sermons/2014/02/09/hope_rises.html [L,R=301]
+RewriteRule ^bible-study/sermon\.php$ /sermons/2014/02/09/hope_rises.html [L,R=301]
 #Redirect 302 /bible-study/sermon.php?title=Hope-Rises&date=2014-02-09 /sermons/2014/02/09/hope_rises.html
 #Redirect 302 /bible-study/sermon.php?title=Transformed&date=2014-02-16 /sermons/2014/02/16/transformed.html
 #Redirect 302 /bible-study/sermon.php?title=Turn-to-the-Lord&date=2014-02-23 /sermons/2014/02/23/turn_to_the_lord.html
