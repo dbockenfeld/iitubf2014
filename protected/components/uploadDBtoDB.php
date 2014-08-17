@@ -42,7 +42,7 @@ class uploadDBtoDB {
         $today = date('Y-m-d');
 
         $db_today = DailyBreadArchive::model()->findByAttributes(array('date' => $today));
-$db_today = false;
+//$db_today = false;
         if (!$db_today) {
 
             $xmlstr = simplexml_load_file('http://ubf.org/dbrss.php');
@@ -51,18 +51,17 @@ $db_today = false;
             $regex_title = "#<h3>(.*?)</h3>#";
             $search = preg_match_all($regex_title, $text, $matches);
 
-            if (count($matches) == 1) {
+            if (count($matches[1]) == 1) {
                 $intro_title = '';
                 $title = uploadDBtoDB::strtotitle(strtolower(strip_tags($matches[1][0])));
             } else {
                 $intro_title = uploadDBtoDB::strtotitle(strtolower(strip_tags($matches[1][0])));
                 $title = uploadDBtoDB::strtotitle(strtolower(strip_tags($matches[1][1])));
-                
             }
 
 //            print_r($matches);
 //            Yii::app()->end();
-            
+            $matches = array();
             $regex_passage = "#<a (.*?)</a>#";
             $search = preg_match($regex_passage, $text, $matches);
 
@@ -70,26 +69,37 @@ $db_today = false;
 
             $book = substr($passage, 0, strpos($passage, ' '));
 
+            $matches = array();
             $regex_kv = "#<br />Key Verse: (.*?)<br />#";
             $search = preg_match($regex_kv, $text, $matches);
 
             $key_verse = $book . strip_tags(str_replace('Key Verse: ', ' ', $matches[0]));
 
+            $matches = array();
             $regex_text = "#<div(.*?)</div>#";
             $search = preg_match($regex_text, $text, $matches);
 
-            $db_text = str_replace('<br /><br />', '</p><p>', str_replace('<br /><br /><h3>', '</p>', str_replace('</h3><br /><br />', '<p>', $matches[0])));
+            $db_text = str_replace('<br /><br /><br />', '</p><p>', str_replace('<br /><br /><br /></div>', '</p>', str_replace('<div align=justify><br />', '<p>', $matches[0])));
 
+            $matches = array();
             $regex_text = "#</h3>(.*?)<h3>#";
             $search = preg_match($regex_text, $text, $matches);
+//            print_r($matches);
+//            Yii::app()->end();
 
-            $intro_text = str_replace('<br /><br /><br />', '</p><p>', str_replace('<br /><br /><br /></div>', '</p>', str_replace('<div align=justify><br />', '<p>', $matches[0])));
+            if (!empty($matches)) {
+                $intro_text = str_replace('<br /><br />', '</p><p>', str_replace('<br /><br /><h3>', '</p>', str_replace('</h3><br /><br />', '<p>', $matches[0])));
+            } else {
+                $intro_text = '';
+            }
 
+            $matches = array();
             $regex_prayer = "#<i>(.*?)</i>#";
             $search = preg_match($regex_prayer, $text, $matches);
 
             $prayer = strip_tags(str_replace('Prayer: ', ' ', $matches[0]));
 
+            $matches = array();
             $regex_ow = "#<b>(.*?)</b>#";
             $search = preg_match($regex_ow, $text, $matches);
 
