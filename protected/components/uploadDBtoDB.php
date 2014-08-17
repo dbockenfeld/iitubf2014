@@ -42,17 +42,27 @@ class uploadDBtoDB {
         $today = date('Y-m-d');
 
         $db_today = DailyBreadArchive::model()->findByAttributes(array('date' => $today));
-
+$db_today = false;
         if (!$db_today) {
 
             $xmlstr = simplexml_load_file('http://ubf.org/dbrss.php');
 
             $text = str_replace('</h3></p></b>', '</h3>', str_replace('<b><p align="center"><h3>', '<h3>', $xmlstr->channel->item->description));
             $regex_title = "#<h3>(.*?)</h3>#";
-            $search = preg_match($regex_title, $text, $matches);
+            $search = preg_match_all($regex_title, $text, $matches);
 
-            $title = uploadDBtoDB::strtotitle(strtolower(strip_tags($matches[0])));
+            if (count($matches) == 1) {
+                $intro_title = '';
+                $title = uploadDBtoDB::strtotitle(strtolower(strip_tags($matches[1][0])));
+            } else {
+                $intro_title = uploadDBtoDB::strtotitle(strtolower(strip_tags($matches[1][0])));
+                $title = uploadDBtoDB::strtotitle(strtolower(strip_tags($matches[1][1])));
+                
+            }
 
+//            print_r($matches);
+//            Yii::app()->end();
+            
             $regex_passage = "#<a (.*?)</a>#";
             $search = preg_match($regex_passage, $text, $matches);
 
@@ -68,7 +78,12 @@ class uploadDBtoDB {
             $regex_text = "#<div(.*?)</div>#";
             $search = preg_match($regex_text, $text, $matches);
 
-            $db_text = str_replace('<br /><br /><br />', '</p><p>', str_replace('<br /><br /><br /></div>', '</p>', str_replace('<div align=justify><br />', '<p>', $matches[0])));
+            $db_text = str_replace('<br /><br />', '</p><p>', str_replace('<br /><br /><h3>', '</p>', str_replace('</h3><br /><br />', '<p>', $matches[0])));
+
+            $regex_text = "#</h3>(.*?)<h3>#";
+            $search = preg_match($regex_text, $text, $matches);
+
+            $intro_text = str_replace('<br /><br /><br />', '</p><p>', str_replace('<br /><br /><br /></div>', '</p>', str_replace('<div align=justify><br />', '<p>', $matches[0])));
 
             $regex_prayer = "#<i>(.*?)</i>#";
             $search = preg_match($regex_prayer, $text, $matches);
@@ -88,6 +103,8 @@ class uploadDBtoDB {
             $model = new DailyBreadArchive();
 
             $model->date = $dc->date;
+            $model->intro_title = trim($intro_title);
+            $model->intro_text = $intro_text;
             $model->title = trim($title);
             $model->passage = trim($passage);
             $model->key_verse = trim($key_verse);
