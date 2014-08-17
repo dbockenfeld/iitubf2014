@@ -122,7 +122,10 @@ class uploadDBtoDB {
             $model->prayer = trim($prayer);
             $model->one_word = trim($one_word);
 
-            $model->save();
+            $model->save(false);
+//        print_r($model->attributes);
+//        Yii::app()->end();
+
         }
     }
 
