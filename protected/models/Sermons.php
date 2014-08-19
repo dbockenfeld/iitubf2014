@@ -220,9 +220,33 @@ class Sermons extends CActiveRecord {
             $list[] = array(
                 'type' => $item->type,
                 'url' => Yii::app()->createUrl('site/downloadSermonFile/id/' . $item->id),
+                'file_url' => $item->filename,
             );
         }
         return $list;
+    }
+    
+    public function hasSermonAudio() {
+        $criteria = new CDbCriteria();
+        $criteria->compare('type', 'Audio');
+        
+        if($this->sermonFiles($criteria)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public function getSermonAudio() {
+        $criteria = new CDbCriteria();
+        $criteria->compare('type', 'Audio');
+        
+        $search = $this->sermonFiles($criteria);
+        
+        $audio = $search[0];
+        
+        return $audio->filename;
+        
     }
 
 }

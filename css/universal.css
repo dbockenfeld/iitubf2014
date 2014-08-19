@@ -390,6 +390,19 @@ section.downloads h4 {
     padding-left: 10px;
 }
 
+section.item section.streaming {
+    color: #3e3e3e;
+    padding: 10px 20px;
+    width: 261px;
+}
+
+.lock-box {
+    position: fixed;
+    top: 60px;
+    background: #fff;
+    z-index: 10000;
+}
+
 p.sermon-passage {
     margin: 0 0 15px;;
 }
