@@ -23,7 +23,9 @@ EOD;
     }
 
     public function actionDailyBread() {
+        echo "Start archive: " . date('Y-m-d h:i:s') . "\r\n ";
         uploadDBtoDB::archive();
+        echo "End archive: " . date('Y-m-d h:i:s') . "\r\n";
     }
 
 }
