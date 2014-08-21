@@ -595,6 +595,7 @@ RewriteRule ^/?about/ /about [R=301,L]
 RewriteRule ^/?contact/ /contact [R=301,L]
 RewriteRule ^/?resources/ /resources [R=301,L]
 Redirect 301 /bible-study /sermons
+Redirect 301 /biblestudy /sermons
 
 # FollowSymLinks must be enabled for this to work.
 <IfModule mod_rewrite.c>
