@@ -46,6 +46,7 @@ return array(
                 '' => 'site/index',
                 '<action:\w+>' => 'site/<action>',
                 '<action:\w+>/<year:\d+>/<month:\d+>/<day:\d+>/<name:\w+>.html' => 'site/<action>/year/<year>/month/<month>/day/<day>/name/<name>',
+                'admin' => 'admin',
             ),
             'showScriptName' => false,
         ),
