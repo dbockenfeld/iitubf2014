@@ -595,6 +595,10 @@ RewriteRule ^/?about/ /about [R=301,L]
 RewriteRule ^/?contact/ /contact [R=301,L]
 RewriteRule ^/?resources/ /resources [R=301,L]
 Redirect 301 /bible-study /sermons
+RewriteCond %{QUERY_STRING} ^id=([0-9]*)$ [NC]
+RewriteRule ^bible-study/sermon\.php$ /sermons? [R=301,L]
+Redirect 301 /biblestudy/messages /docs/sermons
+Redirect 301 /biblestudy/questions /docs/questions
 Redirect 301 /biblestudy /sermons
 
 # FollowSymLinks must be enabled for this to work.
