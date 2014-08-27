@@ -4,6 +4,11 @@ nav {
 	font-size: 0.9em
 }
 
+h1 {
+    position: absolute;
+    left: -10000px;
+}
+
 nav a {
     color: #FFFFFF;
     text-decoration: none;

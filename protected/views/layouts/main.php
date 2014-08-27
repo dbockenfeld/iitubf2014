@@ -41,6 +41,7 @@
     </head>
 
     <body>
+                <h1>IIT UBF - University Bible Fellowship at IIT</h1>
         <header>
             <nav>
                 <section class="logo">
@@ -73,7 +74,7 @@
             </nav>
         </header>
 
-<?php echo $content; ?>
+        <?php echo $content; ?>
 
         <div class="clear"></div>
 
