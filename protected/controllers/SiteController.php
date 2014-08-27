@@ -2,7 +2,7 @@
 
 class SiteController extends Controller {
 
-    public $pageTitle = 'University Bible Fellowship at IIT';
+    public $pageTitle = 'IIT UBF - University Bible Fellowship at IIT';
     public $siteDescription;
 
     /**
