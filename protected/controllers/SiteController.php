@@ -66,6 +66,7 @@ class SiteController extends Controller {
             $page_data->image = $sermon->series ? str_replace('features', 'sermon', $sermon->series->large_feature) : '';
             $download_options = $this->getStreaming($sermon) . $this->getDownloads($sermon);
             $this->pageTitle = $sermon->title . ' (' . $sermon->getSermonPassage() . ') | Sermons | ' . $this->pageTitle;
+            $this->siteDescription = $sermon->message_description;
         } else {
             $page_data = Pages::model()->findByAttributes(array(
                 'page' => 'sermon-listing',
