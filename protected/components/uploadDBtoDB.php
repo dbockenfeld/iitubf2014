@@ -67,7 +67,7 @@ class uploadDBtoDB {
 
             $passage = strip_tags($matches[0]);
 
-            $book = substr($passage, 0, strpos($passage, ' '));
+            $book = substr($passage, 0, strpos($passage, ' ', substr_count($passage, ' ')));
 
             $matches = array();
             $regex_kv = "#<br />Key Verse: (.*?)<br />#";
@@ -125,7 +125,6 @@ class uploadDBtoDB {
             $model->save(false);
 //        print_r($model->attributes);
 //        Yii::app()->end();
-
         }
     }
 

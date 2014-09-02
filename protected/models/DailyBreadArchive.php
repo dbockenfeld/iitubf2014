@@ -17,6 +17,8 @@
  * @property string $timestamp
  */
 class DailyBreadArchive extends CActiveRecord {
+    
+    public $key_verse_text = '';
 
     /**
      * Returns the static model of the specified AR class.

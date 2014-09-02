@@ -38,6 +38,13 @@ class SiteController extends Controller {
     }
 
     public function actionDailyBread() {
+        $db_date = Yii::app()->request->getParam('year') . '-' . Yii::app()->request->getParam('month') . '-' . Yii::app()->request->getParam('day');
+        $today = date('Y-m-d');
+        $params = date('/Y/m/d');
+
+        if (strlen($db_date) < 3) {
+            $this->redirect(array('dailybread'.$params));
+        }
         $page_data = Pages::model()->findByAttributes(array(
             'page' => 'daily-bread',
         ));
@@ -46,14 +53,60 @@ class SiteController extends Controller {
 
         uploadDBtoDB::archive();
 
-        $xmlstr = simplexml_load_file('http://ubf.org/dbrss.php');
+        $criteria = new CDbCriteria();
+        $criteria->compare('date', $db_date);
 
+        $model = DailyBreadArchive::model()->find($criteria);
+        
+        $token = "iax7j0J2ZRgWCdcQfg0fGa0Qa0Ttsq1LNkdajJGX";
 
-        $page_data->text = str_replace('</h3></p></b>', '</h3>', str_replace('<b><p align="center"><h3>', '<h3>', $xmlstr->channel->item->description));
+        $verse = str_replace(' ', '+', $model->key_verse);
+
+        $url = "https://bibles.org/v2/passages.xml?q[]=$verse&version=eng-ESV";
+
+        // Set up cURL
+        $ch = curl_init();
+// Set the URL
+        curl_setopt($ch, CURLOPT_URL, $url);
+// don't verify SSL certificate
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
+// Return the contents of the response as a string
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+// Follow redirects
+        curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
+// Set up authentication
+        curl_setopt($ch, CURLOPT_HTTPAUTH, CURLAUTH_BASIC);
+        curl_setopt($ch, CURLOPT_USERPWD, "$token:X");
+
+// Do the request
+        $response = curl_exec($ch);
+        curl_close($ch);
+
+// Parse the XML into a SimpleXML object
+        $xml = new SimpleXMLElement($response);
+
+// Print the text from the 0th verse
+//        print ($xml->verses->verse[0]->text);
+        $regex = "#<h3(.*?)</h3>#";
+        $regex2 = "#<sup(.*?)</sup>#";
+        $tmp = preg_replace($regex, '', $xml->search->result->passages->passage[0]->text);
+        $model->key_verse_text = preg_replace($regex2, '', $tmp);
+
+        $page_data->text = $this->formatDailyBread($model);
+
+//        $xmlstr = simplexml_load_file('http://ubf.org/dbrss.php');
+//
+//        $page_data->text = str_replace('</h3></p></b>', '</h3>', str_replace('<b><p align="center"><h3>', '<h3>', $xmlstr->channel->item->description));
 
         $this->render('page', array(
             'data' => $page_data,
         ));
+    }
+
+    protected function formatDailyBread($model) {
+        return $this->renderPartial('_daily_bread_text', array(
+                    'model' => $model,
+                        ), true);
     }
 
     public function actionSermons() {
