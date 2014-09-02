@@ -1,3 +1,8 @@
+<section class="date">
+    <section class="month"><?php echo $model->getDBMonth(); ?></section>
+    <section class="day"><?php echo $model->getDBDay(); ?></section>
+    <section class="year"><?php echo $model->getDBYear(); ?></section>
+</section>
 <?php if ($model->intro_title != '') : ?>
     <h3><?php echo $model->intro_title; ?></h3>
     <?php echo $model->intro_text; ?>

@@ -17,7 +17,7 @@
  * @property string $timestamp
  */
 class DailyBreadArchive extends CActiveRecord {
-    
+
     public $key_verse_text = '';
 
     /**
@@ -107,6 +107,23 @@ class DailyBreadArchive extends CActiveRecord {
         return new CActiveDataProvider($this, array(
             'criteria' => $criteria,
         ));
+    }
+
+    public function getDBDate() {
+        $date = $this->date;
+        return $date;
+    }
+
+    public function getDBMonth() {
+        return date('M', strtotime($this->getDBDate()));
+    }
+
+    public function getDBDay() {
+        return date('j', strtotime($this->getDBDate()));
+    }
+
+    public function getDBYear() {
+        return date('Y', strtotime($this->getDBDate()));
     }
 
 }
