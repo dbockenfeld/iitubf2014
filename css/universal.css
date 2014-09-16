@@ -322,6 +322,7 @@ a .blog {
 .sermon-item-top .title,
 .post-item .title {
     font-size: 1.2em;
+    color: inherit;
 }
 
 .sidebar .caption .title {
@@ -562,4 +563,12 @@ article.top-padding {
     margin-left: 10px;
     margin-bottom: 20px;
     width: 200px;
+}
+
+.dbkv p.q1 {
+    
+}
+
+.dbkv p.q2 {
+    margin-left: 20px;
 }
