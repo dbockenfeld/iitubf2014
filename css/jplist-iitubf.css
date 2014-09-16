@@ -1,0 +1,61 @@
+.jplist-drop-down {
+    width: auto;
+    max-width: 220px;
+    position: relative;
+    border: 1px solid #666;
+    background: transparent;
+    border-radius: 0;
+}
+
+.jplist-drop-down .jplist-dd-panel {
+    width: auto;
+    /*position: absolute;*/
+}
+
+.jplist-drop-down .jplist-dd-panel:after {
+    float: none;
+}
+
+.jplist-drop-down:hover .jplist-dd-panel,
+.jplist-drop-down:hover .jplist-dd-panel:after {
+    color: #C00;
+}
+.jplist-drop-down ul {
+    max-height: 400px;
+    overflow-y: scroll;
+    width: auto;
+    max-width: 500px;
+    position: absolute;
+    left: 0;
+    top: 30px;
+}
+
+.jplist-drop-down ul li {
+    height: auto;
+    white-space: nowrap;
+    padding-right: 10px;
+}
+
+.jplist-label {
+    border: none;
+    background: transparent;
+    font-size: 0.8em;
+}
+
+.jplist-panel .jplist-pagination button {
+    border: 1px solid #666;
+    background: #DDD;
+    border-radius: 0;
+    margin-right: 5px;
+    color: #666;
+    cursor: pointer;
+}
+
+.jplist-panel .jplist-pagination button:hover {
+    background: #666;
+    color: #DDD;
+}
+
+.jplist-panel .jplist-pagination .jplist-current {
+    color: #C00;
+}

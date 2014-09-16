@@ -43,7 +43,7 @@ class SiteController extends Controller {
         $params = date('/Y/m/d');
 
         if (strlen($db_date) < 3) {
-            $this->redirect(array('dailybread'.$params));
+            $this->redirect(array('dailybread' . $params));
         }
         $page_data = Pages::model()->findByAttributes(array(
             'page' => 'daily-bread',
@@ -57,7 +57,7 @@ class SiteController extends Controller {
         $criteria->compare('date', $db_date);
 
         $model = DailyBreadArchive::model()->find($criteria);
-        
+
         $token = "iax7j0J2ZRgWCdcQfg0fGa0Qa0Ttsq1LNkdajJGX";
 
         $verse = str_replace(' ', '+', $model->key_verse);
@@ -240,6 +240,28 @@ class SiteController extends Controller {
         $this->render('download_questions', array(
             'sermon' => $sermon,
         ));
+    }
+
+    public function getSermonSeriesFilterList() {
+        $criteria = new CDbCriteria();
+        $criteria->order = 'title';
+
+        $models = SermonSeries::model()->findAll($criteria);
+
+        return $this->renderPartial('_sermon_series_filter_list', array(
+                    'models' => $models,
+                        ), TRUE);
+    }
+
+    public function getBookFilterList() {
+        $criteria = new CDbCriteria();
+        $criteria->order = 'id';
+
+        $models = Books::model()->findAll($criteria);
+
+        return $this->renderPartial('_book_filter_list', array(
+                    'models' => $models,
+                        ), TRUE);
     }
 
     public function actionAjaxAddBlogViewLog() {
