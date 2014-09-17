@@ -42,13 +42,14 @@ class uploadDBtoDB {
         $today = date('Y-m-d');
 
         $db_today = DailyBreadArchive::model()->findByAttributes(array('date' => $today));
-//$db_today = false;
+$db_today = false;
         if (!$db_today) {
 
-            $xmlstr = simplexml_load_file('http://ubf.org/dbrss.php');
+            $xmlstr = simplexml_load_file('http://www.ubf.org/daily-bread.xml');
 
-            $text = str_replace('</h3></p></b>', '</h3>', str_replace('<b><p align="center"><h3>', '<h3>', $xmlstr->channel->item->description));
-            $regex_title = "#<h3>(.*?)</h3>#";
+//            $text = str_replace('</h3></p></b>', '</h3>', str_replace('<b><p align="center"><h3>', '<h3>', $xmlstr->channel->item->description));
+            $text = $xmlstr->channel->item->description;
+            $regex_title = "#<h2>(.*?)</h2>#";
             $search = preg_match_all($regex_title, $text, $matches);
 
             if (count($matches[1]) == 1) {
@@ -59,27 +60,25 @@ class uploadDBtoDB {
                 $title = uploadDBtoDB::strtotitle(strtolower(strip_tags($matches[1][1])));
             }
 
-//            print_r($matches);
-//            Yii::app()->end();
             $matches = array();
-            $regex_passage = "#<a (.*?)</a>#";
+            $regex_passage = '#<div class="field field-name-field-daily-bread-verse (.*?)</div>#';
             $search = preg_match($regex_passage, $text, $matches);
 
-            $passage = strip_tags($matches[0]);
+            $passage = trim(str_replace("Read...", "",strip_tags($matches[0])));
 
             $book = substr($passage, 0, strpos($passage, ' ', substr_count($passage, ' ')));
 
             $matches = array();
-            $regex_kv = "#<br />Key Verse: (.*?)<br />#";
+            $regex_kv = '#<div class="field field-name-field-daily-bread-key-verse (.*?)</div></div>#';
             $search = preg_match($regex_kv, $text, $matches);
 
-            $key_verse = $book . strip_tags(str_replace('Key Verse: ', ' ', $matches[0]));
+            $key_verse = strip_tags(str_replace('Key verse:&nbsp;', ' ', $matches[0]));
 
             $matches = array();
-            $regex_text = "#<div(.*?)</div>#";
+            $regex_text = '#<p(.*?)</p>#s';
             $search = preg_match($regex_text, $text, $matches);
 
-            $db_text = str_replace('<br /><br /><br />', '</p><p>', str_replace('<br /><br /><br /></div>', '</p>', str_replace('<div align=justify><br />', '<p>', $matches[0])));
+            $db_text = str_replace('<br /><br />', '</p><p>',preg_replace("/[\n\r]/","",$matches[0]));
 
             $matches = array();
             $regex_text = "#</h3>(.*?)<h3>#";
@@ -94,16 +93,16 @@ class uploadDBtoDB {
             }
 
             $matches = array();
-            $regex_prayer = "#<i>(.*?)</i>#";
+            $regex_prayer = '#<div class="field field-name-field-daily-bread-prayer(.*?)</div></div>#';
             $search = preg_match($regex_prayer, $text, $matches);
 
-            $prayer = strip_tags(str_replace('Prayer: ', ' ', $matches[0]));
+            $prayer = strip_tags(str_replace('Prayer:&nbsp;', ' ', $matches[0]));
 
             $matches = array();
-            $regex_ow = "#<b>(.*?)</b>#";
+            $regex_ow = '#<div class="field field-name-field-daily-bread-one-word(.*?)</div></div>#';
             $search = preg_match($regex_ow, $text, $matches);
 
-            $one_word = strip_tags(str_replace('One Word: ', ' ', $matches[0]));
+            $one_word = strip_tags(str_replace('One word:&nbsp;', ' ', $matches[0]));
 
             $namespaces = $xmlstr->channel->getNameSpaces(true);
             //Now we don't have the URL hard-coded
@@ -112,7 +111,7 @@ class uploadDBtoDB {
 
             $model = new DailyBreadArchive();
 
-            $model->date = $dc->date;
+            $model->date = $today;
             $model->intro_title = trim($intro_title);
             $model->intro_text = $intro_text;
             $model->title = trim($title);
