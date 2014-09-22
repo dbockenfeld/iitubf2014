@@ -42,7 +42,7 @@ class uploadDBtoDB {
         $today = date('Y-m-d');
 
         $db_today = DailyBreadArchive::model()->findByAttributes(array('date' => $today));
-//$db_today = false;
+        $db_today = false;
         if (!$db_today) {
 
             $xmlstr = simplexml_load_file('http://www.ubf.org/daily-bread.xml');
@@ -64,7 +64,7 @@ class uploadDBtoDB {
             $regex_passage = '#<div class="field field-name-field-daily-bread-verse (.*?)</div>#';
             $search = preg_match($regex_passage, $text, $matches);
 
-            $passage = trim(str_replace("Read...", "",strip_tags($matches[0])));
+            $passage = trim(str_replace("Read...", "", strip_tags($matches[0])));
 
             $book = substr($passage, 0, strpos($passage, ' ', substr_count($passage, ' ')));
 
@@ -75,11 +75,18 @@ class uploadDBtoDB {
             $key_verse = strip_tags(str_replace('Key verse:&nbsp;', ' ', $matches[0]));
 
             $matches = array();
-            $regex_text = '#<p(.*?)</p>#s';
-            $search = preg_match($regex_text, $text, $matches);
+            $regex_text1 = '#<div class="field field-name-body(.*?)</div>#s';
+            $regex_text2 = '#<p(.*?)</p>#s';
+            $search = preg_match($regex_text1, $text, $matches);
+            $search = preg_match_all($regex_text2, $matches[0], $matches);
 
-            $db_text = str_replace('<br /><br />', '</p><p>',preg_replace("/[\n\r]/","",$matches[0]));
+            $db_text = str_replace('<br /><br />', '</p><p>', preg_replace("/[\n\r]/", "", implode($matches[0])));
 
+//            echo "<pre>";
+//            print_r($db_text);
+//            echo "<pre>";
+//            print_r($text);
+//            Yii::app()->end();
             $matches = array();
             $regex_text = "#</h3>(.*?)<h3>#";
             $search = preg_match($regex_text, $text, $matches);
