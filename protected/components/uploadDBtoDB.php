@@ -42,7 +42,7 @@ class uploadDBtoDB {
         $today = date('Y-m-d');
 
         $db_today = DailyBreadArchive::model()->findByAttributes(array('date' => $today));
-        $db_today = false;
+//        $db_today = false;
         if (!$db_today) {
 
             $xmlstr = simplexml_load_file('http://www.ubf.org/daily-bread.xml');
