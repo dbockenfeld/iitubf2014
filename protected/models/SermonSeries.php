@@ -6,6 +6,7 @@
  * The followings are the available columns in table 'series':
  * @property integer $id
  * @property string $title
+ * @property string $short_title
  * @property integer $book_id
  * @property string $large_feature
  * @property string $medium_feature
@@ -14,6 +15,7 @@
  *
  * The followings are the available model relations:
  * @property Messages[] $messages
+ * @property PodcastFeeds[] $podcastFeeds
  * @property Books $book
  */
 class SermonSeries extends CActiveRecord {
@@ -43,10 +45,10 @@ class SermonSeries extends CActiveRecord {
         return array(
             array('book_id', 'numerical', 'integerOnly' => true),
             array('title', 'length', 'max' => 128),
-            array('large_feature, medium_feature, small_feature, thumbnail', 'length', 'max' => 64),
+            array('short_title, large_feature, medium_feature, small_feature, thumbnail', 'length', 'max' => 64),
             // The following rule is used by search().
             // Please remove those attributes that should not be searched.
-            array('id, title, book_id, large_feature, medium_feature, small_feature, thumbnail', 'safe', 'on' => 'search'),
+            array('id, title, short_title, book_id, large_feature, medium_feature, small_feature, thumbnail', 'safe', 'on' => 'search'),
         );
     }
 
@@ -58,6 +60,7 @@ class SermonSeries extends CActiveRecord {
         // class name for the relations automatically generated below.
         return array(
             'messages' => array(self::HAS_MANY, 'Sermons', 'series_id'),
+            'podcastFeeds' => array(self::HAS_MANY, 'PodcastFeeds', 'series_id'),
             'book' => array(self::BELONGS_TO, 'Books', 'book_id'),
         );
     }
@@ -69,6 +72,7 @@ class SermonSeries extends CActiveRecord {
         return array(
             'id' => 'ID',
             'title' => 'Title',
+            'short_title' => 'Short Title',
             'book_id' => 'Book',
             'large_feature' => 'Large Feature',
             'medium_feature' => 'Medium Feature',
@@ -89,6 +93,7 @@ class SermonSeries extends CActiveRecord {
 
         $criteria->compare('id', $this->id);
         $criteria->compare('title', $this->title, true);
+        $criteria->compare('short_title', $this->short_title, true);
         $criteria->compare('book_id', $this->book_id);
         $criteria->compare('large_feature', $this->large_feature, true);
         $criteria->compare('medium_feature', $this->medium_feature, true);

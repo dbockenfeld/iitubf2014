@@ -4,6 +4,10 @@ class SiteController extends Controller {
 
     public $pageTitle = 'IIT UBF - University Bible Fellowship at IIT';
     public $siteDescription;
+    public $rssTitle;
+    public $rssSubTitle;
+    public $rssImage;
+    public $rssSummary;
 
     /**
      * Declares class-based actions.
@@ -262,6 +266,28 @@ class SiteController extends Controller {
         return $this->renderPartial('_book_filter_list', array(
                     'models' => $models,
                         ), TRUE);
+    }
+    
+    public function actionSermonFeeds() {
+        $feed_name = Yii::app()->request->getParam('name');
+        $this->layout = 'rss';
+        $criteria = new CDbCriteria();
+        $criteria->compare('t.key', $feed_name);
+        
+        $model = PodcastFeeds::model()->find($criteria);
+        
+        $this->rssTitle = $model->series->title;
+        $this->rssSubTitle = $model->subtitle;
+        $this->rssSummary = $model->summary;
+        $this->rssImage = $model->image;
+        
+//        print_r(htmlspecialchars($model->series->title));
+//        Yii::app()->end();
+
+        $this->render('rss_feed', array (
+            'feed' => $model,
+        ));
+        
     }
 
     public function actionAjaxAddBlogViewLog() {

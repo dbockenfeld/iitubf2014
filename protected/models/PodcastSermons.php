@@ -1,27 +1,27 @@
 <?php
 
 /**
- * This is the model class for table "podcast_feeds".
+ * This is the model class for table "podcast_sermons".
  *
- * The followings are the available columns in table 'podcast_feeds':
- * @property integer $id
- * @property integer $series_id
- * @property string $key
- * @property string $folder
- * @property string $subtitle
- * @property string $summary
- * @property string $image
+ * The followings are the available columns in table 'podcast_sermons':
+ * @property string $id
+ * @property integer $feed_id
+ * @property integer $sermon_id
+ * @property string $file_location
+ * @property string $duration
+ * @property string $length
+ * @property string $file_type
  *
  * The followings are the available model relations:
- * @property Series $series
- * @property PodcastSermons[] $podcastSermons
+ * @property PodcastFeeds $feed
+ * @property Messages $sermon
  */
-class PodcastFeeds extends CActiveRecord {
+class PodcastSermons extends CActiveRecord {
 
     /**
      * Returns the static model of the specified AR class.
      * @param string $className active record class name.
-     * @return PodcastFeeds the static model class
+     * @return PodcastSermons the static model class
      */
     public static function model($className = __CLASS__) {
         return parent::model($className);
@@ -31,7 +31,7 @@ class PodcastFeeds extends CActiveRecord {
      * @return string the associated database table name
      */
     public function tableName() {
-        return 'podcast_feeds';
+        return 'podcast_sermons';
     }
 
     /**
@@ -41,13 +41,14 @@ class PodcastFeeds extends CActiveRecord {
         // NOTE: you should only define rules for those attributes that
         // will receive user inputs.
         return array(
-            array('series_id', 'numerical', 'integerOnly' => true),
-            array('key', 'length', 'max' => 64),
-            array('folder, image', 'length', 'max' => 256),
-            array('subtitle, summary', 'safe'),
+            array('feed_id, sermon_id', 'numerical', 'integerOnly' => true),
+            array('file_location', 'length', 'max' => 128),
+            array('duration', 'length', 'max' => 8),
+            array('length', 'length', 'max' => 32),
+            array('file_type', 'length', 'max' => 16),
             // The following rule is used by search().
             // Please remove those attributes that should not be searched.
-            array('id, series_id, key, folder, subtitle, summary, image', 'safe', 'on' => 'search'),
+            array('id, feed_id, sermon_id, file_location, duration, length, file_type', 'safe', 'on' => 'search'),
         );
     }
 
@@ -58,8 +59,8 @@ class PodcastFeeds extends CActiveRecord {
         // NOTE: you may need to adjust the relation name and the related
         // class name for the relations automatically generated below.
         return array(
-            'series' => array(self::BELONGS_TO, 'SermonSeries', 'series_id'),
-            'podcastSermons' => array(self::HAS_MANY, 'PodcastSermons', 'feed_id'),
+            'feed' => array(self::BELONGS_TO, 'PodcastFeeds', 'feed_id'),
+            'sermon' => array(self::BELONGS_TO, 'Sermons', 'sermon_id'),
         );
     }
 
@@ -69,12 +70,12 @@ class PodcastFeeds extends CActiveRecord {
     public function attributeLabels() {
         return array(
             'id' => 'ID',
-            'series_id' => 'Series',
-            'key' => 'Key',
-            'folder' => 'Folder',
-            'subtitle' => 'Subtitle',
-            'summary' => 'Summary',
-            'image' => 'Image',
+            'feed_id' => 'Feed',
+            'sermon_id' => 'Sermon',
+            'file_location' => 'File Location',
+            'duration' => 'Duration',
+            'length' => 'Length',
+            'file_type' => 'File Type',
         );
     }
 
@@ -88,13 +89,13 @@ class PodcastFeeds extends CActiveRecord {
 
         $criteria = new CDbCriteria;
 
-        $criteria->compare('id', $this->id);
-        $criteria->compare('series_id', $this->series_id);
-        $criteria->compare('key', $this->key, true);
-        $criteria->compare('folder', $this->folder, true);
-        $criteria->compare('subtitle', $this->subtitle, true);
-        $criteria->compare('summary', $this->summary, true);
-        $criteria->compare('image', $this->image, true);
+        $criteria->compare('id', $this->id, true);
+        $criteria->compare('feed_id', $this->feed_id);
+        $criteria->compare('sermon_id', $this->sermon_id);
+        $criteria->compare('file_location', $this->file_location, true);
+        $criteria->compare('duration', $this->duration, true);
+        $criteria->compare('length', $this->length, true);
+        $criteria->compare('file_type', $this->file_type, true);
 
         return new CActiveDataProvider($this, array(
             'criteria' => $criteria,
