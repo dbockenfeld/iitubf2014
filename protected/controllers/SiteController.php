@@ -441,7 +441,7 @@ class SiteController extends Controller {
 
         $this->render('page', array(
             'data' => $page_data,
-        ));
+            'image_class' => 'sermon-header',        ));
         
     }
 
