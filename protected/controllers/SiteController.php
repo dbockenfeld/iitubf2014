@@ -62,39 +62,43 @@ class SiteController extends Controller {
 
         $model = DailyBreadArchive::model()->find($criteria);
 
-        $token = "iax7j0J2ZRgWCdcQfg0fGa0Qa0Ttsq1LNkdajJGX";
+        if ($model->key_verse != '') {
+            $token = "iax7j0J2ZRgWCdcQfg0fGa0Qa0Ttsq1LNkdajJGX";
 
-        $verse = str_replace(' ', '+', $model->key_verse);
+            $verse = str_replace(' ', '+', $model->key_verse);
 
-        $url = "https://bibles.org/v2/passages.xml?q[]=$verse&version=eng-ESV";
+            $url = "https://bibles.org/v2/passages.xml?q[]=$verse&version=eng-ESV";
 
-        // Set up cURL
-        $ch = curl_init();
+            // Set up cURL
+            $ch = curl_init();
 // Set the URL
-        curl_setopt($ch, CURLOPT_URL, $url);
+            curl_setopt($ch, CURLOPT_URL, $url);
 // don't verify SSL certificate
-        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
+            curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
 // Return the contents of the response as a string
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+            curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 // Follow redirects
-        curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
+            curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
 // Set up authentication
-        curl_setopt($ch, CURLOPT_HTTPAUTH, CURLAUTH_BASIC);
-        curl_setopt($ch, CURLOPT_USERPWD, "$token:X");
+            curl_setopt($ch, CURLOPT_HTTPAUTH, CURLAUTH_BASIC);
+            curl_setopt($ch, CURLOPT_USERPWD, "$token:X");
 
 // Do the request
-        $response = curl_exec($ch);
-        curl_close($ch);
+            $response = curl_exec($ch);
+            curl_close($ch);
 
 // Parse the XML into a SimpleXML object
-        $xml = new SimpleXMLElement($response);
+            $xml = new SimpleXMLElement($response);
 
 // Print the text from the 0th verse
 //        print ($xml->verses->verse[0]->text);
-        $regex = "#<h3(.*?)</h3>#";
-        $regex2 = "#<sup(.*?)</sup>#";
-        $tmp = preg_replace($regex, '', $xml->search->result->passages->passage[0]->text);
-        $model->key_verse_text = preg_replace($regex2, '', $tmp);
+            $regex = "#<h3(.*?)</h3>#";
+            $regex2 = "#<sup(.*?)</sup>#";
+            $tmp = preg_replace($regex, '', $xml->search->result->passages->passage[0]->text);
+            $model->key_verse_text = preg_replace($regex2, '', $tmp);
+        } else {
+            $model->key_verse_text = '';
+        }
 
         $page_data->text = $this->formatDailyBread($model);
 
@@ -267,27 +271,26 @@ class SiteController extends Controller {
                     'models' => $models,
                         ), TRUE);
     }
-    
+
     public function actionSermonFeeds() {
         $feed_name = Yii::app()->request->getParam('name');
         $this->layout = 'rss';
         $criteria = new CDbCriteria();
         $criteria->compare('t.key', $feed_name);
-        
+
         $model = PodcastFeeds::model()->find($criteria);
-        
+
         $this->rssTitle = $model->series->title;
         $this->rssSubTitle = $model->subtitle;
         $this->rssSummary = $model->summary;
         $this->rssImage = $model->image;
-        
+
 //        print_r(htmlspecialchars($model->series->title));
 //        Yii::app()->end();
 
-        $this->render('rss_feed', array (
+        $this->render('rss_feed', array(
             'feed' => $model,
         ));
-        
     }
 
     public function actionAjaxAddBlogViewLog() {
