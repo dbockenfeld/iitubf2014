@@ -431,6 +431,19 @@ class SiteController extends Controller {
             'data' => $page_data,
         ));
     }
+    
+    public function actionWorship() {
+        $page_data = Pages::model()->findByAttributes(array(
+            'page' => 'worship',
+        ));
+
+        $this->pageTitle = $page_data->title . ' | ' . $this->pageTitle;
+
+        $this->render('page', array(
+            'data' => $page_data,
+        ));
+        
+    }
 
     /**
      * This is the action to handle external exceptions.
