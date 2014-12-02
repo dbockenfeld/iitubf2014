@@ -117,6 +117,46 @@ class SiteController extends Controller {
                         ), true);
     }
 
+    public function actionAdvent() {
+        $db_date = Yii::app()->request->getParam('year') . '-' . Yii::app()->request->getParam('month') . '-' . Yii::app()->request->getParam('day');
+        $today = date('Y-m-d');
+        $params = date('/Y/m/d');
+
+        if (strlen($db_date) < 3) {
+            $this->redirect(array('advent' . $params));
+        }
+        $page_data = Pages::model()->findByAttributes(array(
+            'page' => 'advent',
+        ));
+
+        $this->pageTitle = $page_data->title . ' | ' . $this->pageTitle;
+
+
+        $criteria = new CDbCriteria();
+        $criteria->compare('date', $db_date);
+
+        if (!$model = Advent::model()->find($criteria)) {
+            $criteria = new CDbCriteria();
+            $criteria->order = 'date DESC';
+            $model = Advent::model()->find($criteria);
+            $params = date('/Y/m/d', strtotime($model->date));
+            $this->redirect(array('advent' . $params));
+        }
+
+        $page_data->text = $this->formatAdvent($model);
+
+        $this->render('page', array(
+            'data' => $page_data,
+            'image_class' => 'sermon-header',  
+        ));
+    }
+
+    protected function formatAdvent($model) {
+        return $this->renderPartial('_advent_text', array(
+                    'model' => $model,
+                        ), true);
+    }
+
     public function actionSermons() {
         $sermon_name = Yii::app()->request->getParam('name');
         $sermon_date = Yii::app()->request->getParam('year') . '-' . Yii::app()->request->getParam('month') . '-' . Yii::app()->request->getParam('day');
@@ -441,7 +481,8 @@ class SiteController extends Controller {
 
         $this->render('page', array(
             'data' => $page_data,
-            'image_class' => 'sermon-header',        ));
+            'image_class' => 'sermon-header',  
+            ));
         
     }
 
