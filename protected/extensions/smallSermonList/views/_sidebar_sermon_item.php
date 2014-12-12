@@ -3,7 +3,7 @@
         <section class="caption">
             <section class="words">
                 <div class="title"><?php echo $sermon->title; ?></div>
-                <div class="passage"><?php echo $sermon->book->name; ?> <?php echo $sermon->verses; ?></div>
+                <div class="passage"><?php echo $sermon->getSermonPassage(); ?></div>
             </section>
             <div class="clear"></div>
         </section>
