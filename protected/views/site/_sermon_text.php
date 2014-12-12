@@ -6,7 +6,7 @@
 <h3><?php echo $sermon->title ?></h3>
 <p class="sermon-passage"><?php echo $sermon->getSermonPassage(); ?></p>
 <p class="sermon-author">By: <?php echo $sermon->message_author; ?></p>
-<?php if ($sermon->key_verse) : ?>
+<?php if ($sermon->sermonKeyVerses) : ?>
     <p class="key-verse">Key Verse: <?php echo $sermon->getKeyVerse(); ?></p>
     <section class="key-verse-text"><?php echo $sermon->getKeyVerseText(); ?></section>
 <?php endif; ?>
