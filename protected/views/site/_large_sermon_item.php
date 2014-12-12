@@ -8,7 +8,7 @@
             </section>
             <section class="info">
                 <div class="title"><?php echo $sermon->title; ?></div>
-                <div class="passage book_<?php echo $sermon->book_id; ?>"><?php echo $sermon->getSermonPassage(); ?></div>
+                <div class="passage <?php echo $sermon->getBookClasses(); ?>"><?php echo $sermon->getSermonPassage(); ?></div>
             </section>
         </section>
         <section class="sermon-image">

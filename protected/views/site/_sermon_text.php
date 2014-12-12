@@ -7,8 +7,8 @@
 <p class="sermon-passage"><?php echo $sermon->getSermonPassage(); ?></p>
 <p class="sermon-author">By: <?php echo $sermon->message_author; ?></p>
 <?php if ($sermon->key_verse) : ?>
-    <p class="key-verse">Key Verse: <?php echo $sermon->key_verse; ?></p>
-    <section class="key-verse-text"><?php echo $sermon->key_verse_text; ?></section>
+    <p class="key-verse">Key Verse: <?php echo $sermon->getKeyVerse(); ?></p>
+    <section class="key-verse-text"><?php echo $sermon->getKeyVerseText(); ?></section>
 <?php endif; ?>
 <?php if ($sermon->text) : ?>
     <?php echo $sermon->text; ?>

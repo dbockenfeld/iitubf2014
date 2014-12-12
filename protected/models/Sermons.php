@@ -19,6 +19,7 @@
  * @property string $question_file
  * @property string $questions
  * @property string $message_author
+ * @property integer $active
  * @property string $posted_by
  * @property string $posted_date
  * @property string $updated_by
@@ -27,7 +28,10 @@
  * The followings are the available model relations:
  * @property Books $book
  * @property Series $series
+ * @property PodcastSermons[] $podcastSermons
  * @property SermonFiles[] $sermonFiles
+ * @property SermonKeyVerses[] $sermonKeyVerses
+ * @property SermonPassages[] $sermonPassages
  */
 class Sermons extends CActiveRecord {
 
@@ -54,14 +58,14 @@ class Sermons extends CActiveRecord {
         // NOTE: you should only define rules for those attributes that
         // will receive user inputs.
         return array(
-            array('series_id, book_id', 'numerical', 'integerOnly' => true),
+            array('series_id, book_id, active', 'numerical', 'integerOnly' => true),
             array('title, passage, message_author, posted_by, updated_by', 'length', 'max' => 50),
             array('verses, key_verse', 'length', 'max' => 64),
             array('message_file, question_file', 'length', 'max' => 100),
             array('sermon_date, key_verse_text, message_description, text, questions, posted_date, updated_date', 'safe'),
             // The following rule is used by search().
             // Please remove those attributes that should not be searched.
-            array('message_id, sermon_date, series_id, title, passage, book_id, verses, key_verse, key_verse_text, message_description, message_file, text, question_file, questions, message_author, posted_by, posted_date, updated_by, updated_date', 'safe', 'on' => 'search'),
+            array('message_id, sermon_date, series_id, title, passage, book_id, verses, key_verse, key_verse_text, message_description, message_file, text, question_file, questions, message_author, active, posted_by, posted_date, updated_by, updated_date', 'safe', 'on' => 'search'),
         );
     }
 
@@ -74,8 +78,11 @@ class Sermons extends CActiveRecord {
         return array(
             'book' => array(self::BELONGS_TO, 'Books', 'book_id'),
             'series' => array(self::BELONGS_TO, 'SermonSeries', 'series_id'),
+            'podcastSermons' => array(self::HAS_MANY, 'PodcastSermons', 'sermon_id'),
             'sermonFiles' => array(self::HAS_MANY, 'SermonFiles', 'sermon_id'),
             'sermonViewLog' => array(self::HAS_MANY, 'SermonViewLog', 'sermon_id'),
+            'sermonKeyVerses' => array(self::HAS_MANY, 'SermonKeyVerses', 'sermon_id'),
+            'sermonPassages' => array(self::HAS_MANY, 'SermonPassages', 'sermon_id'),
         );
     }
 
@@ -99,6 +106,7 @@ class Sermons extends CActiveRecord {
             'question_file' => 'Question File',
             'questions' => 'Questions',
             'message_author' => 'Message Author',
+            'active' => 'Active',
             'posted_by' => 'Posted By',
             'posted_date' => 'Posted Date',
             'updated_by' => 'Updated By',
@@ -131,6 +139,7 @@ class Sermons extends CActiveRecord {
         $criteria->compare('question_file', $this->question_file, true);
         $criteria->compare('questions', $this->questions, true);
         $criteria->compare('message_author', $this->message_author, true);
+        $criteria->compare('active', $this->active);
         $criteria->compare('posted_by', $this->posted_by, true);
         $criteria->compare('posted_date', $this->posted_date, true);
         $criteria->compare('updated_by', $this->updated_by, true);
@@ -146,19 +155,62 @@ class Sermons extends CActiveRecord {
         $year = date("Y", strtotime($this->sermon_date));
         $month = date("m", strtotime($this->sermon_date));
         $day = date("d", strtotime($this->sermon_date));
-        return Yii::app()->createUrl('site/sermons/year/'.$year.'/month/' . $month.'/day/' . $day.'/name/' . $name);
+        return Yii::app()->createUrl('site/sermons/year/' . $year . '/month/' . $month . '/day/' . $day . '/name/' . $name);
 //        return '/sermons/' . $name;
     }
 
     public function getSermonPassage() {
-        if (isset($this->book)) {
-            $passage = $this->book->name . ' ' . $this->verses;
+        if ($this->sermonPassages) {
+            $passage = '';
+            foreach ($this->sermonPassages as $key => $item) {
+                $p = str_replace(" ", "&nbsp;", $item->book->name . ' ' . $item->passage);
+                $passage .= $p;
+//            echo $passage;
+//            Yii::app()->end();
+                if ($key + 1 < count($this->sermonPassages)) {
+                    $passage .= ", ";
+                }
+            }
         } else {
             $passage = $this->passage;
         }
         return $passage;
     }
 
+    public function getBookClasses() {
+        $passage = '';
+        foreach ($this->sermonPassages as $key => $item) {
+            $passage .= "book_" . $item->book->id;
+            if ($key + 1 < count($this->sermonPassages)) {
+                $passage .= " ";
+            }
+        }
+        return $passage;
+    }
+
+    public function getKeyVerse() {
+        $kv = "";
+        foreach ($this->sermonKeyVerses as $key => $item) {
+            $v = str_replace(" ", "&nbsp;", $item->passage->book->name." " .$item->verses);
+            $kv .= $v;
+            if ($key + 1 < count($this->sermonKeyVerses)) {
+                $kv .= "; ";
+            }
+        }
+        return $kv;
+    }
+    
+    public function getKeyVerseText() {
+        $kv = "";
+        foreach ($this->sermonKeyVerses as $key => $item) {
+            $kv .= $item->text;
+            if ($key + 1 < count($this->sermonKeyVerses)) {
+                $kv .= "<br/>";
+            }
+        }
+        return $kv;
+    }
+    
     public function getSermonDate() {
         if ($this->sermon_date != '')
             $date = $this->sermon_date;
@@ -225,12 +277,12 @@ class Sermons extends CActiveRecord {
         }
         return $list;
     }
-    
+
     public function hasSermonAudio() {
         $criteria = new CDbCriteria();
         $criteria->compare('type', 'Audio');
-        
-        if($this->sermonFiles($criteria)) {
+
+        if ($this->sermonFiles($criteria)) {
             return true;
         } else {
             return false;
@@ -240,13 +292,12 @@ class Sermons extends CActiveRecord {
     public function getSermonAudio() {
         $criteria = new CDbCriteria();
         $criteria->compare('type', 'Audio');
-        
+
         $search = $this->sermonFiles($criteria);
-        
+
         $audio = $search[0];
-        
+
         return $audio->filename;
-        
     }
 
 }
