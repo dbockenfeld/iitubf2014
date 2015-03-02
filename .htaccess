@@ -601,7 +601,7 @@ Redirect 301 /biblestudy/messages /docs/sermons
 Redirect 301 /sermons/messages /docs/sermons
 Redirect 301 /biblestudy/questions /docs/questions
 Redirect 301 /biblestudy /sermons
-RewriteRule /wounded /blog/2015/03/02/wounded.html [NC]
+RewriteRule /wounded /blog/2015/03/02/wounded.html [R=302,NC]
 
 # FollowSymLinks must be enabled for this to work.
 <IfModule mod_rewrite.c>
