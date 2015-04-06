@@ -147,7 +147,7 @@ class SiteController extends Controller {
 
         $this->render('page', array(
             'data' => $page_data,
-            'image_class' => 'sermon-header',  
+            'image_class' => 'sermon-header',
         ));
     }
 
@@ -221,10 +221,12 @@ class SiteController extends Controller {
     protected function getDownloads($sermon) {
         $criteria = new CDbCriteria();
         $download_urls = array();
-        $download_urls[] = array(
-            'type' => 'transcript',
-            'url' => $sermon->getTranscript()
-        );
+        if ($sermon->getTranscript()) {
+            $download_urls[] = array(
+                'type' => 'transcript',
+                'url' => $sermon->getTranscript()
+            );
+        }
         if ($sermon->hasQuestions()) {
             $question_url = $sermon->getQuestions();
             $download_urls[] = array(
@@ -471,7 +473,7 @@ class SiteController extends Controller {
             'data' => $page_data,
         ));
     }
-    
+
     public function actionWorship() {
         $page_data = Pages::model()->findByAttributes(array(
             'page' => 'worship',
@@ -481,9 +483,8 @@ class SiteController extends Controller {
 
         $this->render('page', array(
             'data' => $page_data,
-            'image_class' => 'sermon-header',  
-            ));
-        
+            'image_class' => 'sermon-header',
+        ));
     }
 
     /**

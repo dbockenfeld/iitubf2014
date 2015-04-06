@@ -256,6 +256,7 @@ class Sermons extends CActiveRecord {
         if ($this->message_file) {
             return '/docs/sermons/' . $this->message_file;
         }
+        return false;
     }
 
     public function hasSermonFiles() {
