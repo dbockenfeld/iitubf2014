@@ -606,6 +606,7 @@ Redirect 301 /docs/sermons/13_1-17.msg_final.pdf /sermons/2012/02/19/the_full_ex
 Redirect 301 /docs/sermons/15_1-10.msg_final.doc /sermons/2010/01/31/one_sinner_who_repents.html
 Redirect 301 /docs/sermons/4_1_32.msg_final.doc /sermons/2007/09/23/live_a_life_worthy_of_your_calling.html
 Redirect 301 /docs/sermons/12_20-50.msg_final.pdf /sermons/2012/02/12/a_kernel_of_wheat.html
+Redirect 301 /docs/sermons/7_31_37.msg_final.doc /sermons/2007/08/05/ephphatha_be_opened.html
 
 # FollowSymLinks must be enabled for this to work.
 <IfModule mod_rewrite.c>
