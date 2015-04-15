@@ -603,6 +603,7 @@ Redirect 301 /biblestudy/questions /docs/questions
 Redirect 301 /biblestudy /sermons
 Redirect 301 /wounded /blog/2015/03/02/wounded.html
 Redirect 301 /docs/sermons/13_1-17.msg_final.pdf /sermons/2012/02/19/the_full_extent_of_love.html
+Redirect 301 /docs/sermons/15_1-10.msg_final.doc /sermons/2010/01/31/one_sinner_who_repents.html
 
 # FollowSymLinks must be enabled for this to work.
 <IfModule mod_rewrite.c>
