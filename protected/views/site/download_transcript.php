@@ -46,7 +46,7 @@ $pdf->AddPage();
 
 $html = '<p style="text-align:center;">' . $sermon->title . "</p>";
 $pdf->writeHTML($html, true, false, true, false, 'center');
-$pdf->SetFont('helvetica', '', 10);
+$pdf->SetFont('helvetica', '', 12);
 
 $html = '<p>' . $sermon->getSermonPassage() . '</p>';
 $pdf->writeHTML($html, true, false, true, false, 'center');
