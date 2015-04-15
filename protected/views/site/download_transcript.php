@@ -1,4 +1,5 @@
 <?php
+
 ini_set('max_execution_time', 120);
 $pdf = Yii::createComponent('application.extensions.tcpdf.ETcPdf', 'P', 'mm', 'Letter', true, 'UTF-8', 'transcriptPdf');
 $pdf->setSermonDate($sermon->sermon_date);
@@ -8,7 +9,7 @@ $pdf->SetTitle($sermon->title);
 $pdf->SetSubject($sermon->series->title);
 
 // set default header data
-$pdf->SetHeaderData(PDF_HEADER_LOGO, PDF_HEADER_LOGO_WIDTH, PDF_HEADER_TITLE.' 006', PDF_HEADER_STRING);
+$pdf->SetHeaderData(PDF_HEADER_LOGO, PDF_HEADER_LOGO_WIDTH, PDF_HEADER_TITLE . ' 006', PDF_HEADER_STRING);
 
 // set header and footer fonts
 $pdf->setHeaderFont(Array(PDF_FONT_NAME_MAIN, '', PDF_FONT_SIZE_MAIN));
@@ -29,13 +30,12 @@ $pdf->SetAutoPageBreak(TRUE, PDF_MARGIN_BOTTOM);
 $pdf->setImageScale(PDF_IMAGE_SCALE_RATIO);
 
 // set some language-dependent strings (optional)
-if (@file_exists(dirname(__FILE__).'/lang/eng.php')) {
-	require_once(dirname(__FILE__).'/lang/eng.php');
-	$pdf->setLanguageArray($l);
+if (@file_exists(dirname(__FILE__) . '/lang/eng.php')) {
+    require_once(dirname(__FILE__) . '/lang/eng.php');
+    $pdf->setLanguageArray($l);
 }
 
 // ---------------------------------------------------------
-
 // set font
 $pdf->SetFont('helvetica', '', 12);
 
@@ -44,17 +44,17 @@ $pdf->AddPage();
 
 // create some HTML content
 
-$html  = '<p style="text-align:center;">'.$sermon->title."</p>";
+$html = '<p style="text-align:center;">' . $sermon->title . "</p>";
 $pdf->writeHTML($html, true, false, true, false, 'center');
 $pdf->SetFont('helvetica', '', 10);
 
-$html='<p>'.$sermon->book->name.' '.$sermon->verses.'</p>';
+$html = '<p>' . $sermon->getSermonPassage() . '</p>';
 $pdf->writeHTML($html, true, false, true, false, 'center');
 
-$html='<p>Key Verse: '.$sermon->key_verse.'</p>';
+$html = '<p>Key Verse: ' . $sermon->getKeyVerse() . '</p>';
 $pdf->writeHTML($html, true, false, true, false, 'center');
 
-$html=$sermon->key_verse_text."<br/>";
+$html = $sermon->getKeyVerseText() . "<br/>";
 $pdf->writeHTML($html, true, false, true, false, 'center');
 
 $html = $sermon->text;
@@ -66,8 +66,7 @@ $pdf->writeHTML($html, true, false, true, false, '');
 $pdf->lastPage();
 
 // ---------------------------------------------------------
-
 //Close and output PDF document
-$filename = date('Ymd',strtotime($sermon->sermon_date))."_".$sermon->book->name."_".str_replace(":","_",$sermon->verses)."_sermon.pdf";
+$filename = date('Ymd', strtotime($sermon->sermon_date)) . "_" . str_replace(":", "_", str_replace(" ", "_", str_replace("&nbsp;", "_", $sermon->getSermonPassage()))) . "_sermon.pdf";
 
 $pdf->Output($filename, 'D');
