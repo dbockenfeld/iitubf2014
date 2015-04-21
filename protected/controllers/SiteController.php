@@ -49,6 +49,17 @@ class SiteController extends Controller {
         if (strlen($db_date) < 3) {
             $this->redirect(array('dailybread' . $params));
         }
+
+        if (strtotime($db_date) < strtotime(DailyBreadArchive::getFirstDB()->date)) {
+            $params = date('/Y/m/d', strtotime(DailyBreadArchive::getFirstDB()->date));
+            $this->redirect(array('dailybread' . $params));
+        }
+
+        if (strtotime($db_date) > time()) {
+            $params = date('/Y/m/d', strtotime(DailyBreadArchive::getLastDB()->date));
+            $this->redirect(array('dailybread' . $params));
+        }
+
         $page_data = Pages::model()->findByAttributes(array(
             'page' => 'daily-bread',
         ));

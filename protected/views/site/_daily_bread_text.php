@@ -10,12 +10,24 @@
 <h3><?php echo $model->title ?></h3>
 <p class="sermon-passage"><?php echo $model->passage; ?></p>
 <?php if ($model->key_verse) : ?>
-    <p class="key-verse">Key Verse: <?php echo substr($model->key_verse,strpos($model->key_verse, ' ', substr_count($model->key_verse, ' '))+1); ?></p>
+    <p class="key-verse">Key Verse: <?php echo substr($model->key_verse, strpos($model->key_verse, ' ', substr_count($model->key_verse, ' ')) + 1); ?></p>
     <section class="key-verse-text"><?php echo $model->key_verse_text; ?></section>
 <?php endif; ?>
 <?php echo $model->text; ?>
 <p><i>Prayer: <?php echo $model->prayer; ?></i></p>
 <p><strong>One Word: <?php echo $model->one_word; ?></strong></p>
+<div class="db-nav">
+    <?php if ($model->hasPreviousDB()) : ?>
+    <div class="db-nav-prev">
+        <?php echo CHtml::link("Previous", $model->getPreviousDB()->url); ?>
+    </div>
+    <?php endif; ?>
+    <?php if ($model->hasNextDB()) : ?>
+    <div class="db-nav-next">
+        <?php echo CHtml::link("Next", $model->getNextDB()->url); ?>
+    </div>
+    <?php endif; ?>
+</div>
 <?php Yii::app()->clientScript->registerCoreScript("jquery"); ?>
 <div id="disqus_thread"></div>
 <script type="text/javascript">
@@ -23,7 +35,7 @@
     var disqus_shortname = 'iitubf2013'; // required: replace example with your forum shortname
 
     /* * * DON'T EDIT BELOW THIS LINE * * */
-    (function() {
+    (function () {
         var dsq = document.createElement('script');
         dsq.type = 'text/javascript';
         dsq.async = true;
@@ -38,10 +50,10 @@
 //        $.ajax({
 //            type: 'post',
 //            data: {
-//                id: <?php // echo $sermon->message_id; ?>
+//                id: <?php // echo $sermon->message_id;  ?>
 //            },
 //            cache: false,
-//            url: '<?php // echo $this->createUrl('site/ajaxAddViewLog'); ?>',
+//            url: '<?php // echo $this->createUrl('site/ajaxAddViewLog');  ?>',
 //            datatype: 'html',
 //        });
 //    });

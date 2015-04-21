@@ -109,6 +109,22 @@ class DailyBreadArchive extends CActiveRecord {
         ));
     }
 
+    public function getFirstDB() {
+        $criteria = new CDbCriteria();
+        $criteria->order = 't.date ASC';
+        return self::model()->find($criteria);
+    }
+    
+    public function getLastDB() {
+        $criteria = new CDbCriteria();
+        $criteria->order = 't.date DESC';
+        return self::model()->find($criteria);
+    }
+    
+    public function getUrl() {
+        return '/dailybread' . date('/Y/m/d', strtotime($this->date));
+    }
+
     public function getDBDate() {
         $date = $this->date;
         return $date;
@@ -124,6 +140,54 @@ class DailyBreadArchive extends CActiveRecord {
 
     public function getDBYear() {
         return date('Y', strtotime($this->getDBDate()));
+    }
+
+    public function hasPreviousDB() {
+        $criteria = new CDbCriteria();
+        $criteria->addCondition('t.date < "' . $this->date . '"');
+        $criteria->order = 't.date DESC';
+
+        if ($this->model()->find($criteria)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public function hasNextDB() {
+        $criteria = new CDbCriteria();
+        $criteria->addCondition('t.date > "' . $this->date . '"');
+        $criteria->order = 't.date ASC';
+
+        if ($this->model()->find($criteria)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public function getPreviousDB() {
+        $criteria = new CDbCriteria();
+        $criteria->addCondition('t.date < "' . $this->date . '"');
+        $criteria->order = 't.date DESC';
+
+        if ($db = $this->model()->find($criteria)) {
+            return $db;
+        } else {
+            return false;
+        }
+    }
+
+    public function getNextDB() {
+        $criteria = new CDbCriteria();
+        $criteria->addCondition('t.date > "' . $this->date . '"');
+        $criteria->order = 't.date ASC';
+
+        if ($db = $this->model()->find($criteria)) {
+            return $db;
+        } else {
+            return false;
+        }
     }
 
 }
