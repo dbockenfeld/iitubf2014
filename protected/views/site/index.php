@@ -29,6 +29,7 @@
             </section>
         </section>
         <section class="right50">
+<?php $this->widget('ext.dailyBreadVerse.dailyBreadVerse'); ?>
 <?php $this->widget('ext.smallBlogList.smallBlogList'); ?>
             <section class="item homepage">
                 <h3>Facebook</h3>

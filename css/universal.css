@@ -299,7 +299,8 @@ section.item-right {
 }
 a .sermon-item,
 a .post-item,
-a .blog {
+a .blog,
+a .dbkv {
     color: #3e3e3e;
 }
 .caption .words {
@@ -335,7 +336,8 @@ a .blog {
     font-size: .9em;
 }
 
-p.home-blog-title {
+p.home-blog-title,
+.dbkv h4 {
     color: #CC0000;
     font-size: 24px;
     font-weight: bold;
@@ -354,7 +356,8 @@ p.home-blog-author {
     border-bottom: 1px solid #3e3e3e;
 }
 
-p.home-blog-summary {
+p.home-blog-summary,
+.dbkv p {
     font-size: 1.2em;
     line-height: 1.2em;
 }
@@ -646,4 +649,12 @@ p.no-margin {
 .db-nav .db-nav-next a::after {
     content: "\25b6";
     margin-left: 10px;
+}
+
+.dbkv h4 {
+    margin: 0;
+}
+
+.dbkv .passage {
+    margin-bottom: 10px;
 }
