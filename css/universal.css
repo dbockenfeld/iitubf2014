@@ -604,3 +604,46 @@ table.schedule-table td.name {
 p.no-margin {
 	margin: 0;
 }
+
+.db-nav {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.db-nav div {
+    background-color: #CC0000;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.db-nav div:hover {
+    background-color: #3e3e3e;
+}
+
+.db-nav div a {
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 5px 10px;
+    text-align: center;
+    width: 120px;
+    display: inline-block;
+}
+
+.db-nav div a:hover {
+    text-decoration: none;
+}
+
+.db-nav .db-nav-prev a::before {
+    content: "\25c0";
+    margin-right: 10px;
+}
+
+.db-nav .db-nav-next {
+    right: 0;
+    position: absolute;
+}
+
+.db-nav .db-nav-next a::after {
+    content: "\25b6";
+    margin-left: 10px;
+}
