@@ -10,12 +10,12 @@
 <section class="content">
     <section class="content-body zero-font">
         <section class="left50">
-<?php $this->widget('ext.smallSermonList.smallSermonList'); ?>
+            <?php $this->widget('ext.smallSermonList.smallSermonList'); ?>
             <section class="item homepage">
                 <h3>Twitter</h3>
                 <section class="item-right">
                     <a class="twitter-timeline" href="https://twitter.com/iitubf" data-widget-id="499377545481973760" width="395" height="297">Tweets by @iitubf</a>
-                    <script>!function(d, s, id) {
+                    <script>!function (d, s, id) {
                             var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
                             if (!d.getElementById(id)) {
                                 js = d.createElement(s);
@@ -29,13 +29,17 @@
             </section>
         </section>
         <section class="right50">
-<?php $this->widget('ext.dailyBreadVerse.dailyBreadVerse'); ?>
+            <?php
+            $this->widget('ext.dailyBreadVerse.dailyBreadVerse', array(
+                'location' => 'homepage',
+            ));
+            ?>
 <?php $this->widget('ext.smallBlogList.smallBlogList'); ?>
             <section class="item homepage">
                 <h3>Facebook</h3>
                 <section class="item-right">
                     <div id="fb-root"></div>
-                    <script>(function(d, s, id) {
+                    <script>(function (d, s, id) {
                             var js, fjs = d.getElementsByTagName(s)[0];
                             if (d.getElementById(id))
                                 return;

@@ -658,3 +658,11 @@ p.no-margin {
 .dbkv .passage {
     margin-bottom: 10px;
 }
+
+.sidebar img.sidebar-header {
+    width: 100%;
+}
+
+.sidebar .dbkv {
+    font-size: 0.9em;
+}

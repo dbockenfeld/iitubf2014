@@ -15,9 +15,11 @@
             </section>
         </section>
         <section class="right30">
-            <?php if(isset($sidebar_top)) {
+            <?php
+            if (isset($sidebar_top)) {
                 echo $sidebar_top;
-            }?>
+            }
+            ?>
             <?php
             $this->widget('ext.smallSermonList.smallSermonList', array(
                 'options' => array(
@@ -25,6 +27,15 @@
                 ),
             ));
             ?>
+            <?php echo Yii::app()->controller->action->id; ?>
+            <?php if (Yii::app()->controller->action->id != 'dailybread') : ?>
+
+                <?php
+                $this->widget('ext.dailyBreadVerse.dailyBreadVerse', array(
+                    'location' => 'sidebar',
+                ));
+                ?>
+            <?php endif; ?>
             <section class="item sidebar">
                 <section class="item-right">
                     <?php
