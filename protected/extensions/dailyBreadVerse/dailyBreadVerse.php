@@ -13,6 +13,8 @@
  */
 class dailyBreadVerse extends CWidget {
 
+    public $location;
+
     public function init() {
         uploadDBtoDB::archive();
     }
@@ -24,7 +26,7 @@ class dailyBreadVerse extends CWidget {
         $model = DailyBreadArchive::model()->find($criteria);
 
         $token = "iax7j0J2ZRgWCdcQfg0fGa0Qa0Ttsq1LNkdajJGX";
-        
+
         $verse = str_replace(' ', '+', $model->key_verse);
 
         $url = "https://bibles.org/v2/passages.xml?q[]=$verse&version=eng-ESV";
@@ -52,15 +54,22 @@ class dailyBreadVerse extends CWidget {
 
 // Print the text from the 0th verse
 //        print ($xml->verses->verse[0]->text);
-            $regex = "#<h3(.*?)</h3>#";
-            $regex2 = "#<sup(.*?)</sup>#";
-            $tmp = preg_replace($regex, '', $xml->search->result->passages->passage[0]->text);
-            $text = preg_replace($regex2, '', $tmp);
+        $regex = "#<h3(.*?)</h3>#";
+        $regex2 = "#<sup(.*?)</sup>#";
+        $tmp = preg_replace($regex, '', $xml->search->result->passages->passage[0]->text);
+        $text = preg_replace($regex2, '', $tmp);
 
-        $this->render('dailyBreadVerse', array(
-            'model' => $model,
-            'text' => $text
-        ));
+        if ($this->location == 'sidebar') {
+            $this->render('dailyBreadVerseSidebar', array(
+                'model' => $model,
+                'text' => $text,
+            ));
+        } else {
+            $this->render('dailyBreadVerse', array(
+                'model' => $model,
+                'text' => $text,
+            ));
+        }
     }
 
 }

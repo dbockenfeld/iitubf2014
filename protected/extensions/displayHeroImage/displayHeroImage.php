@@ -27,7 +27,7 @@ class displayHeroImage extends CWidget {
         $criteria->compare('active', 1);
         
         $criteria2 = new CDbCriteria();
-        $criteria2->addNotInCondition('link', array($this->current_page));
+        $criteria2->addNotInCondition('link', array($this->current_page, 'dailybread'));
         $criteria2->addInCondition('link', array(null), 'OR');
         
         $criteria->mergeWith($criteria2);
