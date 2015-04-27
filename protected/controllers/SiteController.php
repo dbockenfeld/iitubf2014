@@ -352,7 +352,7 @@ class SiteController extends Controller {
         $criteria = new CDbCriteria();
 
         $this->rssTitle = 'Sermons | IIT UBF';
-        $this->rssUrl = 'http://iitubf.org/sermons';
+        $this->rssUrl = 'http://iitubf.org/sermonfeed';
         $this->rssSummary = 'The most recent sermons from IIT UBF';
 
         $criteria = new CDbCriteria();
@@ -380,7 +380,7 @@ class SiteController extends Controller {
         $criteria = new CDbCriteria();
 
         $this->rssTitle = 'Daily Bread | IIT UBF';
-        $this->rssUrl = 'http://iitubf.org/dailybread';
+        $this->rssUrl = 'http://iitubf.org/dailybreadfeed';
         $this->rssSummary = 'Daily Bread from IIT UBF';
 
         uploadDBtoDB::archive();
