@@ -124,6 +124,18 @@ class DailyBreadArchive extends CActiveRecord {
     public function getUrl() {
         return '/dailybread' . date('/Y/m/d', strtotime($this->date));
     }
+    
+    public function getAbsoluteUrl() {
+        $year = date("Y", strtotime($this->date));
+        $month = date("m", strtotime($this->date));
+        $day = date("d", strtotime($this->date));
+        return Yii::app()->createAbsoluteUrl('site/dailybread/year/' . $year . '/month/' . $month . '/day/' . $day . '/');
+//        return '/dailybread' . date('/Y/m/d', strtotime($this->date));
+    }
+    
+    public function getFeedDescription() {
+        return "Daily Bread passage: " . $this->passage;
+    }
 
     public function getDBDate() {
         $date = $this->date;

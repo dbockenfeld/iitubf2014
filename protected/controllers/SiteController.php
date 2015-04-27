@@ -8,6 +8,7 @@ class SiteController extends Controller {
     public $rssSubTitle;
     public $rssImage;
     public $rssSummary;
+    public $rssUrl;
 
     /**
      * Declares class-based actions.
@@ -325,9 +326,9 @@ class SiteController extends Controller {
                         ), TRUE);
     }
 
-    public function actionSermonFeeds() {
+    public function actionSermonPodcastFeeds() {
         $feed_name = Yii::app()->request->getParam('name');
-        $this->layout = 'rss';
+        $this->layout = 'itunes_rss';
         $criteria = new CDbCriteria();
         $criteria->compare('t.key', $feed_name);
 
@@ -341,8 +342,66 @@ class SiteController extends Controller {
 //        print_r(htmlspecialchars($model->series->title));
 //        Yii::app()->end();
 
-        $this->render('rss_feed', array(
+        $this->render('rss_itunes_feed', array(
             'feed' => $model,
+        ));
+    }
+
+    public function actionSermonFeed() {
+        $this->layout = 'rss';
+        $criteria = new CDbCriteria();
+
+        $this->rssTitle = 'Sermons | IIT UBF';
+        $this->rssUrl = 'http://iitubf.org/sermons';
+        $this->rssSummary = 'The most recent sermons from IIT UBF';
+
+        $criteria = new CDbCriteria();
+        $criteria->order = "sermon_date DESC";
+        $criteria->limit = 1;
+
+        $model = Sermons::model()->findAll($criteria);
+        $feed = array();
+
+        foreach ($model as $key => $item) {
+            $feed[$key]['title'] = $item->title;
+            $feed[$key]['link'] = $item->makeAbsoluteSermonUrl();
+            $feed[$key]['description'] = strip_tags($item->message_description);
+            $feed[$key]['guid'] = $item->makeAbsoluteSermonUrl();
+            $feed[$key]['pubDate'] = date('D, d M Y H:i:s T', strtotime($item->sermon_date));
+        }
+
+        $this->render("rss_feed", array(
+            'feed' => $feed
+        ));
+    }
+
+    public function actionDailyBreadFeed() {
+        $this->layout = 'rss';
+        $criteria = new CDbCriteria();
+
+        $this->rssTitle = 'Daily Bread | IIT UBF';
+        $this->rssUrl = 'http://iitubf.org/dailybread';
+        $this->rssSummary = 'Daily Bread from IIT UBF';
+
+        uploadDBtoDB::archive();
+
+        $criteria = new CDbCriteria();
+        $criteria->order = "date DESC";
+        $criteria->limit = 1;
+
+        $model = DailyBreadArchive::model()->findAll($criteria);
+        $feed = array();
+
+        foreach ($model as $key => $item) {
+            $feed[$key]['title'] = $item->title;
+            $feed[$key]['link'] = $item->getAbsoluteUrl();
+            $feed[$key]['description'] = strip_tags($item->feedDescription);
+            $feed[$key]['guid'] = $item->getAbsoluteUrl();
+            $feed[$key]['pubDate'] = date('D, d M Y H:i:s T', strtotime($item->date));
+        }
+
+        $this->render("rss_feed", array(
+            'feed' => $feed
         ));
     }
 
