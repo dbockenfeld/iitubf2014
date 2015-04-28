@@ -397,7 +397,7 @@ class SiteController extends Controller {
             $feed[$key]['link'] = $item->getAbsoluteUrl();
             $feed[$key]['description'] = strip_tags($item->feedDescription);
             $feed[$key]['guid'] = $item->getAbsoluteUrl();
-            $feed[$key]['pubDate'] = date('D, d M Y H:i:s T', strtotime($item->date));
+            $feed[$key]['pubDate'] = date('D, d M Y H:i:s T', strtotime($item->timestamp));
         }
 
         $this->render("rss_feed", array(
