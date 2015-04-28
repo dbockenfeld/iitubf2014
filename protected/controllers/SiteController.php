@@ -429,6 +429,18 @@ class SiteController extends Controller {
         }
     }
 
+    public function actionAjaxAddDBViewLog() {
+        if (Yii::app()->request->isAjaxRequest) {
+            if (!preg_match('/bot|Disqus|spider|crawler|curl|Ezooms|^$/i', $_SERVER['HTTP_USER_AGENT'])) {
+                $log = new DailyBreadViewLog();
+                $log->daily_bread_id = $_POST['id'];
+                $log->ip = $_SERVER['REMOTE_ADDR'];
+                $log->system = $_SERVER['HTTP_USER_AGENT'];
+                $log->save(false);
+            }
+        }
+    }
+
     public function actionAjaxAddStreamLog() {
         if (Yii::app()->request->isAjaxRequest) {
             if (!preg_match('/bot|Disqus|spider|crawler|curl|Ezooms|^$/i', $_SERVER['HTTP_USER_AGENT'])) {
