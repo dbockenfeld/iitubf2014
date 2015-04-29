@@ -367,7 +367,7 @@ class SiteController extends Controller {
             $feed[$key]['link'] = $item->makeAbsoluteSermonUrl();
             $feed[$key]['description'] = strip_tags($item->message_description);
             $feed[$key]['guid'] = $item->makeAbsoluteSermonUrl();
-            $feed[$key]['pubDate'] = date('D, d M Y H:i:s T', strtotime($item->sermon_date));
+            $feed[$key]['pubDate'] = date('D, d M Y H:i:s T', strtotime($item->sermon_date.' + 6 hours 25 minutes 17 seconds'));
         }
 
         $this->render("rss_feed", array(

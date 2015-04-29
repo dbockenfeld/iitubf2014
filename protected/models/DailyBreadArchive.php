@@ -134,7 +134,7 @@ class DailyBreadArchive extends CActiveRecord {
     }
     
     public function getFeedDescription() {
-        return "Daily Bread passage: " . $this->passage;
+        return "Today's Passage: " . $this->passage;
     }
 
     public function getDBDate() {
