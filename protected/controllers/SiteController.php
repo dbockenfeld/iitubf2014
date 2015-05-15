@@ -383,8 +383,6 @@ class SiteController extends Controller {
         $this->rssUrl = 'http://iitubf.org/dailybreadfeed';
         $this->rssSummary = 'Daily Bread from IIT UBF';
 
-        uploadDBtoDB::archive();
-
         $criteria = new CDbCriteria();
         $criteria->order = "date DESC";
         $criteria->limit = 1;
