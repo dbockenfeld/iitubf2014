@@ -40,10 +40,13 @@ class uploadDBtoDB {
 
     public function archive() {
         $today = date('Y-m-d');
+        $yesterday = date('Y-m-d', strtotime('-1 day'));
 
         $db_today = DailyBreadArchive::model()->findByAttributes(array('date' => $today));
+        $db_yesterday = DailyBreadArchive::model()->findByAttributes(array('date' => $yesterday));
 //        $db_today = false;
         if (!$db_today) {
+
 
             $xmlstr = simplexml_load_file('http://www.ubf.org/daily-bread.xml');
 
@@ -60,83 +63,86 @@ class uploadDBtoDB {
                 $title = uploadDBtoDB::strtotitle(strtolower(strip_tags($matches[1][1])));
             }
 
-            $matches = array();
-            $regex_passage = '#<div class="field field-name-field-daily-bread-verses-long (.*?)</div>#s';
-            $regex_passage2 = '#<a(.*?)</a>#s';
-            $search = preg_match($regex_passage, $text, $matches);
+            if ($title != $db_yesterday->title) {
 
-            $passage = trim(str_replace("Read...", "", strip_tags($matches[0])));
+                $matches = array();
+                $regex_passage = '#<div class="field field-name-field-daily-bread-verses-long (.*?)</div>#s';
+                $regex_passage2 = '#<a(.*?)</a>#s';
+                $search = preg_match($regex_passage, $text, $matches);
 
-            $book = substr($passage, 0, strpos($passage, ' ', substr_count($passage, ' ')));
+                $passage = trim(str_replace("Read...", "", strip_tags($matches[0])));
 
-            $matches = array();
-            $regex_kv = '#<div class="field field-name-field-daily-bread-key-verse-long (.*?)</div></div>#';
-            $search = preg_match($regex_kv, $text, $matches);
+                $book = substr($passage, 0, strpos($passage, ' ', substr_count($passage, ' ')));
 
-            $key_verse = trim(strip_tags(str_replace('Key verse:&nbsp;', ' ', $matches[0])));
+                $matches = array();
+                $regex_kv = '#<div class="field field-name-field-daily-bread-key-verse-long (.*?)</div></div>#';
+                $search = preg_match($regex_kv, $text, $matches);
+
+                $key_verse = trim(strip_tags(str_replace('Key verse:&nbsp;', ' ', $matches[0])));
 
 //            echo "<pre>";
 //            print_r($key_verse);
 //            echo "<pre>";
 //            print_r($text);
 //            Yii::app()->end();
-            $matches = array();
-            $regex_text1 = '#<div class="field field-name-body(.*?)</div>#s';
-            $regex_text2 = '#<p(.*?)</p>#s';
-            $search = preg_match($regex_text1, $text, $matches);
-            $search = preg_match_all($regex_text2, $matches[0], $matches);
+                $matches = array();
+                $regex_text1 = '#<div class="field field-name-body(.*?)</div>#s';
+                $regex_text2 = '#<p(.*?)</p>#s';
+                $search = preg_match($regex_text1, $text, $matches);
+                $search = preg_match_all($regex_text2, $matches[0], $matches);
 
-            $db_text = str_replace('<br /><br />', '</p><p>', preg_replace("/[\n\r]/", "", implode($matches[0])));
+                $db_text = str_replace('<br /><br />', '</p><p>', preg_replace("/[\n\r]/", "", implode($matches[0])));
 
 //            echo "<pre>";
 //            print_r($db_text);
 //            echo "<pre>";
 //            print_r($text);
 //            Yii::app()->end();
-            $matches = array();
-            $regex_text = "#</h3>(.*?)<h3>#";
-            $search = preg_match($regex_text, $text, $matches);
+                $matches = array();
+                $regex_text = "#</h3>(.*?)<h3>#";
+                $search = preg_match($regex_text, $text, $matches);
 //            print_r($matches);
 //            Yii::app()->end();
 
-            if (!empty($matches)) {
-                $intro_text = str_replace('<br /><br />', '</p><p>', str_replace('<br /><br /><h3>', '</p>', str_replace('</h3><br /><br />', '<p>', $matches[0])));
-            } else {
-                $intro_text = '';
-            }
+                if (!empty($matches)) {
+                    $intro_text = str_replace('<br /><br />', '</p><p>', str_replace('<br /><br /><h3>', '</p>', str_replace('</h3><br /><br />', '<p>', $matches[0])));
+                } else {
+                    $intro_text = '';
+                }
 
-            $matches = array();
-            $regex_prayer = '#<div class="field field-name-field-daily-bread-prayer(.*?)</div></div>#';
-            $search = preg_match($regex_prayer, $text, $matches);
+                $matches = array();
+                $regex_prayer = '#<div class="field field-name-field-daily-bread-prayer(.*?)</div></div>#';
+                $search = preg_match($regex_prayer, $text, $matches);
 
-            $prayer = strip_tags(str_replace('Prayer:&nbsp;', ' ', $matches[0]));
+                $prayer = strip_tags(str_replace('Prayer:&nbsp;', ' ', $matches[0]));
 
-            $matches = array();
-            $regex_ow = '#<div class="field field-name-field-daily-bread-one-word(.*?)</div></div>#';
-            $search = preg_match($regex_ow, $text, $matches);
+                $matches = array();
+                $regex_ow = '#<div class="field field-name-field-daily-bread-one-word(.*?)</div></div>#';
+                $search = preg_match($regex_ow, $text, $matches);
 
-            $one_word = strip_tags(str_replace('One word:&nbsp;', ' ', $matches[0]));
+                $one_word = strip_tags(str_replace('One word:&nbsp;', ' ', $matches[0]));
 
-            $namespaces = $xmlstr->channel->getNameSpaces(true);
-            //Now we don't have the URL hard-coded
-            $dc = $xmlstr->channel->children($namespaces['dc']);
+                $namespaces = $xmlstr->channel->getNameSpaces(true);
+                //Now we don't have the URL hard-coded
+                $dc = $xmlstr->channel->children($namespaces['dc']);
 //            echo $dc->date;
 
-            $model = new DailyBreadArchive();
+                $model = new DailyBreadArchive();
 
-            $model->date = $today;
-            $model->intro_title = trim($intro_title);
-            $model->intro_text = $intro_text;
-            $model->title = trim($title);
-            $model->passage = trim($passage);
-            $model->key_verse = trim($key_verse);
-            $model->text = $db_text;
-            $model->prayer = trim($prayer);
-            $model->one_word = trim($one_word);
+                $model->date = $today;
+                $model->intro_title = trim($intro_title);
+                $model->intro_text = $intro_text;
+                $model->title = trim($title);
+                $model->passage = trim($passage);
+                $model->key_verse = trim($key_verse);
+                $model->text = $db_text;
+                $model->prayer = trim($prayer);
+                $model->one_word = trim($one_word);
 
-            $model->save(false);
+                $model->save(false);
 //        print_r($model->attributes);
 //        Yii::app()->end();
+            }
         }
     }
 
