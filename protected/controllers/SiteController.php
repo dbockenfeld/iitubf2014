@@ -367,7 +367,7 @@ class SiteController extends Controller {
             $feed[$key]['link'] = $item->makeAbsoluteSermonUrl();
             $feed[$key]['description'] = strip_tags($item->message_description);
             $feed[$key]['guid'] = $item->makeAbsoluteSermonUrl();
-            $feed[$key]['pubDate'] = date('D, d M Y H:i:s T', strtotime($item->sermon_date.' + 6 hours 25 minutes 17 seconds'));
+            $feed[$key]['pubDate'] = date('D, d M Y H:i:s T', strtotime($item->sermon_date . ' + 6 hours 25 minutes 17 seconds'));
         }
 
         $this->render("rss_feed", array(
@@ -562,6 +562,27 @@ class SiteController extends Controller {
         $this->pageTitle = $page_data->title . ' | ' . $this->pageTitle;
 
         $this->render('page', array(
+            'data' => $page_data,
+            'image_class' => 'sermon-header',
+        ));
+    }
+
+    public function actionWorshipEvent() {
+        $page_data = Pages::model()->findByAttributes(array(
+            'page' => 'worship-event',
+        ));
+
+        $sermon_widget = $this->widget('ext.smallSermonList.smallSermonList', array(
+            'options' => array(
+                'location' => 'image-band',
+            ),
+        ), TRUE);
+
+        $page_data->text = str_replace("{{sermon-listing}}", $sermon_widget, $page_data->text);
+
+        $this->pageTitle = $page_data->title . ' | ' . $this->pageTitle;
+
+        $this->render('event-page', array(
             'data' => $page_data,
             'image_class' => 'sermon-header',
         ));

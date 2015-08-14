@@ -65,6 +65,12 @@ SELECT *
                 'recent_sermon' => $this->recent_sermon,
                 'popular_sermons' => $this->popular_sermons,
             ));
+        } elseif ($this->options['location'] == 'image-band') {
+            $this->render('smallSermonListBand', array(
+                'options' => $this->options,
+                'recent_sermon' => $this->recent_sermon,
+                'popular_sermons' => $this->popular_sermons,
+            ));
         } else {
             $this->render('smallSermonList', array(
                 'options' => $this->options,
