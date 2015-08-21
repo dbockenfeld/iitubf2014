@@ -554,9 +554,9 @@ class SiteController extends Controller {
         ));
     }
 
-    public function actionWorship() {
+    public function actionWorshipOld() {
         $page_data = Pages::model()->findByAttributes(array(
-            'page' => 'worship',
+            'page' => 'worship-old',
         ));
 
         $this->pageTitle = $page_data->title . ' | ' . $this->pageTitle;
@@ -567,9 +567,9 @@ class SiteController extends Controller {
         ));
     }
 
-    public function actionWorshipEvent() {
+    public function actionWorship() {
         $page_data = Pages::model()->findByAttributes(array(
-            'page' => 'worship-event',
+            'page' => 'worship',
         ));
 
         $sermon_widget = $this->widget('ext.smallSermonList.smallSermonList', array(
