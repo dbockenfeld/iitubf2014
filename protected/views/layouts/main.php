@@ -53,7 +53,7 @@
                     <?php
                     $this->widget('zii.widgets.CMenu', array(
                         'items' => array(
-//                            array('label' => 'Worship', 'url' => array('/site/worship')),
+                            array('label' => 'Worship', 'url' => array('/site/worship')),
                             array('label' => 'Sermons', 'url' => array('/site/sermons')),
                             array('label' => 'Blog', 'url' => array('/site/blog')),
                             array('label' => 'Daily Bread', 'url' => array('/site/dailybread')),
