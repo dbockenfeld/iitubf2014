@@ -6,8 +6,7 @@
 // CWebApplication properties can be configured here.
 //$root = dirname(__FILE__) . '/..';
 $params = array_merge(
-        require('params.php'), 
-        require('params-local.php')
+        require('params.php'), require('params-local.php')
 );
 
 return array(
@@ -30,11 +29,19 @@ return array(
 //			'ipFilters'=>array('127.0.0.1','::1'),
         ),
     ),
+//    'user' => array(// Webuser for the admin area (admin)
+//        'class' => 'WebUser',
+//        'allowAutoLogin' => true,
+//        'loginUrl' => array('/admin/login'),
+//        'stateKeyPrefix' => 'admin_',
+//    ),
     // application components
     'components' => array(
         'user' => array(
             // enable cookie-based authentication
+            'loginUrl' => array('/admin/login'),
             'allowAutoLogin' => true,
+//            'class' => 'WebUser',
         ),
         // uncomment the following to enable URLs in path-format
         'urlManager' => array(
@@ -44,11 +51,12 @@ return array(
 //                '<controller:\w+>/<action:\w+>/<id:\d+>' => '<controller>/<action>',
 //                '<controller:\w+>/<action:\w+>' => '<controller>/<action>',
                 '' => 'site/index',
+                'admin' => 'admin/index',
                 '<action:\w+>' => 'site/<action>',
+                'search.html' => 'site/search',
                 '<action:\w+>/<year:\d+>/<month:\d+>/<day:\d+>/' => 'site/<action>/year/<year>/month/<month>/day/<day>',
                 '<action:\w+>/<year:\d+>/<month:\d+>/<day:\d+>/<name:\w+>.html' => 'site/<action>/year/<year>/month/<month>/day/<day>/name/<name>',
                 '<action:\w+>/<name:\w+>.rss' => 'site/<action>/name/<name>',
-//                'admin' => 'admin/index',
             ),
             'showScriptName' => false,
         ),
@@ -75,11 +83,9 @@ return array(
                     'levels' => 'error, warning',
                 ),
             // uncomment the following to show log messages on web pages
-            
 //              array(
 //              'class'=>'CWebLogRoute',
 //              ),
-             
             ),
         ),
     ),

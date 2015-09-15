@@ -587,6 +587,19 @@ class SiteController extends Controller {
             'image_class' => 'sermon-header',
         ));
     }
+    
+    public function actionSearch() {
+        $page_data = Pages::model()->findByAttributes(array(
+            'page' => 'search',
+        ));
+
+        $this->pageTitle = $page_data->title . ' | ' . $this->pageTitle;
+
+        $this->render('page', array(
+            'data' => $page_data,
+            'image_class' => 'sermon-header',
+        ));
+    }
 
     /**
      * This is the action to handle external exceptions.

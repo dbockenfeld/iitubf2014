@@ -6,42 +6,49 @@
         <meta name="language" content="en" />
         <title><?php echo $this->pageTitle; ?></title>
         <?php if ($this->siteDescription) : ?>
-            <meta name="description" content="<?php echo $this->siteDescription; ?>">
-            <?php endif; ?>
-            <?php Yii::app()->clientScript->registerCoreScript('jquery'); ?>
-            <?php Yii::app()->clientScript->registerScriptFile(Yii::app()->request->baseUrl . '/js/jquery.defuscate.js'); ?>
-            <script>
-                $(document).ready(function() {
-                    $('.obfuscated').defuscate();
+            <meta name="description" content="<?php echo $this->siteDescription; ?>"/>
+        <?php endif; ?>
+        <?php Yii::app()->clientScript->registerCoreScript('jquery'); ?>
+        <?php Yii::app()->clientScript->registerScriptFile(Yii::app()->request->baseUrl . '/js/jquery.defuscate.js'); ?>
+        <script>
+            $(document).ready(function () {
+                $('.obfuscated').defuscate();
+            });
+        </script>
+        <script>
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                        m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+            ga('create', 'UA-5732686-1', 'auto');
+            ga('send', 'pageview');
+
+        </script>
+        <script>
+            $(document).ready(function () {
+                $(".search img").click(function () {
+                    $(".search-field").toggle();
                 });
-            </script>
-            <script>
-                (function(i, s, o, g, r, a, m) {
-                    i['GoogleAnalyticsObject'] = r;
-                    i[r] = i[r] || function() {
-                        (i[r].q = i[r].q || []).push(arguments)
-                    }, i[r].l = 1 * new Date();
-                    a = s.createElement(o),
-                            m = s.getElementsByTagName(o)[0];
-                    a.async = 1;
-                    a.src = g;
-                    m.parentNode.insertBefore(a, m)
-                })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-
-                ga('create', 'UA-5732686-1', 'auto');
-                ga('send', 'pageview');
-
-            </script>
-            <link type="text/css" rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/reset_uni.css"/>
-            <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/font-awesome/css/font-awesome.min.css"/>
-            <link type="text/css" rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/universal.css"/>
-            <link type="text/css" rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/nav.css"/>
-            <link type="text/css" rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/footer.css"/>
-            <link rel="shortcut icon" href="<?php echo Yii::app()->request->baseUrl; ?>/favicon.ico" type="image/x-icon" />
+            })
+        </script>
+        <link type="text/css" rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/reset_uni.css"/>
+        <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/font-awesome/css/font-awesome.min.css"/>
+        <link type="text/css" rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/universal.css"/>
+        <link type="text/css" rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/nav.css"/>
+        <link type="text/css" rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/footer.css"/>
+        <link rel="shortcut icon" href="<?php echo Yii::app()->request->baseUrl; ?>/favicon.ico" type="image/x-icon" />
     </head>
 
     <body>
-                <h1>IIT UBF - University Bible Fellowship at IIT</h1>
+        <h1>IIT UBF - University Bible Fellowship at IIT</h1>
         <header>
             <nav>
                 <section class="logo">
@@ -60,6 +67,15 @@
                         ),
                     ));
                     ?>
+                </section>
+                <section class="search">
+                    <img src="<?php echo Yii::app()->request->baseUrl; ?>/images/common/search.svg"/>
+                    <section class="search-field">
+                        <form action="search.html" method="get">
+                            <input type="text" name="q" placeholder="Search..."/>
+                            <button type="submit" value="Submit">Submit</button>
+                        </form>
+                    </section>
                 </section>
                 <section class="about">
                     <?php
@@ -165,7 +181,7 @@
                                     script.src = '//ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js';
                                     head.appendChild(script);
                                     if (script.readyState && script.onload !== null) {
-                                        script.onreadystatechange = function() {
+                                        script.onreadystatechange = function () {
                                             if (this.readyState == 'complete')
                                                 mce_preload_check();
                                         }
@@ -213,28 +229,28 @@
                                     mce_init_form();
                                 }
                                 function mce_init_form() {
-                                    jQuery(document).ready(function($) {
-                                        var options = {errorClass: 'mce_inline_error', errorElement: 'div', onkeyup: function() {
-                                            }, onfocusout: function() {
-                                            }, onblur: function() {
+                                    jQuery(document).ready(function ($) {
+                                        var options = {errorClass: 'mce_inline_error', errorElement: 'div', onkeyup: function () {
+                                            }, onfocusout: function () {
+                                            }, onblur: function () {
                                             }};
                                         var mce_validator = $("#mc-embedded-subscribe-form").validate(options);
                                         $("#mc-embedded-subscribe-form").unbind('submit');//remove the validator so we can get into beforeSubmit on the ajaxform, which then calls the validator
                                         options = {url: 'http://iitubf.us5.list-manage.com/subscribe/post-json?u=48f6c762e0ed4066a87626bd7&id=635a9b89ec&c=?', type: 'GET', dataType: 'json', contentType: "application/json; charset=utf-8",
-                                            beforeSubmit: function() {
+                                            beforeSubmit: function () {
                                                 $('#mce_tmp_error_msg').remove();
                                                 $('.datefield', '#mc_embed_signup').each(
-                                                        function() {
+                                                        function () {
                                                             var txt = 'filled';
                                                             var fields = new Array();
                                                             var i = 0;
                                                             $(':text', this).each(
-                                                                    function() {
+                                                                    function () {
                                                                         fields[i] = this;
                                                                         i++;
                                                                     });
                                                             $(':hidden', this).each(
-                                                                    function() {
+                                                                    function () {
                                                                         var bday = false;
                                                                         if (fields.length == 2) {
                                                                             bday = true;
@@ -254,16 +270,16 @@
                                                                     });
                                                         });
                                                 $('.phonefield-us', '#mc_embed_signup').each(
-                                                        function() {
+                                                        function () {
                                                             var fields = new Array();
                                                             var i = 0;
                                                             $(':text', this).each(
-                                                                    function() {
+                                                                    function () {
                                                                         fields[i] = this;
                                                                         i++;
                                                                     });
                                                             $(':hidden', this).each(
-                                                                    function() {
+                                                                    function () {
                                                                         if (fields[0].value.length != 3 || fields[1].value.length != 3 || fields[2].value.length != 4) {
                                                                             this.value = '';
                                                                         } else {
@@ -286,7 +302,7 @@
                                     if (resp.result == "success") {
                                         $('#mce-' + resp.result + '-response').show();
                                         $('#mce-' + resp.result + '-response').html(resp.msg);
-                                        $('#mc-embedded-subscribe-form').each(function() {
+                                        $('#mc-embedded-subscribe-form').each(function () {
                                             this.reset();
                                         });
                                     } else {
