@@ -64,15 +64,14 @@ class SiteController extends Controller {
         $page_data = Pages::model()->findByAttributes(array(
             'page' => 'daily-bread',
         ));
-
-        $this->pageTitle = $page_data->title . ' | ' . $this->pageTitle;
-
         uploadDBtoDB::archive();
 
         $criteria = new CDbCriteria();
         $criteria->compare('date', $db_date);
 
         $model = DailyBreadArchive::model()->find($criteria);
+
+        $this->pageTitle = $model->title . ' (' . $model->passage . ') | ' . $page_data->title . ' | ' . $this->pageTitle;
 
         if ($model->key_verse != '') {
             $token = "iax7j0J2ZRgWCdcQfg0fGa0Qa0Ttsq1LNkdajJGX";
@@ -576,7 +575,7 @@ class SiteController extends Controller {
             'options' => array(
                 'location' => 'image-band',
             ),
-        ), TRUE);
+                ), TRUE);
 
         $page_data->text = str_replace("{{sermon-listing}}", $sermon_widget, $page_data->text);
 
@@ -587,7 +586,7 @@ class SiteController extends Controller {
             'image_class' => 'sermon-header',
         ));
     }
-    
+
     public function actionSearch() {
         $page_data = Pages::model()->findByAttributes(array(
             'page' => 'search',
