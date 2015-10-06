@@ -75,15 +75,17 @@ class uploadDBtoDB {
                 $book = substr($passage, 0, strpos($passage, ' ', substr_count($passage, ' ')));
 
                 $matches = array();
-                $regex_kv = '#<div class="field field-name-field-daily-bread-key-verse-long (.*?)</div></div>#';
+//                $regex_kv = '#<div class="field field-name-field-daily-bread-key-verse-long (.*?)</div></div>#';
+                $regex_kv = '#<div class="field field-name-field-daily-bread-key-verse-long field-type-text-long field-label-inline clearfix"><div class="field-label">Key verse:&nbsp;</div><div class="field-items"><div class="field-item even"><p>(.*?)</p>
+</div></div></div>#';
                 $search = preg_match($regex_kv, $text, $matches);
 
                 $key_verse = trim(strip_tags(str_replace('Key verse:&nbsp;', ' ', $matches[0])));
 
-//            echo "<pre>";
-//            print_r($key_verse);
-//            echo "<pre>";
-//            print_r($text);
+//                echo "<pre>";
+//                print_r($matches);
+//                echo "<pre>";
+//                print_r($text);
 //            Yii::app()->end();
                 $matches = array();
                 $regex_text1 = '#<div class="field field-name-body(.*?)</div>#s';
@@ -141,7 +143,7 @@ class uploadDBtoDB {
 
                 $model->save(false);
 //        print_r($model->attributes);
-//        Yii::app()->end();
+//                Yii::app()->end();
             }
         }
     }
