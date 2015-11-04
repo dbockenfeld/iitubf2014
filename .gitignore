@@ -1,5 +1,8 @@
 .gitignore
 assets/
+media/
+admin/
+sitemap.xml
 
 protected/runtime
 protected/config/*-local.php
