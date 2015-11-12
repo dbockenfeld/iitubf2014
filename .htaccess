@@ -609,6 +609,8 @@ Redirect 301 /docs/sermons/12_20-50.msg_final.pdf /sermons/2012/02/12/a_kernel_o
 Redirect 301 /docs/sermons/7_31_37.msg_final.doc /sermons/2007/08/05/ephphatha_be_opened.html
 Redirect 301 /docs/sermons/12_35-48_msg_final.doc /sermons/2009/11/11/how_to_be_ready_for_the_lords_return.html
 
+Redirect 301 /docs/sermons/1.1-2.11.msg_final.doc /sermons/2010/09/12/pouring_out_our_soul_to_the_lord.html
+
 # FollowSymLinks must be enabled for this to work.
 <IfModule mod_rewrite.c>
   Options +FollowSymlinks
