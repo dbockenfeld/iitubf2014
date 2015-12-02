@@ -156,6 +156,13 @@ section.item h3 {
     padding: 10px;
 }
 
+section.sidebar h3 {
+    display: block;
+    width: auto;
+    text-align: left;
+    padding: 10px 20px;
+}
+
 section.item .item-right {
     display: table-cell;
     padding: 10px;
@@ -191,6 +198,11 @@ section.item .item-right {
 
 }
 
+.sermon.caption-overlay {
+    position: relative;
+    padding: 0;
+}
+
 .sermon .image {
     margin: 0;
     line-height: 0;
@@ -207,6 +219,25 @@ section.item .item-right {
     color: #ffffff;
     margin: 0;
     padding: 10px;
+}
+
+.caption-overlay .caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: linear-gradient(rgba(62,62,62,0) 10%, rgba(62,62,62,1));
+}
+
+.caption-overlay .caption .words {
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+}
+
+.hero-image-sidebar {
+    height: 126px;
 }
 
 a:hover .scale-small,
@@ -569,7 +600,7 @@ article.top-padding {
 }
 
 .dbkv p.q1 {
-    
+
 }
 
 .dbkv p.q2 {
@@ -589,23 +620,23 @@ article.top-padding {
 }
 
 table.schedule-table {
-	width: 100%;	
+    width: 100%;	
 }
 
 table.schedule-table td {
-	vertical-align: top;
+    vertical-align: top;
 }
 
 table.schedule-table td.time {
-	width: 20%;
+    width: 20%;
 }
 
 table.schedule-table td.name {
-	width: 40%;
+    width: 40%;
 }
 
 p.no-margin {
-	margin: 0;
+    margin: 0;
 }
 
 .db-nav {

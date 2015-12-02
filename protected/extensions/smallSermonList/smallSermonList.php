@@ -30,7 +30,7 @@ class smallSermonList extends CWidget {
         if ($this->options['location'] == 'sidebar') {
             $pop_num = 5;
         } else {
-            $pop_num = 3;
+            $pop_num = 4;
         }
 
         $criteria = new CDbCriteria();

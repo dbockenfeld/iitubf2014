@@ -1,5 +1,5 @@
-<a href="<?php echo $sermon->makeSermonUrl(); ?>">
-    <article class="sermon<?php echo $location == 'sidebar' ? " caption-overlay" : " caption-overlay"?>">
+<a href="<?php echo $sermon->makeSermonUrl();?>">
+    <article class="sermon caption-overlay">
         <section class="image"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/<?php echo str_replace('features', 'sermon', $sermon->series->large_feature); ?>" /></section>
         <section class="caption">
             <section class="words">

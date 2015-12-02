@@ -19,6 +19,15 @@
             if (isset($sidebar_top)) {
                 echo $sidebar_top;
             }
+
+            if ($related) {
+                $this->widget('ext.relatedSermonList.relatedSermonList', array(
+                    'options' => array(
+                        'location' => 'sidebar',
+                    ),
+                    'sermon_id' => $sermon_id,
+                ));
+            }
             ?>
             <?php
             $this->widget('ext.smallSermonList.smallSermonList', array(
@@ -34,9 +43,9 @@
                     'location' => 'sidebar',
                 ));
                 ?>
-            <?php endif; ?>
+<?php endif; ?>
             <section class="item sidebar">
-                <section class="item-right">
+                <section class="hero-image-sidebar">
                     <?php
                     $this->widget('ext.displayHeroImage.displayHeroImage', array(
                         'location' => 'sidebar',

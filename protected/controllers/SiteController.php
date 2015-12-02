@@ -177,8 +177,10 @@ class SiteController extends Controller {
             $page_data->text = $this->formatSermon($sermon);
             $page_data->image = $sermon->series ? str_replace('features', 'sermon', $sermon->series->large_feature) : '';
             $download_options = $this->getStreaming($sermon) . $this->getDownloads($sermon);
+            $related = true;
             $this->pageTitle = $sermon->title . ' (' . $sermon->getSermonPassage() . ') | Sermons | ' . $this->pageTitle;
             $this->siteDescription = strip_tags($sermon->message_description);
+            $sermon_id = $sermon->id;
         } else {
             $page_data = Pages::model()->findByAttributes(array(
                 'page' => 'sermon-listing',
@@ -186,6 +188,8 @@ class SiteController extends Controller {
             $page_data->text = $this->getSermonList();
             $download_options = '';
             $this->pageTitle = $page_data->title . ' | ' . $this->pageTitle;
+            $related = false;
+            $sermon_id = false;
         }
 
         $page_data->title = $page_data->short_title = 'Sermons';
@@ -194,6 +198,8 @@ class SiteController extends Controller {
             'data' => $page_data,
             'image_class' => 'sermon-header',
             'sidebar_top' => $download_options,
+            'related' => $related,
+            'sermon_id' => $sermon_id,
         ));
     }
 
