@@ -201,6 +201,7 @@ section.item .item-right {
 .sermon.caption-overlay {
     position: relative;
     padding: 0;
+    min-height: 126px;
 }
 
 .sermon .image {
