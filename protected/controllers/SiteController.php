@@ -177,7 +177,11 @@ class SiteController extends Controller {
             $page_data->text = $this->formatSermon($sermon);
             $page_data->image = $sermon->series ? str_replace('features', 'sermon', $sermon->series->large_feature) : '';
             $download_options = $this->getStreaming($sermon) . $this->getDownloads($sermon);
-            $related = true;
+            if ($sermon->text) {
+                $related = true;
+            } else {
+                $related = false;
+            }
             $this->pageTitle = $sermon->title . ' (' . $sermon->getSermonPassage() . ') | Sermons | ' . $this->pageTitle;
             $this->siteDescription = strip_tags($sermon->message_description);
             $sermon_id = $sermon->id;
