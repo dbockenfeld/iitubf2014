@@ -25,13 +25,9 @@
                             <p class="key-verse">Key Verse: <?php echo $sermon->keyVerse; ?></p>
                             <section class="key-verse-text" id="key-verse-text"><?php echo $sermon->keyVerseText; ?></section>
                         <?php endif; ?>
-                        <?php if ($sermon->text) : ?>
-                            <div class="body-text-edit" id="body-text">
-                                <?php echo $sermon->text; ?>
-                            </div>
-                        <?php else : ?>
-                            <?php echo $sermon->message_description; ?>
-                        <?php endif; ?>
+                        <div class="body-text-edit" id="body-text">
+                            <?php echo $sermon->text; ?>
+                        </div>
                     </section>
                 </section>
             </section>
@@ -46,9 +42,13 @@
                         <div class="row">
                             <?php echo CHtml::label("Passage", "passage"); ?>
                             <?php foreach ($sermon->sermonPassages as $passage): ?>
-                                <?php echo CHtml::dropDownList("book[$passage->id]", $passage->book_id, Books::getBookList(), array("empty" => "--")); ?>
-                                <?php echo CHtml::textField("verses[$passage->id]", $passage->passage); ?>
+                                <?php
+                                $this->renderPartial("_sermon_passage_input", array(
+                                    "passage" => $passage,
+                                ));
+                                ?>
                             <?php endforeach; ?>
+                            <div class="add-passage">+</div>
                         </div>
                         <div class="row">
                             <?php echo CHtml::activeLabel($sermon, "message_description"); ?>
@@ -169,6 +169,48 @@
             save(form, processing_url);
         });
 
+        $("body").on('keyup', "input:text", function () {
+            autosave(form, processing_url);
+        });
+
+        $("body").on("click", ".add-passage", function () {
+            var sermon_id = $("#sermon_id").val();
+            $.ajax({
+                type: 'POST',
+                dataType: 'html',
+                url: "<?php echo Yii::app()->createUrl("admin/ajaxaddPassage") ?>",
+                data: {
+                    sermon_id: sermon_id,
+                },
+                timeout: 5000,
+                cache: false,
+                success: function (html) {
+                    $(".add-passage").before(html)
+                    $(".passage-item").last().hide().slideDown();
+                },
+            });
+        });
+
+        $("body").on("click", ".remove-passage", function () {
+            var sermon_id = $(this).attr("id").substring(15);
+            var item = $(this).parents(".passage-item");
+            $.ajax({
+                type: 'POST',
+                dataType: 'html',
+                url: "<?php echo Yii::app()->createUrl("admin/ajaxremovePassage") ?>",
+                data: {
+                    sermon_id: sermon_id,
+                },
+                timeout: 5000,
+                cache: false,
+                success: function (html) {
+                    item.slideUp().delay(1000).queue(function (n) {
+                        $(this).remove();
+                        n();
+                    });
+                },
+            });
+        });
     });
 
     function save(form, processing_url) {

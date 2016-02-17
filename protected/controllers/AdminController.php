@@ -12,7 +12,7 @@ class AdminController extends Controller {
                 'users' => array('*'),
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
-                'actions' => array('create', 'update', 'index', 'logout', 'sermons', 'sermon', "changePassword", "ajaxSermonSave"),
+                'actions' => array('create', 'update', 'index', 'logout', 'sermons', 'sermon', "changePassword", "ajaxSermonSave", "ajaxAddPassage", "ajaxRemovePassage"),
                 'users' => array('@'),
             ),
             array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -78,6 +78,31 @@ class AdminController extends Controller {
             $body_text = str_replace("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;", "", $body_text);
             $sermon->text = $body_text;
             $sermon->save();
+            
+            foreach ($_POST['passage'] as $passage_id => $passage) {
+                $model = SermonPassages::model()->findByPk($passage_id);
+                $model->book_id = $passage["book"];
+                $model->passage = $passage['verses'];
+                $model->save();
+            }
+        }
+    }
+
+    public function actionAjaxAddPassage() {
+        if (Yii::app()->request->isAjaxRequest) {
+            $passage = new SermonPassages();
+            $passage->sermon_id = $_POST["sermon_id"];
+            $passage->save();
+            $this->renderPartial("_sermon_passage_input", array(
+                "passage" => $passage,
+            ));
+        }
+    }
+
+    public function actionAjaxRemovePassage() {
+        if (Yii::app()->request->isAjaxRequest) {
+            $passage = SermonPassages::model()->findByPk($_POST["sermon_id"]);
+            $passage->delete();
         }
     }
 

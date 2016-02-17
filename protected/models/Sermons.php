@@ -151,7 +151,7 @@ class Sermons extends CActiveRecord {
             'criteria' => $criteria,
         ));
     }
-    
+
     public function getId() {
         return $this->message_id;
     }
@@ -178,12 +178,16 @@ class Sermons extends CActiveRecord {
         if ($this->sermonPassages) {
             $passage = '';
             foreach ($this->sermonPassages as $key => $item) {
-                $p = str_replace(" ", "&nbsp;", $item->book->name . ' ' . $item->passage);
-                $passage .= $p;
+                if ($item->book_id) {
+                    $p = str_replace(" ", "&nbsp;", $item->book->name . ' ' . $item->passage);
+                    $passage .= $p;
 //            echo $passage;
 //            Yii::app()->end();
-                if ($key + 1 < count($this->sermonPassages)) {
-                    $passage .= ", ";
+                    $criteria = new CDbCriteria();
+                    $criteria->addCondition("book_id IS NOT NULL");
+                    if ($key + 1 < count($this->sermonPassages($criteria))) {
+                        $passage .= ", ";
+                    }
                 }
             }
         } else {
@@ -388,15 +392,15 @@ class Sermons extends CActiveRecord {
 
 //        print_r($count);
 //        Yii::app()->end();
-        
-        $sermon_ids = array ();
+
+        $sermon_ids = array();
         foreach ($count as $key => $item) {
             $sermon_ids[] = $key;
         }
-        
+
         $criteria = new CDbCriteria();
         $criteria->addInCondition("message_id", $sermon_ids);
-        
+
         $sermons = Sermons::model()->findAll($criteria);
 
 
