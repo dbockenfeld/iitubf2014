@@ -94,5 +94,9 @@ class SermonPassages extends CActiveRecord {
             'criteria' => $criteria,
         ));
     }
+    
+    public function getListName() {
+        return $this->book->name . " ". $this->passage;
+    }
 
 }

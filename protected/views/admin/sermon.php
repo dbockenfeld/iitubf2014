@@ -51,6 +51,19 @@
                             <div class="add-passage">+</div>
                         </div>
                         <div class="row">
+                            <?php echo CHtml::label("Key Verse", "key_verse"); ?>
+                            <?php foreach ($sermon->sermonKeyVerses as $item): ?>
+                                <?php
+                                $this->renderPartial("_sermon_key_verse_input", array(
+                                    "key_verse" => $item,
+                                ));
+                                ?>
+                            <?php endforeach; ?>
+                            <?php if (!$sermon->sermonKeyVerses) : ?>
+                                <div class="add-key-verse">+</div>
+                            <?php endif; ?>
+                        </div>
+                        <div class="row">
                             <?php echo CHtml::activeLabel($sermon, "message_description"); ?>
                             <div class="summary-text-edit" id="summary-text">
                                 <?php echo $sermon->message_description; ?>
@@ -187,6 +200,26 @@
                 success: function (html) {
                     $(".add-passage").before(html)
                     $(".passage-item").last().hide().slideDown();
+                },
+            });
+        });
+
+        $("body").on("click", ".add-key-verse", function () {
+            var sermon_id = $("#sermon_id").val();
+            var button = $(this);
+            $.ajax({
+                type: 'POST',
+                dataType: 'html',
+                url: "<?php echo Yii::app()->createUrl("admin/ajaxaddKeyVerse") ?>",
+                data: {
+                    sermon_id: sermon_id,
+                },
+                timeout: 5000,
+                cache: false,
+                success: function (html) {
+                    button.slideUp();
+                    $(".add-key-verse").before(html)
+                    $(".verse-item").last().hide().slideDown();
                 },
             });
         });

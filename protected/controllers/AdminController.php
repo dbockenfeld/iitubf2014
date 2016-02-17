@@ -12,7 +12,7 @@ class AdminController extends Controller {
                 'users' => array('*'),
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
-                'actions' => array('create', 'update', 'index', 'logout', 'sermons', 'sermon', "changePassword", "ajaxSermonSave", "ajaxAddPassage", "ajaxRemovePassage"),
+                'actions' => array('create', 'update', 'index', 'logout', 'sermons', 'sermon', "changePassword", "ajaxSermonSave", "ajaxAddPassage", "ajaxRemovePassage", "ajaxAddKeyVerse"),
                 'users' => array('@'),
             ),
             array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -78,11 +78,23 @@ class AdminController extends Controller {
             $body_text = str_replace("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;", "", $body_text);
             $sermon->text = $body_text;
             $sermon->save();
-            
+
             foreach ($_POST['passage'] as $passage_id => $passage) {
                 $model = SermonPassages::model()->findByPk($passage_id);
                 $model->book_id = $passage["book"];
                 $model->passage = $passage['verses'];
+                $model->save();
+            }
+            foreach ($_POST['verse'] as $id => $verse) {
+                $model = SermonKeyVerses::model()->findByPk($id);
+                $model->passage_id = $verse["passage"];
+                $model->verses = $verse['verses'];
+                $text = $_POST['key-verse-text'];
+                $text = str_replace("<u>", "", $text);
+                $text = str_replace("</u>", "", $text);
+                $text = str_replace("<em>", "", $text);
+                $text = str_replace("</em>", "", $text);
+                $model->text = $text;
                 $model->save();
             }
         }
@@ -95,6 +107,17 @@ class AdminController extends Controller {
             $passage->save();
             $this->renderPartial("_sermon_passage_input", array(
                 "passage" => $passage,
+            ));
+        }
+    }
+
+    public function actionAjaxAddKeyVerse() {
+        if (Yii::app()->request->isAjaxRequest) {
+            $verse = new SermonKeyVerses();
+            $verse->sermon_id = $_POST["sermon_id"];
+            $verse->save();
+            $this->renderPartial("_sermon_key_verse_input", array(
+                "key_verse" => $verse,
             ));
         }
     }

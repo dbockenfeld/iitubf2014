@@ -55,7 +55,7 @@ class SermonKeyVerses extends CActiveRecord {
         // NOTE: you may need to adjust the relation name and the related
         // class name for the relations automatically generated below.
         return array(
-            'sermon' => array(self::BELONGS_TO, 'Messages', 'sermon_id'),
+            'sermon' => array(self::BELONGS_TO, 'Sermons', 'sermon_id'),
             'passage' => array(self::BELONGS_TO, 'SermonPassages', 'passage_id'),
         );
     }
@@ -92,6 +92,11 @@ class SermonKeyVerses extends CActiveRecord {
         return new CActiveDataProvider($this, array(
             'criteria' => $criteria,
         ));
+    }
+    
+    public function getPassageList() {
+        $passages = $this->sermon->sermonPassages;
+        return CHtml::listData($passages, "id", "listName");
     }
 
 }

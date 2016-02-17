@@ -91,7 +91,8 @@ tbody td {
     padding-bottom: 0px;
 }
 
-.additional-info .add-passage {
+.additional-info .add-passage,
+.additional-info .add-key-verse {
     background-color: #3e3e3e;
     display: inline-block;
     color: #FFF;
@@ -123,6 +124,7 @@ tbody td {
 }
 
 .additional-info .add-passage:hover,
+.additional-info .add-key-verse:hover,
 .additional-info .remove-passage:hover {
     background-color: #C00;
 }
