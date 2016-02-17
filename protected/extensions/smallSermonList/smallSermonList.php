@@ -27,10 +27,16 @@ class smallSermonList extends CWidget {
 
         $offset = date('Y-m-d', strtotime('-1 month'));
 
-        if ($this->options['location'] == 'sidebar') {
-            $pop_num = 5;
-        } else {
-            $pop_num = 4;
+        switch ($this->options['location']) {
+            case "sidebar":
+                $pop_num = 5;
+                break;
+            case "image-band":
+                $pop_num = 3;
+                break;
+            default:
+                $pop_num = 4;
+                break;
         }
 
         $criteria = new CDbCriteria();
