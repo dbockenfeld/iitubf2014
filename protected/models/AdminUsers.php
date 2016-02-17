@@ -1,22 +1,23 @@
 <?php
 
 /**
- * This is the model class for table "books".
+ * This is the model class for table "admin_users".
  *
- * The followings are the available columns in table 'books':
+ * The followings are the available columns in table 'admin_users':
  * @property integer $id
- * @property string $name
- *
- * The followings are the available model relations:
- * @property Messages[] $messages
- * @property Series[] $series
+ * @property string $username
+ * @property string $first_name
+ * @property string $last_name
+ * @property string $email
+ * @property string $password
+ * @property string $message
  */
-class Books extends CActiveRecord {
+class AdminUsers extends CActiveRecord {
 
     /**
      * Returns the static model of the specified AR class.
      * @param string $className active record class name.
-     * @return Books the static model class
+     * @return AdminUsers the static model class
      */
     public static function model($className = __CLASS__) {
         return parent::model($className);
@@ -26,7 +27,7 @@ class Books extends CActiveRecord {
      * @return string the associated database table name
      */
     public function tableName() {
-        return 'books';
+        return 'admin_users';
     }
 
     /**
@@ -36,10 +37,13 @@ class Books extends CActiveRecord {
         // NOTE: you should only define rules for those attributes that
         // will receive user inputs.
         return array(
-            array('name', 'length', 'max' => 24),
+            array('username', 'length', 'max' => 16),
+            array('first_name, last_name', 'length', 'max' => 32),
+            array('email, password', 'length', 'max' => 255),
+            array('message', 'length', 'max' => 2),
             // The following rule is used by search().
             // Please remove those attributes that should not be searched.
-            array('id, name', 'safe', 'on' => 'search'),
+            array('id, username, first_name, last_name, email, password, message', 'safe', 'on' => 'search'),
         );
     }
 
@@ -50,8 +54,6 @@ class Books extends CActiveRecord {
         // NOTE: you may need to adjust the relation name and the related
         // class name for the relations automatically generated below.
         return array(
-            'messages' => array(self::HAS_MANY, 'Sermons', 'book_id'),
-            'series' => array(self::HAS_MANY, 'SermonSeries', 'book_id'),
         );
     }
 
@@ -61,7 +63,12 @@ class Books extends CActiveRecord {
     public function attributeLabels() {
         return array(
             'id' => 'ID',
-            'name' => 'Name',
+            'username' => 'Username',
+            'first_name' => 'First Name',
+            'last_name' => 'Last Name',
+            'email' => 'Email',
+            'password' => 'Password',
+            'message' => 'Message',
         );
     }
 
@@ -76,15 +83,16 @@ class Books extends CActiveRecord {
         $criteria = new CDbCriteria;
 
         $criteria->compare('id', $this->id);
-        $criteria->compare('name', $this->name, true);
+        $criteria->compare('username', $this->username, true);
+        $criteria->compare('first_name', $this->first_name, true);
+        $criteria->compare('last_name', $this->last_name, true);
+        $criteria->compare('email', $this->email, true);
+        $criteria->compare('password', $this->password, true);
+        $criteria->compare('message', $this->message, true);
 
         return new CActiveDataProvider($this, array(
             'criteria' => $criteria,
         ));
-    }
-    public static function getBookList() {
-        $model = self::model()->findAll();
-        return CHtml::listData($model, "id", "name");
     }
 
 }

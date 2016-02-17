@@ -102,7 +102,7 @@ class Sermons extends CActiveRecord {
             'verses' => 'Verses',
             'key_verse' => 'Key Verse',
             'key_verse_text' => 'Key Verse Text',
-            'message_description' => 'Message Description',
+            'message_description' => 'Summary',
             'message_file' => 'Message File',
             'text' => 'Text',
             'question_file' => 'Question File',

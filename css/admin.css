@@ -1,0 +1,82 @@
+.login-page {
+    width: 300px;
+    margin: 0 auto !important;
+    padding: 20px;
+}
+
+.pw-page {
+    width: 500px;
+    margin: 0 auto !important;
+    padding: 20px;
+}
+
+.admin-error {
+    background-color: #fcc;
+    color: #C00;
+    border: 2px solid #C00;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.admin-success {
+    background-color: #d8ffcd;
+    color: #1e8900;
+    border: 2px solid #1e8900;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.row {
+    margin-bottom: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+tbody tr {
+    cursor: pointer;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #eee;
+}
+
+tbody tr:hover {
+    background-color: #C00;
+    color: #FFF;
+}
+
+tbody td {
+    padding: 3px 5px;
+    max-width: 300px;
+}
+
+.float-right {
+    float: right;
+}
+
+#ui-datepicker-div{
+    font-size: 12px;
+}
+
+.vis-hidden {
+    visibility: hidden;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.additional-info {
+    padding: 10px 20px;
+}
+
+.additional-info select {
+    width: 261px;
+}

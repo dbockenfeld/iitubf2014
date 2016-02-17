@@ -5,7 +5,7 @@
     </section>
 </section>
 <section class="item <?php echo $options['location']; ?>">
-        <h3>Most Popular<?php echo $options['location'] == 'homepage' ? '' : ' Sermons' ?></h3>
+    <h3>Most Popular<?php echo $options['location'] == 'homepage' ? '' : ' Sermons' ?></h3>
     <section class="item-right sermons">
         <?php foreach ($popular_sermons as $sermon) : ?>
             <?php $this->render('_sidebar_sermon_item', array('sermon' => $sermon)); ?>
