@@ -285,7 +285,7 @@ class SiteController extends Controller {
 
     public function actionGenerateSermonTranscript($id) {
         $sermon = Sermons::model()->findByPk($id);
-        if (!preg_match('/bot|Disqus|spider|crawler|curl|Ezooms|^$/i', $_SERVER['HTTP_USER_AGENT'])) {
+        if (!preg_match('/bot|Disqus|spider|crawler|curl|Ezooms|Slurp|^$/i', $_SERVER['HTTP_USER_AGENT'])) {
             $log = new DownloadLog();
             $log->sermon_id = $id;
             $log->type = 'text';
@@ -300,7 +300,7 @@ class SiteController extends Controller {
 
     public function actionGenerateSermonQuestions($id) {
         $sermon = Sermons::model()->findByPk($id);
-        if (!preg_match('/bot|Disqus|spider|crawler|curl|Ezooms|^$/i', $_SERVER['HTTP_USER_AGENT'])) {
+        if (!preg_match('/bot|Disqus|spider|crawler|curl|Ezooms|Slurp|^$/i', $_SERVER['HTTP_USER_AGENT'])) {
             $log = new DownloadLog();
             $log->sermon_id = $id;
             $log->type = 'questions';
@@ -414,7 +414,7 @@ class SiteController extends Controller {
 
     public function actionAjaxAddBlogViewLog() {
         if (Yii::app()->request->isAjaxRequest) {
-            if (!preg_match('/bot|Disqus|spider|crawler|curl|Ezooms|^$/i', $_SERVER['HTTP_USER_AGENT'])) {
+            if (!preg_match('/bot|Disqus|spider|crawler|curl|Ezooms|Slurp|^$/i', $_SERVER['HTTP_USER_AGENT'])) {
                 $log = new BlogViewLog();
                 $log->post_id = $_POST['id'];
                 $log->ip = $_SERVER['REMOTE_ADDR'];
@@ -426,7 +426,7 @@ class SiteController extends Controller {
 
     public function actionAjaxAddViewLog() {
         if (Yii::app()->request->isAjaxRequest) {
-            if (!preg_match('/bot|Disqus|spider|crawler|curl|Ezooms|^$/i', $_SERVER['HTTP_USER_AGENT'])) {
+            if (!preg_match('/bot|Disqus|spider|crawler|curl|Ezooms|Slurp|^$/i', $_SERVER['HTTP_USER_AGENT'])) {
                 $log = new SermonViewLog();
                 $log->sermon_id = $_POST['id'];
                 $log->ip = $_SERVER['REMOTE_ADDR'];
@@ -438,7 +438,7 @@ class SiteController extends Controller {
 
     public function actionAjaxAddDBViewLog() {
         if (Yii::app()->request->isAjaxRequest) {
-            if (!preg_match('/bot|Disqus|spider|crawler|curl|Ezooms|^$/i', $_SERVER['HTTP_USER_AGENT'])) {
+            if (!preg_match('/bot|Disqus|spider|crawler|curl|Ezooms|Slurp|^$/i', $_SERVER['HTTP_USER_AGENT'])) {
                 $log = new DailyBreadViewLog();
                 $log->daily_bread_id = $_POST['id'];
                 $log->ip = $_SERVER['REMOTE_ADDR'];
@@ -450,7 +450,7 @@ class SiteController extends Controller {
 
     public function actionAjaxAddStreamLog() {
         if (Yii::app()->request->isAjaxRequest) {
-            if (!preg_match('/bot|Disqus|spider|crawler|curl|Ezooms|^$/i', $_SERVER['HTTP_USER_AGENT'])) {
+            if (!preg_match('/bot|Disqus|spider|crawler|curl|Ezooms|Slurp|^$/i', $_SERVER['HTTP_USER_AGENT'])) {
                 $log = new SermonStreamLog();
                 $log->sermon_id = $_POST['id'];
                 $log->ip = $_SERVER['REMOTE_ADDR'];
@@ -462,7 +462,7 @@ class SiteController extends Controller {
 
     public function actionDownloadSermonFile($id) {
         $file = SermonFiles::model()->findByPk($id);
-        if (!preg_match('/bot|Disqus|spider|crawler|curl|Ezooms|^$/i', $_SERVER['HTTP_USER_AGENT'])) {
+        if (!preg_match('/bot|Disqus|spider|crawler|curl|Ezooms|Slurp|^$/i', $_SERVER['HTTP_USER_AGENT'])) {
             $log = new DownloadLog();
             $log->sermon_id = $file->sermon_id;
             $log->type = 'file';
