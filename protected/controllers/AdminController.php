@@ -63,6 +63,10 @@ class AdminController extends Controller {
             $sermon = Sermons::model()->findByPk($_POST['sermon_id']);
             $sermon->sermon_date = $_POST["datepicker"];
             $sermon->series_id = $_POST["Sermons"]["series_id"];
+            if ($sermon->active == 0 && $_POST["Sermons"]["active"] == 1) {
+                $sermon->setSermonTopics();
+            }
+            $sermon->active = $_POST["Sermons"]["active"];
             $sermon->title = $_POST['title'];
             $sermon->message_author = $_POST["author"];
             $sermon->message_description = $_POST["summary-text"];

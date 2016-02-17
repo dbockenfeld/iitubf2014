@@ -56,6 +56,10 @@
                                 <?php echo $sermon->message_description; ?>
                             </div>
                         </div>
+                        <div class="row">
+                            <?php echo CHtml::activeCheckBox($sermon, "active"); ?>
+                            <?php echo CHtml::activeLabel($sermon, "active"); ?>
+                        </div>
                     </section>
                 </section>
 
@@ -161,7 +165,7 @@
             $(this).parent().find('.datepicker').datepicker('show');
         });
 
-        $("body").on('change', "select", function () {
+        $("body").on('change', "select, input:checkbox", function () {
             save(form, processing_url);
         });
 
