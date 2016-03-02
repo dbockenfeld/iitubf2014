@@ -12,7 +12,7 @@ class AdminController extends Controller {
                 'users' => array('*'),
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
-                'actions' => array('create', 'update', 'index', 'logout', 'sermons', 'sermon', "changePassword", "ajaxSermonSave", "ajaxAddPassage", "ajaxRemovePassage", "ajaxAddKeyVerse"),
+                'actions' => array('create', 'update', 'index', 'logout', 'sermons', 'sermon', "changePassword", "ajaxSermonSave", "ajaxAddPassage", "ajaxRemovePassage", "ajaxAddKeyVerse", "addSermon"),
                 'users' => array('@'),
             ),
             array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -36,6 +36,13 @@ class AdminController extends Controller {
         $this->render('sermons', array(
             'sermons' => $sermons,
         ));
+    }
+    
+    public function actionAddSermon() {
+        $sermon = new Sermons();
+        $sermon->sermon_date = date("Y-m-d");
+        $sermon->save();
+        $this->redirect(Yii::app()->createUrl("admin/sermon", array("id" => $sermon->id)));
     }
 
     public function actionSermon($id) {

@@ -26,6 +26,10 @@
     margin-bottom: 10px;
 }
 
+.page-content {
+    width: 580px;
+}
+
 .row {
     margin-bottom: 10px;
 }
@@ -92,7 +96,8 @@ tbody td {
 }
 
 .additional-info .add-passage,
-.additional-info .add-key-verse {
+.additional-info .add-key-verse,
+.add-sermon {
     background-color: #3e3e3e;
     display: inline-block;
     color: #FFF;

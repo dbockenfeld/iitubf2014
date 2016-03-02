@@ -4,8 +4,8 @@
         <section class="full-width event-page">
             <section class="item event-page-item">
                 <ul>
-                    <li><?php echo CHtml::link('View/Edit Sermons', "sermons"); ?></li>
-                    <li><?php echo CHtml::link('Change Your Password', "changePassword"); ?></li>
+                    <li><?php echo CHtml::link('View/Edit Sermons', "admin/sermons"); ?></li>
+                    <li><?php echo CHtml::link('Change Your Password', "admin/changePassword"); ?></li>
                 </ul>
             </section>
         </section>

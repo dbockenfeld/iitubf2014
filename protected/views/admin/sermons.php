@@ -6,6 +6,7 @@
                 <?php echo CHtml::image("/images/page-headers/sermon-listing.jpg"); ?>
                 <section class="event-page-item-section">
                     <h3>View/Edit Sermons</h3>
+                    <a href="<?php echo Yii::app()->createUrl('admin/addsermon'); ?>"><div class="add-sermon">+</div></a>
                     <table>
                         <thead>
                             <tr>
