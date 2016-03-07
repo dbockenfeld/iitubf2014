@@ -602,6 +602,7 @@ Redirect 301 /sermons/messages /docs/sermons
 Redirect 301 /biblestudy/questions /docs/questions
 Redirect 301 /biblestudy /sermons
 Redirect 301 /wounded /blog/2015/03/02/wounded.html
+Redirect 301 /forever /blog/2016/02/18/forever.html
 Redirect 301 /docs/sermons/13_1-17.msg_final.pdf /sermons/2012/02/19/the_full_extent_of_love.html
 Redirect 301 /docs/sermons/15_1-10.msg_final.doc /sermons/2010/01/31/one_sinner_who_repents.html
 Redirect 301 /docs/sermons/4_1_32.msg_final.doc /sermons/2007/09/23/live_a_life_worthy_of_your_calling.html
@@ -610,6 +611,8 @@ Redirect 301 /docs/sermons/7_31_37.msg_final.doc /sermons/2007/08/05/ephphatha_b
 Redirect 301 /docs/sermons/12_35-48_msg_final.doc /sermons/2009/11/11/how_to_be_ready_for_the_lords_return.html
 
 Redirect 301 /docs/sermons/1.1-2.11.msg_final.doc /sermons/2010/09/12/pouring_out_our_soul_to_the_lord.html
+Redirect 301 /docs/sermons/Sharing_Jesus1_1John_4.7-21.msg_final.pdf /sermons/2011/07/13/why_do_we_share_jesus.html
+Redirect 301 /docs/sermons/1.kings.1-2.msg_final.pdf /sermons/2011/06/27/davids_final_days_and_the_rise_of_solomon.html
 
 # FollowSymLinks must be enabled for this to work.
 <IfModule mod_rewrite.c>

@@ -153,7 +153,7 @@
             "insertdatetime media table contextmenu paste"
         ],
         toolbar: "undo redo | bold italic",
-        menubar: false
+        menubar: false,
         valid_elements: "p",
     });
     var months = ["", "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
