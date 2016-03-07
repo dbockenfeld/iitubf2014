@@ -134,7 +134,8 @@
             "insertdatetime media table contextmenu paste"
         ],
         toolbar: "undo redo",
-        menubar: false
+        menubar: false,
+        valid_elements: "p",
     });
     tinymce.init({
         setup: function (ed) {
@@ -153,6 +154,7 @@
         ],
         toolbar: "undo redo | bold italic",
         menubar: false
+        valid_elements: "p",
     });
     var months = ["", "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 
