@@ -32,6 +32,15 @@
                 </section>
             </section>
             <section class="right30">
+                <?php if (!$sermon->text && $sermon->message_file) : ?>
+                    <section class="item sidebar">
+                        <h3>Files</h3>
+                        <section class="item-right downloads">
+                            <a target="_blank" class="no-color" href="<?php echo $sermon->getTranscript(); ?>">
+                                <section class="download-item transcript"><span>Transcript</span></section>
+                            </a>                    </section>
+                    </section>
+                <?php endif; ?>
                 <section class="item sidebar">
                     <h3>Additional Information</h3>
                     <section class="additional-info">
