@@ -12,7 +12,7 @@ class AdminController extends Controller {
                 'users' => array('*'),
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
-                'actions' => array('create', 'update', 'index', 'logout', 'sermons', 'sermon', "changePassword", "ajaxSermonSave", "ajaxAddPassage", "ajaxRemovePassage", "ajaxAddKeyVerse", "addSermon"),
+                'actions' => array('create', 'update', 'index', 'logout', 'sermons', 'sermon', "changePassword", "ajaxSermonSave", "ajaxAddPassage", "ajaxRemovePassage", "ajaxAddKeyVerse", "addSermon", "ajaxChangeSeries", "ajaxDisplaySermonPassages"),
                 'users' => array('@'),
             ),
             array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -114,6 +114,25 @@ class AdminController extends Controller {
             $passage->save();
             $this->renderPartial("_sermon_passage_input", array(
                 "passage" => $passage,
+            ));
+        }
+    }
+    
+    public function actionAjaxChangeSeries() {
+        if (Yii::app()->request->isAjaxRequest) {
+            $series = SermonSeries::model()->findByPk($_POST['series_id']);
+            $this->renderPartial("_header_image", array(
+                "image" => $series->large_feature,
+                "title" => $series->title,
+            ));
+        }
+    }
+    
+    public function actionAjaxDisplaySermonPassages() {
+        if (Yii::app()->request->isAjaxRequest) {
+            $sermon = Sermons::model()->findByPk($_POST["sermon_id"]);
+            $this->renderPartial("_sermon_passage", array(
+                "sermon" => $sermon,
             ));
         }
     }

@@ -2,11 +2,17 @@
     <section class="content-body zero-font">
         <h2>IIT UBF Admin</h2>
         <form id="sermon-form">
-            <?php if ($data->image != '') : ?>
-                <div class="<?php echo isset($image_class) ? $image_class : 'page-header'; ?>">
-                    <?php echo CHtml::image(Yii::app()->baseUrl . '/images/' . $data->image, $data->title); ?>
-                </div>
-            <?php endif; ?>
+            <div class="header-image">
+                <?php if ($data->image != '') : ?>
+                    <?php
+                    echo $this->renderPartial("_header_image", array(
+                        "image_class" => $image_class,
+                        "image" => $data->image,
+                        "title" => $data->title,
+                    ));
+                    ?>
+                <?php endif; ?>
+            </div>
             <section class="left70">
                 <?php echo CHtml::hiddenField("sermon_id", $sermon->id); ?>
                 <section class="item">
@@ -21,18 +27,23 @@
                         <h3 class="sermon-title-edit" id="title"><?php echo $sermon->title ?></h3>
                         <p class="sermon-passage"><?php echo $sermon->sermonPassage; ?></p>
                         <p class="sermon-author">By: <span class="author-name-edit" id="author"><?php echo $sermon->message_author; ?></span></p>
-                        <?php if ($sermon->sermonKeyVerses) : ?>
-                            <p class="key-verse">Key Verse: <?php echo $sermon->keyVerse; ?></p>
-                            <section class="key-verse-text" id="key-verse-text"><?php echo $sermon->keyVerseText; ?></section>
-                        <?php endif; ?>
+                        <div class="key-verse-container">
+                            <?php if ($sermon->sermonKeyVerses) : ?>
+                                <?php
+                                echo $this->renderPartial("_key_verse", array(
+                                    "sermon" => $sermon,
+                                ));
+                                ?>
+                            <?php endif; ?>
+                        </div>
                         <div class="body-text-edit" id="body-text">
-                            <?php echo $sermon->text; ?>
+<?php echo $sermon->text; ?>
                         </div>
                     </section>
                 </section>
             </section>
             <section class="right30">
-                <?php if (!$sermon->text && $sermon->message_file) : ?>
+<?php if (!$sermon->text && $sermon->message_file) : ?>
                     <section class="item sidebar">
                         <h3>Files</h3>
                         <section class="item-right downloads">
@@ -40,12 +51,12 @@
                                 <section class="download-item transcript"><span>Transcript</span></section>
                             </a>                    </section>
                     </section>
-                <?php endif; ?>
+<?php endif; ?>
                 <section class="item sidebar">
                     <h3>Additional Information</h3>
                     <section class="additional-info">
                         <div class="row">
-                            <?php echo CHtml::activeLabel($sermon, "series_id"); ?>
+<?php echo CHtml::activeLabel($sermon, "series_id"); ?>
                             <?php echo CHtml::activeDropDownList($sermon, "series_id", Series::getSeriesList(), array("empty" => "--")); ?>
                         </div>
                         <div class="row">
@@ -56,7 +67,7 @@
                                     "passage" => $passage,
                                 ));
                                 ?>
-                            <?php endforeach; ?>
+<?php endforeach; ?>
                             <div class="add-passage">+</div>
                         </div>
                         <div class="row">
@@ -73,14 +84,14 @@
                             <?php endif; ?>
                         </div>
                         <div class="row">
-                            <?php echo CHtml::activeLabel($sermon, "message_description"); ?>
+                                <?php echo CHtml::activeLabel($sermon, "message_description"); ?>
                             <div class="summary-text-edit" id="summary-text">
-                                <?php echo $sermon->message_description; ?>
+<?php echo $sermon->message_description; ?>
                             </div>
                         </div>
                         <div class="row">
-                            <?php echo CHtml::activeCheckBox($sermon, "active"); ?>
-                            <?php echo CHtml::activeLabel($sermon, "active"); ?>
+<?php echo CHtml::activeCheckBox($sermon, "active"); ?>
+<?php echo CHtml::activeLabel($sermon, "active"); ?>
                         </div>
                     </section>
                 </section>
@@ -193,8 +204,40 @@
             save(form, processing_url);
         });
 
+        $("body").on('change', "#Sermons_series_id", function () {
+            var series_id = $(this).val();
+            $.ajax({
+                type: 'POST',
+                dataType: 'html',
+                url: "<?php echo Yii::app()->createUrl("admin/ajaxChangeSeries") ?>",
+                data: {
+                    series_id: series_id,
+                },
+                timeout: 5000,
+                cache: false,
+                success: function (html) {
+                    $(".header-image").html(html)
+                },
+            });
+        });
         $("body").on('keyup', "input:text", function () {
             autosave(form, processing_url);
+        });
+
+        var timer2;
+        $("body").on('keyup', ".verse-input", function () {
+            clearInterval(timer2);
+            timer2 = setTimeout(function () {
+                displaySermonPassages();
+            }, 1500);
+        });
+
+        var timer3;
+        $("body").on('change', ".book-input", function () {
+            clearInterval(timer3);
+            timer3 = setTimeout(function () {
+                displaySermonPassages();
+            }, 1500);
         });
 
         $("body").on("click", ".add-passage", function () {
@@ -285,5 +328,22 @@
         timer = setTimeout(function () {
             save(form, processing_url);
         }, duration);
+    }
+
+    function displaySermonPassages() {
+        var sermon_id = $("#sermon_id").val();
+        $.ajax({
+            type: 'POST',
+            dataType: 'html',
+            url: "<?php echo Yii::app()->createUrl("admin/ajaxDisplaySermonPassages") ?>",
+            data: {
+                sermon_id: sermon_id,
+            },
+            timeout: 5000,
+            cache: false,
+            success: function (html) {
+                $(".sermon-passage").html(html)
+            },
+        });
     }
 </script>
