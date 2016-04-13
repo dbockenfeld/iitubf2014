@@ -13,7 +13,7 @@
  */
 class uploadDBtoDB {
 
-    public function strtotitle($title) {
+    public static function strtotitle($title) {
 // Converts $title to Title Case, and returns the result.
 // Our array of 'small words' which shouldn't be capitalised if
 // they aren't the first word. Add your own words to taste.
@@ -38,7 +38,7 @@ class uploadDBtoDB {
         return $newtitle;
     }
 
-    public function archive() {
+    public static function archive() {
         $today = date('Y-m-d');
         $yesterday = date('Y-m-d', strtotime('-1 day'));
 
