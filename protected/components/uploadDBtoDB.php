@@ -38,7 +38,7 @@ class uploadDBtoDB {
         return $newtitle;
     }
 
-    public function archive() {
+    public static function archive() {
         $today = date('Y-m-d');
         $yesterday = date('Y-m-d', strtotime('-1 day'));
 

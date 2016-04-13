@@ -47,7 +47,7 @@ class smallSermonList extends CWidget {
         $connection = Yii::app()->db;
         $sql = "SELECT sermon_id, COUNT(*) AS num
   FROM (
-SELECT *
+SELECT a.sermon_id, a.ip
   FROM view_log a
  WHERE a.timestamp > '" . $offset . "'
   GROUP BY sermon_id, ip ) reduced
