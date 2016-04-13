@@ -1,0 +1,29 @@
+.intro {
+    background: url(/images/common/intro-background.jpg) no-repeat;
+}
+
+.intro .body-text {
+    margin: 20px auto;
+    width: 600px;
+}
+
+.intro .body-text p {
+    font-size: 18px;
+    line-height: 1.5em;
+    text-shadow: 0 0 9px #FFF;
+}
+
+.intro .intro-body {
+    width: 800px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+
+.intro .intro-body input {
+    width: 100%;
+    font-size: 24px;
+    padding: 10px;
+    border: 3px solid #3e3e3e;
+    color: #3e3e3e;
+    background-color: rgba(255,255,255,0.9);
+}

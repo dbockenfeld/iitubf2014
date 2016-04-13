@@ -4,6 +4,11 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="language" content="en" />
+        <link type="text/css" rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/reset_uni.css"/>
+        <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/font-awesome/css/font-awesome.min.css"/>
+        <link type="text/css" rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/universal.css"/>
+        <link type="text/css" rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/nav.css"/>
+        <link type="text/css" rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/footer.css"/>
         <title><?php echo $this->pageTitle; ?></title>
         <?php if ($this->siteDescription) : ?>
             <meta name="description" content="<?php echo $this->siteDescription; ?>"/>
@@ -41,11 +46,6 @@
                 });
             })
         </script>
-        <link type="text/css" rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/reset_uni.css"/>
-        <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/font-awesome/css/font-awesome.min.css"/>
-        <link type="text/css" rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/universal.css"/>
-        <link type="text/css" rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/nav.css"/>
-        <link type="text/css" rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/footer.css"/>
         <link rel="shortcut icon" href="<?php echo Yii::app()->request->baseUrl; ?>/favicon.ico" type="image/x-icon" />
     </head>
 

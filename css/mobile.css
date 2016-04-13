@@ -1,0 +1,13 @@
+@media screen and (max-width: 1020px) {
+    .content-body .left70 {
+        width: 100%;
+    }
+    
+    .content-body .left70 h3 {
+        display: none;
+    }
+    
+    .content-body .right30 {
+        width: 100%;
+    }
+}

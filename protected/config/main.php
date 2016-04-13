@@ -52,6 +52,7 @@ return array(
 //                '<controller:\w+>/<action:\w+>' => '<controller>/<action>',
                 '' => 'site/index',
                 'admin' => 'admin/index',
+                'intro' => 'intro/index',
                 '<action:\w+>' => 'site/<action>',
                 'search.html' => 'site/search',
                 '<action:\w+>/<year:\d+>/<month:\d+>/<day:\d+>/' => 'site/<action>/year/<year>/month/<month>/day/<day>',
