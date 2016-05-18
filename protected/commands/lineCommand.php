@@ -31,4 +31,13 @@ EOD;
         echo "End topic creation: " . date('Y-m-d h:i:s') . "\r\n";
     }
 
+    public function actionDailyBreadTopics() {
+        echo "Start topic creation: " . date('Y-m-d h:i:s') . "\r\n ";
+        $db = DailyBreadArchive::model()->findAll();
+        foreach ($db as $item) {
+            $item->setTopics();
+        }
+        echo "End topic creation: " . date('Y-m-d h:i:s') . "\r\n";
+    }
+
 }
