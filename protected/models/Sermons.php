@@ -355,6 +355,10 @@ class Sermons extends CActiveRecord {
             }
         }
     }
+    
+    public function getImage() {
+	    return $this->series ? str_replace('features', 'sermon', $this->series->large_feature) : '';
+    }
 
     public function getRelatedSermons($total = 5) {
         $criteria = new CDbCriteria();

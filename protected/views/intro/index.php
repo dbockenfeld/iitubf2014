@@ -13,6 +13,7 @@
                         <?php echo CHtml::textField("intro-field", "", array("placeholder" => "Search...")); ?>
                     </section>
                     <section class="intro-question-list"></section>
+                    <section class="intro-result-container"></section>
                 </section>
             </section>
         </section>

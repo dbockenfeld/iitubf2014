@@ -182,6 +182,37 @@ class AdminController extends Controller {
 
         $this->render("changePassword");
     }
+    
+    public function postToFacebook($sermon) {
+	    require_once Yii::app()->basePath . '/extensions/facebook-php-sdk-v4/src/Facebook/autoload.php';
+	    $fb = new Facebook\Facebook([
+			'app_id' => '561142330727643',
+			'app_secret' => '47e077d18d5d09de3993e41d4b8e8518',
+			'default_graph_version' => 'v2.5',
+		]);
+		$linkData = [
+			'link' => $sermon->makeAbsoluteSermonUrl(),
+			'message' => 'Test',
+		];
+		
+		$params = array(
+		  // this is the access token for Fan Page
+		  "access_token" => "CAACYHYyWcnIBAMK1y2tqiRKx8bBXGFFzjdUamOlMZCBJrTSL8ic1z5sZBarBi3DbTh9mMUz3aiZCAQRNHvOmcMxLZC53FNtkrVCq8rZCLsyjbQVZAt8o7S6Rd1UT0LK7AkgyZAlu11MC9rWND8eZBiKjjiYjwmBMLWko7k6GGPZCREehKRNFCsyM1Ll7sFb1hXycZD",
+		  "message" => "Our latest message is now online.",
+		  "link" => $sermon->makeAbsoluteSermonUrl(),
+		  "picture" => $sermon->image,
+		  "name" => $sermon->title,
+		  "caption" => "iitubf.org",
+		  "description" => $sermon->message_description,
+		);
+		try {
+		  // 466400200079875 is Facebook id of Fan page https://www.facebook.com/pontikis.net
+		  $ret = $fb->api('/466400200079875/feed', 'POST', $params);
+		  echo 'Successfully posted to Facebook Fan Page';
+		} catch(Exception $e) {
+		  echo $e->getMessage();
+		}
+	}
 
     /**
      * Displays the login page

@@ -98,4 +98,12 @@ class IntroPassages extends CActiveRecord
 			'criteria'=>$criteria,
 		));
 	}
+	
+	public function getRef() {
+		return $this->book->name . " " . $this->verse;
+	}
+	
+	public function getRefNoSpace() {
+		return str_replace(" ", "&nbsp;", $this->ref);
+	}
 }

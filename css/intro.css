@@ -14,16 +14,114 @@
 }
 
 .intro .intro-body {
-    width: 800px;
+    width: 850px;
     margin: 0 auto;
     padding-bottom: 40px;
+    position: relative;
 }
 
 .intro .intro-body input {
-    width: 100%;
+    width: 824px;
     font-size: 24px;
     padding: 10px;
     border: 3px solid #3e3e3e;
     color: #3e3e3e;
     background-color: rgba(255,255,255,0.9);
+    z-index: 5;
+}
+
+.intro .intro-body .intro-question-list .list {
+	padding: 10px 0;
+    background-color: rgba(255,255,255,0.9);
+    position: absolute;
+    width: 800px;
+    left: 3px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    z-index: 3;
+}
+
+.intro .intro-body .intro-question-list .list ul,
+ul.related-question-list {
+	list-style-type: none;
+	margin: 0;
+}
+.intro .intro-body .intro-question-list .list ul li,
+ul.related-question-list li {
+	font-size: 18px;
+	padding: 5px 15px;
+	cursor: pointer;
+}
+
+.intro .intro-body .intro-question-list .list ul li:hover,
+ul.related-question-list li:hover {
+    background-color: #C00;
+    color: #FFF;
+}
+
+.intro .intro-body .intro-result {
+	font-size: 0;
+	margin-top: 30px;
+}
+
+.intro .intro-body .intro-result h3 {
+	background-color: transparent;
+	color: #C00;
+	text-transform: none;
+	font-size: 28px;
+/* 	font-weight: bold; */
+	padding: 0;
+}
+
+.intro .intro-body .intro-result h4 {
+	background-color: transparent;
+	color: #C00;
+	text-transform: none;
+	font-size: 24px;
+	line-height: 28px;
+	font-weight: normal;
+	padding: 0;
+}
+
+.intro .intro-body .intro-result p,
+.intro .intro-body .intro-result li {
+	font-size: 18px;
+}
+
+
+.intro .intro-body .intro-result .intro-related-questions h4 {
+	padding-left: 15px;
+}
+
+.ref-tag {
+	position: relative;
+	z-index: 0;
+}
+
+.ref-tag .tag-highlight {
+	position: absolute;
+	background-color: #fbb;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	display: none;
+	border-radius: 5px;
+}
+
+/*
+.ref-tag:hover,
+*/
+.hover-tag {
+	background-color: #fbb;
+}
+
+.ref-passage {
+	padding: 0 5px;
+	background-color: #cac;
+	margin-right: 3px;
+	border-radius: 4px;
+}
+
+.ref-passage:hover {
+	background-color: #c00;
+	color: #fff;
 }
