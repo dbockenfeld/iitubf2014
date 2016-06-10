@@ -17,12 +17,11 @@
 		<h4>Reference Passages</h4>
 		<?php foreach ($passages as $region => $p) : ?>
 			<section class="intro-region" data-region="<?php echo $region; ?>">
-				<p>
-				<sup><?php echo $region; ?></sup>
+				<p><sup><?php echo $region; ?></sup></p>
 				<?php foreach ($p as $passage) : ?>
-					<span class="ref-passage" data-passage="<?php echo $passage->ref; ?>"><?php echo $passage->refNoSpace; ?></span>
+					<div class="ref-passage" data-passage="<?php echo $passage->ref; ?>"><?php echo $passage->refNoSpace; ?></div>
 				<?php endforeach; ?>
-				</p>
+				
 			</section>
 		<?php endforeach; ?>
 	</section>
